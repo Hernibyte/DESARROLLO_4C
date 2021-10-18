@@ -20,12 +20,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {   
-        Dodge();
+        if(Input.GetKeyDown(KeyCode.Space) && !inDodge && movement != Vector2.zero)
+            inDodge = true;
     }
 
     void FixedUpdate()  
     {
         Movement();
+        Dodge();
     }
 
     void Movement()
@@ -36,18 +38,31 @@ public class PlayerMovement : MonoBehaviour
             movement.x = Input.GetAxis("Horizontal");
             movement.y = Input.GetAxis("Vertical");
             body2D.AddForce(movement * playerStats.forceMovement);
+            if(movement.x == 0)
+                body2D.velocity = new Vector2(0f, body2D.velocity.y);
+            if(movement.y == 0)
+                body2D.velocity = new Vector2(body2D.velocity.x, 0f);
         }
     }
 
     void Dodge()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && !inDodge)
-        {
-            inDodge = true;
-            auxMovement = movement;
-        }
         if(inDodge)
         {
+            if(movement.x < 0)
+                auxMovement.x = -1;
+            else if(movement.x > 0)
+                auxMovement.x = 1;
+            else 
+                auxMovement.x = 0;
+            //
+            if(movement.y < 0)
+                auxMovement.y = -1;
+            else if(movement.y > 0)
+                auxMovement.y = 1;
+            else 
+                auxMovement.y = 0;
+            //
             body2D.AddForce(auxMovement * playerStats.dodgeForce);
             if(Vector2.Distance(transform.position, dodgePivot.position) >= playerStats.dodgeDistance)
             {
@@ -62,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
         if(MyUtilities.Contains(environmentMask, other.gameObject.layer))
         {
             inDodge = false;
+            body2D.velocity = Vector2.zero;
         }
     }
 }

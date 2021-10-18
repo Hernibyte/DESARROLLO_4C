@@ -653,9 +653,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba58d2baa570004cb13665241298e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMovement: 1600
-  dodgeForce: 20000
-  dodgeDistance: 2
+  forceMovement: 7000
+  dodgeForce: 30000
+  dodgeDistance: 3
 --- !u!114 &1872101442
 MonoBehaviour:
   m_ObjectHideFlags: 0
