@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInteractions : MonoBehaviour, IReciveDamage
+public class PlayerInteractions : MonoBehaviour, IHitabble
 {
-    public void Damage(int amountDamage, float knockBackForce, Vector2 posAttacker)
+    public void ReciveDamage(int amountDamage, float knockBackForce, Vector2 posAttacker)
     {
         //Daño
     }

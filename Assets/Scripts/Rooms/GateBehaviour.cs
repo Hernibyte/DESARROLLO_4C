@@ -11,11 +11,7 @@ public class GateBehaviour : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) 
     {
         if(isGateOpen)
-        {
             if(MyUtilities.Contains(playerMask, other.gameObject.layer))
-            {
                 other.transform.position = teleportPosition;
-            }
-        }
     }
 }

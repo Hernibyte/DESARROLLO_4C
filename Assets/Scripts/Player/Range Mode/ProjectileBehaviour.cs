@@ -31,10 +31,10 @@ public class ProjectileBehaviour : MonoBehaviour
     {
         if (MyUtilities.Contains(layerToAttack, collision.gameObject.layer))
         {
-            IReciveDamage impactDone = collision.GetComponent<IReciveDamage>();
+            IHitabble impactDone = collision.GetComponent<IHitabble>();
             if (impactDone != null)
             {
-                impactDone.Damage(damageProjectile, knockBack, transform.position);
+                impactDone.ReciveDamage(damageProjectile, knockBack, transform.position);
                 Destroy(gameObject);
             }
         }

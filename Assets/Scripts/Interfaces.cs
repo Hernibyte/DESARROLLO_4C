@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-interface IReciveDamage
+interface IHitabble
 {
-    void Damage(int amountDamage, float knockBackForce, Vector2 posAttacker);
+    void ReciveDamage(int amountDamage, float knockBackForce, Vector2 posAttacker);
 }
+
 public interface INode
 {
-
+    
 }

@@ -10,10 +10,10 @@ public class MainNode : MonoBehaviour
     [SerializeField] float nodeXDistance;
     [SerializeField] float nodeYDistance;
     [SerializeField] int nodeAmount;
+    [SerializeField] UnityEvent finishGeneration;
     UnityEvent checkConections;
     UnityEvent callGenerationRooms;
     GameObject obj;
-    UnityEvent finishGeneration;
 
     void Awake()
     {
