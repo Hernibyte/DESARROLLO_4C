@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126562988}
   - component: {fileID: 1126562989}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 1872101440}
   - component: {fileID: 1872101441}
   - component: {fileID: 1872101442}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,6 +556,14 @@ MonoBehaviour:
   forceMovement: 7000
   dodgeForce: 30000
   dodgeDistance: 3
+  maxHp: 0
+  actualHp: 0
+  defense: 0
+  damageReducedByDef: 0
+  damageRangeAttack: 0
+  damageMeleeAttack: 0
+  knockbackRange: 0
+  knockbackMelee: 0
 --- !u!114 &1872101442
 MonoBehaviour:
   m_ObjectHideFlags: 0

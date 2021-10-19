@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GateBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [HideInInspector] public Vector2 teleportPosition;
+    [HideInInspector] public bool isGateOpen;
+    [SerializeField] LayerMask playerMask;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other) 
     {
-        
+        if(isGateOpen)
+        {
+            if(MyUtilities.Contains(playerMask, other.gameObject.layer))
+            {
+                other.transform.position = teleportPosition;
+            }
+        }
     }
 }

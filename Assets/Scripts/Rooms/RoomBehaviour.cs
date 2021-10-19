@@ -30,6 +30,8 @@ public class RoomBehaviour : MonoBehaviour
 
     public void GenerateGates()
     {
+        GameObject obj;
+        GateBehaviour gateBehaviour;
         for(int i = 0; i < 4; i++)
         {
             switch(i)
@@ -38,32 +40,44 @@ public class RoomBehaviour : MonoBehaviour
                     if(leftNode == null)
                         break;
                     //
-                    CreateGate(new Vector2(-gateXOffSet, 0f), Quaternion.identity);
+                    obj = CreateGate(new Vector2(-gateXOffSet, 0f), Quaternion.identity);
+                    gateBehaviour = obj.GetComponent<GateBehaviour>();
+                    gateBehaviour.teleportPosition = new Vector2(leftNode.transform.position.x + nodeXOffSet, leftNode.transform.position.y);
+                    gateBehaviour.isGateOpen = true;
                 break;
                 case 1:
                     if(rightNode == null)
                         break;
                     //
-                    CreateGate(new Vector2(gateXOffSet, 0f), new Quaternion(0f, 0f, halfRound, 0f));
+                    obj = CreateGate(new Vector2(gateXOffSet, 0f), new Quaternion(0f, 0f, halfRound, 0f));
+                    gateBehaviour = obj.GetComponent<GateBehaviour>();
+                    gateBehaviour.teleportPosition = new Vector2(rightNode.transform.position.x - nodeXOffSet, rightNode.transform.position.y);
+                    gateBehaviour.isGateOpen = true;
                 break;
                 case 2:
                     if(topNode == null)
                         break;
                     //
-                    CreateGate(new Vector2(0f, gateYOffSet), new Quaternion(0f, 0f, -quarterRound, quarterRound));
+                    obj = CreateGate(new Vector2(0f, gateYOffSet), new Quaternion(0f, 0f, -quarterRound, quarterRound));
+                    gateBehaviour = obj.GetComponent<GateBehaviour>();
+                    gateBehaviour.teleportPosition = new Vector2(topNode.transform.position.x, topNode.transform.position.y - nodeYOffSet);
+                    gateBehaviour.isGateOpen = true;
                 break;
                 case 3:
                     if(downNode == null)
                         break;
                     //
-                    CreateGate(new Vector2(0f, -gateYOffSet), new Quaternion(0f, 0f, quarterRound, quarterRound));
+                    obj = CreateGate(new Vector2(0f, -gateYOffSet), new Quaternion(0f, 0f, quarterRound, quarterRound));
+                    gateBehaviour = obj.GetComponent<GateBehaviour>();
+                    gateBehaviour.teleportPosition = new Vector2(downNode.transform.position.x, downNode.transform.position.y + nodeYOffSet);
+                    gateBehaviour.isGateOpen = true;
                 break;
             }
         }
     }
 
-    void CreateGate(Vector2 offSet, Quaternion gateRotation)
+    GameObject CreateGate(Vector2 offSet, Quaternion gateRotation)
     {
-        Instantiate(gatePrefab, new Vector2(transform.position.x + offSet.x, transform.position.y + offSet.y), gateRotation, transform);
+        return Instantiate(gatePrefab, new Vector2(transform.position.x + offSet.x, transform.position.y + offSet.y), gateRotation, transform);
     }
 }
