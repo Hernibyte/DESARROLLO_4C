@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class DeckOfCardsBehaviour : MonoBehaviour
+{
+    public int cardsAmount;
+    [HideInInspector] public int[] idsOfCardsInEquipment;
+
+    void Awake()
+    {
+        idsOfCardsInEquipment = new int[cardsAmount];
+        for(int i = 0; i < cardsAmount; i++)
+            idsOfCardsInEquipment[i] = new int();
+    }
+
+    public void EquipCardByID(int index, int id)
+    {
+        idsOfCardsInEquipment[index] = id;
+    }
+}
