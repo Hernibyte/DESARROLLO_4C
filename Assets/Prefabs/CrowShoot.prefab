@@ -146,8 +146,8 @@ MonoBehaviour:
   speed: 5
   layerToAttack:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   roomLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   rb: {fileID: 4227810542231676193}
