@@ -17,6 +17,7 @@ public class DeckOfCardsBehaviour : MonoBehaviour
 
     public void EquipCardByID(int index, int id)
     {
-        idsOfCardsInEquipment[index] = id;
+        if(index >= 0 && index <= (cardsAmount-1))
+            idsOfCardsInEquipment[index] = id;
     }
 }
