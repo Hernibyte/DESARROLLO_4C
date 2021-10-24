@@ -6,7 +6,6 @@ public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] Transform attackPivot;
     [SerializeField] EnemyStats stats;
-    [SerializeField] LayerMask playerMask;
     float auxTimer;
 
     public void SetPivotPosition(Vector2 position)
@@ -14,12 +13,12 @@ public class EnemyAttack : MonoBehaviour
         attackPivot.position = position;
     }
 
-    public bool Attack()
+    public bool Attack( LayerMask objectiveMask)
     {
         auxTimer += Time.deltaTime;
         if(auxTimer >= stats.attackDelay)
         {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPivot.position, stats.attackRadiusArea, playerMask);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPivot.position, stats.attackRadiusArea, objectiveMask);
             foreach(Collider2D collider in colliders)
             {
                 IHitabble hittable;
