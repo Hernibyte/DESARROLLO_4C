@@ -10,7 +10,6 @@ public class FirstEnemyBehaviour : MonoBehaviour
     [SerializeField] EnemyAttack enemyAttack;
     [SerializeField] LayerMask playerMask;
     [SerializeField] MyUtilities.EnemyState state;
-    public Transform playerTransform;
     [HideInInspector] public UnityEvent imDie;
     bool ifSetPositionPivot;
 
@@ -32,16 +31,16 @@ public class FirstEnemyBehaviour : MonoBehaviour
 
     void Idle()
     {
-        if(Vector2.Distance(transform.position, playerTransform.position) <= stats.distanceTracking)
+        if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceTracking)
             state = MyUtilities.EnemyState.Chasing;
     }
 
     void Chasing()
     {
-        if(Vector2.Distance(transform.position, playerTransform.position) >= stats.distanceTracking)
+        if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) >= stats.distanceTracking)
             state = MyUtilities.EnemyState.Idle;
         //
-        if(Vector2.Distance(transform.position, playerTransform.position) <= stats.distanceToAttack)
+        if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceToAttack)
         {
             state = MyUtilities.EnemyState.Attacking;
             ifSetPositionPivot = false;
@@ -50,7 +49,7 @@ public class FirstEnemyBehaviour : MonoBehaviour
         if(ifSetPositionPivot)
             ifSetPositionPivot = false;
         //
-        enemyMovement.Move(playerTransform.position);
+        enemyMovement.Move(enemyAttack.playerTransform.position);
     }
 
     void Attacking()

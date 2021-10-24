@@ -12,7 +12,6 @@ public class SecondEnemyBehaviour : MonoBehaviour
     [SerializeField] MyUtilities.EnemyState state;
     [SerializeField] Rigidbody2D firePointRb;
     [SerializeField] float firePointOffSet;
-    public Transform playerTransform;
     [HideInInspector] public UnityEvent imDie;
     //
     float auxTimer;
@@ -38,16 +37,16 @@ public class SecondEnemyBehaviour : MonoBehaviour
 
     void Idle()
     {
-        if(Vector2.Distance(transform.position, playerTransform.position) <= stats.distanceTracking)
+        if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceTracking)
             state = MyUtilities.EnemyState.Tracking;
     }
 
     void Tracking()
     {
-        if(Vector2.Distance(transform.position, playerTransform.position) >= stats.distanceTracking)
+        if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) >= stats.distanceTracking)
             state = MyUtilities.EnemyState.Idle;
         //
-        if(Vector2.Distance(transform.position, playerTransform.position) <= stats.distanceToAttack)
+        if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceToAttack)
             state = MyUtilities.EnemyState.Attacking;
     }
 
@@ -63,10 +62,10 @@ public class SecondEnemyBehaviour : MonoBehaviour
 
     void Attacking()
     {
-        if(Vector2.Distance(transform.position, playerTransform.position) >= stats.distanceToAttack)
+        if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) >= stats.distanceToAttack)
             state = MyUtilities.EnemyState.Tracking;
         //
-        Vector2 directionShoot = playerTransform.position - new Vector3(transform.position.x, transform.position.y);
+        Vector2 directionShoot = enemyAttack.playerTransform.position - new Vector3(transform.position.x, transform.position.y);
         float angle = Mathf.Atan2(directionShoot.y,directionShoot.x) * Mathf.Rad2Deg - 90f;
         firePointRb.rotation = angle;
         //

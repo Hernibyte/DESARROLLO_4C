@@ -244,7 +244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4015f59303eb9de4ab540ce368ca78d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemiesPrefab: []
+  enemiesPrefab:
+  - {fileID: 2276568717983404206, guid: c20fd72caf311e44daccc455455af611, type: 3}
+  - {fileID: 6397217175561193418, guid: 40778fec3adad40479b25863a66a12c7, type: 3}
   switchGatesOpen:
     m_PersistentCalls:
       m_Calls:
@@ -259,6 +261,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  enemyGenerator: {fileID: 4056008632670356702}
+  enemiesSpawnOffSet: 0
+  minEnemiesPerRoom: 1
+  maxEnemiesPerRoom: 2
   enemiesAmount: 0
 --- !u!1 &6936002377458514498
 GameObject:

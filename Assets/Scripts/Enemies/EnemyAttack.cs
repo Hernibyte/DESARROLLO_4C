@@ -7,6 +7,7 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] Transform attackPivot;
     [SerializeField] EnemyStats stats;
+    public Transform playerTransform;
     float auxTimer;
 
     public void SetPivotPosition(Vector2 position)
