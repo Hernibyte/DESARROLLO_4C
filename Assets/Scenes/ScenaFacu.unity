@@ -226,6 +226,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1099209571171220996, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: rangeMelee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099209571171220996, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 592766813}
+    - target: {fileID: 1099209571171220996, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: attackPointRb
+      value: 
+      objectReference: {fileID: 592766812}
+    - target: {fileID: 1099209571171220996, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: impulsePerAttack
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319500716175630094, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: canReciveInput
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5664354270066988782, guid: 70a8bd4d8e543234aba4140b10a3fea6,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -337,6 +362,18 @@ PrefabInstance:
 --- !u!1 &592766811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5664354271051113588, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+    type: 3}
+  m_PrefabInstance: {fileID: 592766810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &592766812 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 705084703207700108, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+    type: 3}
+  m_PrefabInstance: {fileID: 592766810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &592766813 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5513816174426868106, guid: 70a8bd4d8e543234aba4140b10a3fea6,
     type: 3}
   m_PrefabInstance: {fileID: 592766810}
   m_PrefabAsset: {fileID: 0}

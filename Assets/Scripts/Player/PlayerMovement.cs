@@ -11,11 +11,13 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     Vector2 auxMovement;
     bool inDodge;
+    Animator animator;
 
     void Awake()
     {
         body2D = GetComponent<Rigidbody2D>();
         playerStats = GetComponent<PlayerStats>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -30,6 +32,14 @@ public class PlayerMovement : MonoBehaviour
         Dodge();
     }
 
+    public void ImpulseAttack(Vector2 directionImpulse, float impulseForce)
+    {
+        if (!inDodge)
+        {
+            body2D.velocity = new Vector2(directionImpulse.x * impulseForce, directionImpulse.y * impulseForce);
+        }
+    }
+
     void Movement()
     {
         if(!inDodge)
@@ -38,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
             movement.x = Input.GetAxis("Horizontal");
             movement.y = Input.GetAxis("Vertical");
             body2D.AddForce(movement * playerStats.forceMovement);
-            if(movement.x == 0)
+            animator.SetFloat("Velocity", body2D.velocity.magnitude);
+            if (movement.x == 0)
                 body2D.velocity = new Vector2(0f, body2D.velocity.y);
             if(movement.y == 0)
                 body2D.velocity = new Vector2(body2D.velocity.x, 0f);
