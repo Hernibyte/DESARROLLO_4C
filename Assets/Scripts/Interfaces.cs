@@ -4,7 +4,7 @@ using UnityEngine;
 
 interface IHitabble
 {
-    void ReciveDamage(int amountDamage, float knockBackForce, Vector2 posAttacker);
+    void ReciveDamage(float amountDamage, float knockBackForce, Vector2 posAttacker);
 }
 
 public interface INode
