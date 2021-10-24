@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] GameObject firePrefab;
+    [SerializeField] GameObject projectilePrefab;
     [SerializeField] Transform attackPivot;
     [SerializeField] EnemyStats stats;
     float auxTimer;
@@ -34,10 +34,10 @@ public class EnemyAttack : MonoBehaviour
         return false;
     }
 
-    public void RangeAttack(int damageDelt, float knockBackForce, Transform direction)
+    public void RangeAttack(int damageDelt, float knockBackForce, Transform position)
     {
-        GameObject obj = Instantiate(firePrefab, transform.position, Quaternion.identity, transform);
+        GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity, transform);
         ProjectileBehaviour proj = obj.GetComponent<ProjectileBehaviour>();
-        proj.SetValuesAndShoot(damageDelt, knockBackForce, direction);
+        proj.SetValuesAndShoot(damageDelt, knockBackForce, position);
     }
 }
