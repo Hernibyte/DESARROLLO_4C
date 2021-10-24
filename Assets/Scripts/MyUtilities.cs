@@ -13,6 +13,8 @@ public struct MyUtilities
     {
         Idle,
         Chasing,
-        Attacking,
+        Tracking,
+        Placing,
+        Attacking
     }
 }
