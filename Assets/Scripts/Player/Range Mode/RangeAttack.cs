@@ -6,7 +6,7 @@ public class RangeAttack : MonoBehaviour
 {
     [Header("ATTACK NEEDS")]
     [SerializeField] ProjectileBehaviour projectilePrefab;
-    [SerializeField] Transform firePoint;
+    public Transform firePoint;
     [SerializeField] Rigidbody2D firePointRb;
     
     [Header("ATTACK SETTINGS")]
