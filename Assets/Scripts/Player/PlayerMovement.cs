@@ -72,9 +72,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other) 
+    void OnCollisionStay2D(Collision2D other) 
     {
-        if(MyUtilities.Contains(environmentMask, other.gameObject.layer))
+        if(MyUtilities.Contains(environmentMask, other.gameObject.layer) && inDodge)
         {
             inDodge = false;
             body2D.velocity = Vector2.zero;
