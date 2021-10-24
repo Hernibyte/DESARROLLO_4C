@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    
+    [SerializeField] GameObject playerPrefab;
+
+    public void IfLevelGenerationEnds()
+    {
+        
+    }
 }
