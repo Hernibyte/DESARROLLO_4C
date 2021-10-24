@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
+    [SerializeField] GameObject firePrefab;
     [SerializeField] Transform attackPivot;
     [SerializeField] EnemyStats stats;
     float auxTimer;
@@ -13,7 +14,7 @@ public class EnemyAttack : MonoBehaviour
         attackPivot.position = position;
     }
 
-    public bool Attack( LayerMask objectiveMask)
+    public bool MeleeAttack(LayerMask objectiveMask)
     {
         auxTimer += Time.deltaTime;
         if(auxTimer >= stats.attackDelay)
@@ -31,5 +32,12 @@ public class EnemyAttack : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public void RangeAttack(int damageDelt, float knockBackForce, Transform direction)
+    {
+        GameObject obj = Instantiate(firePrefab, transform.position, Quaternion.identity, transform);
+        ProjectileBehaviour proj = obj.GetComponent<ProjectileBehaviour>();
+        proj.SetValuesAndShoot(damageDelt, knockBackForce, direction);
     }
 }

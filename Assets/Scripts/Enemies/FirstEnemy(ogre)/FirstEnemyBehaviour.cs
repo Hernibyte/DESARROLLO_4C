@@ -58,7 +58,7 @@ public class FirstEnemyBehaviour : MonoBehaviour
         if(!ifSetPositionPivot)
             enemyAttack.SetPivotPosition(transform.position);
         //
-        if(enemyAttack.Attack(playerMask))
+        if(enemyAttack.MeleeAttack(playerMask))
         {
             ifSetPositionPivot = true;
             state = MyUtilities.EnemyState.Chasing;
