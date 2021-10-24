@@ -6,29 +6,13 @@ using UnityEngine.Events;
 public class EnemyGenerator : MonoBehaviour
 {
     [SerializeField] LayerMask playerMask;
-    [SerializeField] List<GameObject> enemiesPrefab;
-    [SerializeField] UnityEvent switchDoorsOpen;
-    [HideInInspector] public int enemiesAmount;
+    [SerializeField] UnityEvent generateEnemies;
 
     void OnTriggerEnter2D(Collider2D other) 
     {
         if(MyUtilities.Contains(playerMask, other.gameObject.layer))
         {
-            GenerateEnemies();
-            switchDoorsOpen?.Invoke();
-            enemiesAmount++;
+            generateEnemies?.Invoke();
         }
-    }
-
-    void GenerateEnemies()
-    {
-
-    }
-
-    public void IfEnemyDie()
-    {
-        enemiesAmount--;
-        if(enemiesAmount <= 0)
-            switchDoorsOpen?.Invoke();
     }
 }
