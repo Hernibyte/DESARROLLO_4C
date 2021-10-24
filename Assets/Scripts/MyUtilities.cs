@@ -8,4 +8,11 @@ public struct MyUtilities
     {
         return mask == (mask | (1 << layer));
     }
+
+    public enum EnemyState
+    {
+        Idle,
+        Chasing,
+        Attacking,
+    }
 }
