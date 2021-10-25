@@ -5,12 +5,12 @@ using UnityEngine.Events;
 
 public class SecondEnemyBehaviour : MonoBehaviour
 {
-    [SerializeField] EnemyStats stats;
+    public EnemyStats stats;
     [SerializeField] EnemyMovement enemyMovement;
-    [SerializeField] EnemyAttack enemyAttack;
+    public EnemyAttack enemyAttack;
     [SerializeField] LayerMask playerMask;
     [SerializeField] MyUtilities.EnemyState state;
-    [SerializeField] Rigidbody2D firePointRb;
+    public Rigidbody2D firePointRb;
     [SerializeField] float firePointOffSet;
     [HideInInspector] public UnityEvent imDie;
     //
@@ -57,7 +57,6 @@ public class SecondEnemyBehaviour : MonoBehaviour
         if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceToAttack)
         {
             state = MyUtilities.EnemyState.Attacking;
-            enemyAnimator.SetTrigger("Attack");
         }
     }
 
@@ -85,7 +84,8 @@ public class SecondEnemyBehaviour : MonoBehaviour
         {
             auxTimer = 0f;
             //
-            enemyAttack.RangeAttack((int)stats.damage, stats.knockbackForce, firePointRb.transform, enemyAttack.playerTransform.position);
+            enemyAnimator.SetTrigger("Attack");
+            //enemyAttack.RangeAttack((int)stats.damage, stats.knockbackForce, firePointRb.transform, enemyAttack.playerTransform.position);
             //
             if(Random.Range(0, 4) == 0)
                 state = MyUtilities.EnemyState.Placing;
