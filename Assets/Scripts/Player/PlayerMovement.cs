@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform dodgePivot;
     [SerializeField] LayerMask environmentMask;
     [Tooltip("The distance between the images on the afterImage effect on dodge")]
-    [SerializeField] public float distanceBetweenImages;
+    public float distanceBetweenImages;
     private float lastImagePosX;
     private float lastImagePosY;
 
@@ -56,10 +56,6 @@ public class PlayerMovement : MonoBehaviour
             movement.y = Input.GetAxis("Vertical");
             body2D.AddForce(movement * playerStats.forceMovement);
             animator.SetFloat("Velocity", body2D.velocity.magnitude);
-            if (movement.x == 0)
-                body2D.velocity = new Vector2(0f, body2D.velocity.y);
-            if(movement.y == 0)
-                body2D.velocity = new Vector2(body2D.velocity.x, 0f);
         }
     }
 

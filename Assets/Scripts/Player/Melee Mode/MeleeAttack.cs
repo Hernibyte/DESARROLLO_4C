@@ -8,6 +8,7 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] Transform attackPoint;
     [SerializeField] float rangeMelee;
     [SerializeField] float impulsePerAttack;
+    [SerializeField] LayerMask enemyMask;
 
     PlayerStats playerData;
     PlayerMovement movementPlayer;
@@ -25,7 +26,7 @@ public class MeleeAttack : MonoBehaviour
 
         Debug.Log("ATAQUE Meleeee");
 
-        Collider2D [] collisions = Physics2D.OverlapCircleAll(new Vector2(attackPoint.position.x, attackPoint.position.y), rangeMelee);
+        Collider2D [] collisions = Physics2D.OverlapCircleAll(new Vector2(attackPoint.position.x, attackPoint.position.y), rangeMelee, enemyMask);
         foreach (Collider2D coll in collisions)
         {
             IHitabble hit = coll.GetComponent<IHitabble>();

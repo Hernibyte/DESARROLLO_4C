@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba58d2baa570004cb13665241298e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeAmount: 0
   forceMovement: 7000
   dodgeForce: 30000
   dodgeDistance: 3
@@ -287,9 +288,9 @@ MonoBehaviour:
   defense: 20
   damageReducedByDef: 0
   damageRangeAttack: 5
-  damageMeleeAttack: 0
+  damageMeleeAttack: 10
   knockbackRange: 1
-  knockbackMelee: 0
+  knockbackMelee: 30
 --- !u!114 &5664354271051113591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,6 +355,9 @@ MonoBehaviour:
   attackPoint: {fileID: 5513816174426868106}
   rangeMelee: 1.5
   impulsePerAttack: 25
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &5664354271051113594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aab4ecf34fe4fa14bb9094d35b1d7ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats: {fileID: 5664354271051113590}
+  movement: {fileID: 5664354271051113591}
 --- !u!1 &5664354271700873072
 GameObject:
   m_ObjectHideFlags: 0

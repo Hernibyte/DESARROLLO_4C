@@ -5,12 +5,14 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] EnemyStats stats;
+    Rigidbody2D body2D;
     SpriteRenderer enemySprite;
     float auxTimer;
     float auxDistante;
 
     private void Start()
     {
+        body2D = GetComponent<Rigidbody2D>();
         enemySprite = GetComponentInChildren<SpriteRenderer>();
     }
 
@@ -30,5 +32,10 @@ public class EnemyMovement : MonoBehaviour
             enemySprite.flipX = true;
         else
             enemySprite.flipX = false;
+    }
+
+    public void ImpulseAttack(Vector2 directionImpulse, float impulseForce)
+    {
+        body2D.velocity = new Vector2(directionImpulse.x * impulseForce, directionImpulse.y * impulseForce);
     }
 }

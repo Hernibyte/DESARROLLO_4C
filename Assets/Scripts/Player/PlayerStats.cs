@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    public float lifeAmount;
+
     [Header("MOVEMENT STATS")]
     public float forceMovement;
     public float dodgeForce;

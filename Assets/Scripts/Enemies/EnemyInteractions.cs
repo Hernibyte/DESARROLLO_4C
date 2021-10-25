@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInteractions : MonoBehaviour, IHitabble
+public class EnemyInteractions : MonoBehaviour, IHitabble
 {
-    [SerializeField] PlayerStats stats;
-    [SerializeField] PlayerMovement movement;
+    [SerializeField] EnemyStats stats;
+    [SerializeField] EnemyMovement movement;
 
     public void ReciveDamage(float amountDamage, float knockBackForce, Vector2 posAttacker)
     {
