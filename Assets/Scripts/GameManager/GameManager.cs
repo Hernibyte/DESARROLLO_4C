@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] StatsManager statsManager;
     [SerializeField] GameObject playerPrefab;
+    [SerializeField] UI_Manager uiManager;
     public Transform playerTransform;
     public GameObject playerDodgePivot;
 
@@ -15,6 +16,12 @@ public class GameManager : MonoBehaviour
         PlayerMovement movement = Instantiate(playerPrefab, transform.position, Quaternion.identity).GetComponent<PlayerMovement>();
         playerTransform = movement.transform;
         movement.dodgePivot = obj.transform;
+
+        PlayerInteractions playerInteractions = movement.GetComponent<PlayerInteractions>();
+        if (playerInteractions != null)
+            playerInteractions.hasRecivedDamage.AddListener(uiManager.uiPlayer.UpdateUIPlayer);
+        else
+            Debug.LogError("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         //
         statsManager.GetPlayerStatsReference();
     }
