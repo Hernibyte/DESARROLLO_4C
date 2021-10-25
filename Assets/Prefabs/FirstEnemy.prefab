@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2276568716931850987}
   - component: {fileID: 2276568716931850980}
+  - component: {fileID: 7315592522303999868}
   m_Layer: 9
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -55,8 +56,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2276568716931850986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.274, z: 0}
-  m_LocalScale: {x: 4.3854027, y: 8.302883, z: 4.3854027}
+  m_LocalPosition: {x: -0.028, y: 0.274, z: 0}
+  m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 2276568717983404207}
   m_RootOrder: 0
@@ -100,9 +101,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 1891780017945334795, guid: 1a41068c9c6f59141a798dc6a43ec9e2,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.2, y: 0.2}
@@ -111,6 +113,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7315592522303999868
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2276568716931850986}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfc88a5a7b2ed744db5e79ff64fa6f09, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2276568717983404206
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,9 +182,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0007681623, y: 0}
+  m_Offset: {x: 0.08, y: -0.29}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.5
 --- !u!114 &2276568717983404202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,9 +197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af0ce90de37ab6449d9e748669aa171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementForce: 2
-  distanceTracking: 6
-  distanceToAttack: 1
+  movementForce: 4
+  distanceTracking: 8
+  distanceToAttack: 1.5
   attackDelay: 1
   attackRadiusArea: 1
   damage: 0
