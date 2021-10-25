@@ -16,18 +16,21 @@ public class RangeAttack : MonoBehaviour
 
     PlayerStats playerData;
     Vector2 mousePosition;
-
+    Animator animator;
+    Camera mainCamera;
 
     void Start()
     {
+        animator = gameObject.GetComponentInChildren<Animator>();
+        mainCamera = FindObjectOfType<Camera>();
         tToRestore = 0;
         playerData = GetComponent<PlayerStats>();
     }
 
     private void Update()
     {
-        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        firePointRb.position = transform.position;
+        mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        firePointRb.position = new Vector2(transform.position.x, transform.position.y) + Vector2.up;
 
         if (tToRestore < delayAttack)
             tToRestore += Time.deltaTime;
@@ -35,6 +38,7 @@ public class RangeAttack : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Mouse1))
             {
+                animator.SetTrigger("RangeAttack");
                 ShootProjectile();
             }
         }
