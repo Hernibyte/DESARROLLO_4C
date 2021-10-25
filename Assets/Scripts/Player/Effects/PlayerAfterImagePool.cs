@@ -15,10 +15,10 @@ public class PlayerAfterImagePool : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        GrowPool();
+        //GrowPool();
     }
 
-    private void GrowPool()
+    public void GrowPool()
     {
         for (int i = 0; i < poolSize; i++)
         {

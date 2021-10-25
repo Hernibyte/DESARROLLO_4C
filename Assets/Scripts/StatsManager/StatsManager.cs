@@ -6,7 +6,18 @@ public class StatsManager : MonoBehaviour
 {
     [SerializeField] DeckOfCardsBehaviour inventory;
     [SerializeField] ListOfCards listOfCards;
-    [SerializeField] PlayerStats playerStats;
+    public PlayerStats playerStats;
+    GameManager gameManager;
+
+    void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+    }
+
+    public void GetPlayerStatsReference()
+    {
+        playerStats = gameManager.playerTransform.GetComponent<PlayerStats>();
+    }
 
     public void ModifyStats()
     {

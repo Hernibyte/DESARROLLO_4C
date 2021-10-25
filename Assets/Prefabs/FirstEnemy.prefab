@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2276568716588668276}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PointAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2276568716931850987}
   - component: {fileID: 2276568716931850980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,8 +125,8 @@ GameObject:
   - component: {fileID: 2276568717983404203}
   - component: {fileID: 2276568717983404196}
   - component: {fileID: 2276568717983404201}
-  m_Layer: 0
-  m_Name: MeleeEnemy
+  m_Layer: 9
+  m_Name: FirstEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -208,8 +208,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4757a183c75a9834fa52ac499c9bcbcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
   attackPivot: {fileID: 2276568716588668276}
   stats: {fileID: 2276568717983404202}
+  playerTransform: {fileID: 0}
 --- !u!114 &2276568717983404201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +231,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   state: 0
-  playerTransform: {fileID: 0}
   imDie:
     m_PersistentCalls:
       m_Calls: []

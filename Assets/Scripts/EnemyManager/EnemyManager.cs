@@ -23,7 +23,7 @@ public class EnemyManager : MonoBehaviour
     {
         GameObject obj = Instantiate(prefab, position, Quaternion.identity, transform);
         EnemyAttack enemyAttack = obj.GetComponent<EnemyAttack>();
-        enemyAttack.playerTransform = gameManager.playerPrefab.transform;
+        enemyAttack.playerTransform = gameManager.playerTransform.transform;
     }
 
     public void GenerateEnemies()

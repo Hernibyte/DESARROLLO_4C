@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6397217175561193430}
   - component: {fileID: 6397217175561193429}
   - component: {fileID: 6397217175561193424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SecondEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,6 +101,7 @@ MonoBehaviour:
     type: 3}
   attackPivot: {fileID: 0}
   stats: {fileID: 6397217175561193431}
+  playerTransform: {fileID: 0}
 --- !u!114 &6397217175561193424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +123,6 @@ MonoBehaviour:
   state: 0
   firePointRb: {fileID: 6397217177134218693}
   firePointOffSet: 0.1
-  playerTransform: {fileID: 0}
   imDie:
     m_PersistentCalls:
       m_Calls: []
@@ -136,7 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6397217175572048383}
   - component: {fileID: 6397217175572048376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6397217177134218692}
   - component: {fileID: 6397217177134218693}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

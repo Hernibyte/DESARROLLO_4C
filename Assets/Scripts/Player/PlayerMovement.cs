@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] Transform dodgePivot;
+    public Transform dodgePivot;
     [SerializeField] LayerMask environmentMask;
     [Tooltip("The distance between the images on the afterImage effect on dodge")]
     [SerializeField] public float distanceBetweenImages;
