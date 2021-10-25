@@ -12,7 +12,13 @@ public class FirstEnemyBehaviour : MonoBehaviour
     [SerializeField] MyUtilities.EnemyState state;
     [HideInInspector] public UnityEvent imDie;
     bool ifSetPositionPivot;
+    Animator enemyAnimator;
 
+
+    private void Start()
+    {
+        enemyAnimator = GetComponentInChildren<Animator>();
+    }
     void Update()
     {
         switch(state)
@@ -32,17 +38,24 @@ public class FirstEnemyBehaviour : MonoBehaviour
     void Idle()
     {
         if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceTracking)
+        {
             state = MyUtilities.EnemyState.Chasing;
+            enemyAnimator.SetTrigger("Chase");
+        }
     }
 
     void Chasing()
     {
         if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) >= stats.distanceTracking)
+        {
             state = MyUtilities.EnemyState.Idle;
+            enemyAnimator.SetTrigger("Idle");
+        }
         //
-        if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceToAttack)
+        if (Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceToAttack)
         {
             state = MyUtilities.EnemyState.Attacking;
+            enemyAnimator.SetTrigger("Attack");
             ifSetPositionPivot = false;
         }
         //
@@ -61,6 +74,7 @@ public class FirstEnemyBehaviour : MonoBehaviour
         {
             ifSetPositionPivot = true;
             state = MyUtilities.EnemyState.Chasing;
+            enemyAnimator.SetTrigger("Chase");
         }
     }
 }

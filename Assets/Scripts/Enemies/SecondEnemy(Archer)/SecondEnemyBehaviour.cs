@@ -15,7 +15,12 @@ public class SecondEnemyBehaviour : MonoBehaviour
     [HideInInspector] public UnityEvent imDie;
     //
     float auxTimer;
+    Animator enemyAnimator;
 
+    private void Start()
+    {
+        enemyAnimator = GetComponentInChildren<Animator>();
+    }
     void Update()
     {
         switch(state)
@@ -44,10 +49,16 @@ public class SecondEnemyBehaviour : MonoBehaviour
     void Tracking()
     {
         if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) >= stats.distanceTracking)
+        {
             state = MyUtilities.EnemyState.Idle;
+            enemyAnimator.SetTrigger("Idle");
+        }
         //
         if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceToAttack)
+        {
             state = MyUtilities.EnemyState.Attacking;
+            enemyAnimator.SetTrigger("Attack");
+        }
     }
 
     void Placing()
@@ -74,7 +85,7 @@ public class SecondEnemyBehaviour : MonoBehaviour
         {
             auxTimer = 0f;
             //
-            enemyAttack.RangeAttack((int)stats.damage, stats.knockbackForce, firePointRb.transform);
+            enemyAttack.RangeAttack((int)stats.damage, stats.knockbackForce, firePointRb.transform, enemyAttack.playerTransform.position);
             //
             if(Random.Range(0, 4) == 0)
                 state = MyUtilities.EnemyState.Placing;

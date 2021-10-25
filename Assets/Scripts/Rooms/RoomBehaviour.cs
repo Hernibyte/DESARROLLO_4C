@@ -95,7 +95,16 @@ public class RoomBehaviour : MonoBehaviour
     {
         foreach(GateBehaviour gate in listOfDoors)
         {
-            gate.isGateOpen = !gate.isGateOpen;
+            if(!imFirstRoom)
+            {
+                gate.isGateOpen = !gate.isGateOpen;
+                gate.UpdateGateAnimation();
+            }
+            else
+            {
+                gate.isGateOpen = true;
+                gate.UpdateGateAnimation();
+            }
         }
     }
 }

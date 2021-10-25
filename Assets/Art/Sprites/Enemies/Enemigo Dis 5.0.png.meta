@@ -1,0 +1,527 @@
+fileFormatVersion: 2
+guid: a8bcfacebd1929847bf60be4fac79eb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3668233245515595698
+    second: Enemigo Dis 5.0_0
+  - first:
+      213: -4419182171326090340
+    second: Enemigo Dis 5.0_1
+  - first:
+      213: -1855285663329202734
+    second: Enemigo Dis 5.0_2
+  - first:
+      213: 6534265697851864435
+    second: Enemigo Dis 5.0_3
+  - first:
+      213: 5877583974344846197
+    second: Enemigo Dis 5.0_4
+  - first:
+      213: 6116883634323390791
+    second: Enemigo Dis 5.0_5
+  - first:
+      213: -7181033180728189330
+    second: Enemigo Dis 5.0_6
+  - first:
+      213: 7178181270969820627
+    second: Enemigo Dis 5.0_7
+  - first:
+      213: 3522395660367948915
+    second: Enemigo Dis 5.0_8
+  - first:
+      213: -5369066866243628219
+    second: Enemigo Dis 5.0_9
+  - first:
+      213: -8062752587256531877
+    second: Enemigo Dis 5.0_10
+  - first:
+      213: -3030069358938373333
+    second: Enemigo Dis 5.0_11
+  - first:
+      213: -6905503240576821677
+    second: Enemigo Dis 5.0_12
+  - first:
+      213: -2029386459008251294
+    second: Enemigo Dis 5.0_13
+  - first:
+      213: 3798153153932463278
+    second: Enemigo Dis 5.0_14
+  - first:
+      213: -795165085304215825
+    second: Enemigo Dis 5.0_15
+  - first:
+      213: -7637646985558759055
+    second: Enemigo Dis 5.0_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_0
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 2876
+        width: 219
+        height: 423
+      alignment: 9
+      pivot: {x: 0.5122615, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40c3cf5c41d71dc0800000000000000
+      internalID: -3668233245515595698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2439
+        width: 297
+        height: 374
+      alignment: 9
+      pivot: {x: 0.24684241, y: 0.43538105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c937e50aa39eba2c0800000000000000
+      internalID: -4419182171326090340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_2
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 2439
+        width: 297
+        height: 374
+      alignment: 9
+      pivot: {x: 0.24684261, y: 0.44615066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd4368d483b046e0800000000000000
+      internalID: -1855285663329202734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_3
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 2454
+        width: 297
+        height: 359
+      alignment: 9
+      pivot: {x: 0.2423219, y: 0.42520115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375fa7c38006eaa50800000000000000
+      internalID: 6534265697851864435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_5
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 2439
+        width: 297
+        height: 374
+      alignment: 9
+      pivot: {x: 0.2468422, y: 0.43538105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7410f3cb14983e450800000000000000
+      internalID: 6116883634323390791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1664
+        width: 222
+        height: 395
+      alignment: 9
+      pivot: {x: 0.43347284, y: 0.4592109}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e176e6e58d75c90800000000000000
+      internalID: -7181033180728189330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_7
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1680
+        width: 279
+        height: 379
+      alignment: 9
+      pivot: {x: 0.4855631, y: 0.45748892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5a48595d50e9360800000000000000
+      internalID: 7178181270969820627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_8
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1696
+        width: 274
+        height: 364
+      alignment: 9
+      pivot: {x: 0.68130517, y: 0.4262286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ceb9ec03012e030800000000000000
+      internalID: 3522395660367948915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_9
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1696
+        width: 302
+        height: 364
+      alignment: 9
+      pivot: {x: 0.7133995, y: 0.4114742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5439a36b12e3d75b0800000000000000
+      internalID: -5369066866243628219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_10
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1825
+        width: 185
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5476bc7d395b1090800000000000000
+      internalID: -8062752587256531877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_11
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1696
+        width: 302
+        height: 364
+      alignment: 9
+      pivot: {x: 0.7133995, y: 0.4004084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23cea7d8f703f5d0800000000000000
+      internalID: -3030069358938373333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_12
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 592
+        width: 265
+        height: 355
+      alignment: 9
+      pivot: {x: 0.6063976, y: 0.3600629}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3561c1eb369ba20a0800000000000000
+      internalID: -6905503240576821677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_13
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 592
+        width: 321
+        height: 349
+      alignment: 9
+      pivot: {x: 0.6422108, y: 0.38073975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a43d684cb26d3e0800000000000000
+      internalID: -2029386459008251294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_14
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 582
+        width: 244
+        height: 366
+      alignment: 9
+      pivot: {x: 0.4064556, y: 0.4046212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac8ca68b20c5b430800000000000000
+      internalID: 3798153153932463278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_15
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 669
+        width: 371
+        height: 244
+      alignment: 9
+      pivot: {x: 0.39866847, y: 0.32391632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe626a0619107f4f0800000000000000
+      internalID: -795165085304215825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemigo Dis 5.0_16
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 642
+        width: 375
+        height: 192
+      alignment: 9
+      pivot: {x: 0.3854284, y: 0.41608524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179efe95880a10690800000000000000
+      internalID: -7637646985558759055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 520e65b1dc1ef814da2e9b02bde1e27f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

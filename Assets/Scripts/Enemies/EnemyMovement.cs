@@ -5,8 +5,14 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] EnemyStats stats;
+    SpriteRenderer enemySprite;
     float auxTimer;
     float auxDistante;
+
+    private void Start()
+    {
+        enemySprite = GetComponentInChildren<SpriteRenderer>();
+    }
 
     public void Move(Vector2 position)
     {
@@ -19,5 +25,10 @@ public class EnemyMovement : MonoBehaviour
         //
         auxTimer += Time.deltaTime * stats.movementForce / auxDistante;
         transform.position = Vector2.Lerp(transform.position, position, auxTimer);
+
+        if (position.x > transform.position.x)
+            enemySprite.flipX = true;
+        else
+            enemySprite.flipX = false;
     }
 }
