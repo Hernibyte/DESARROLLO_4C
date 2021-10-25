@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 5664354271051113594}
   m_Layer: 10
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,6 +325,20 @@ MonoBehaviour:
   firePointRb: {fileID: 5664354271700873074}
   delayAttack: 0.6
   tToRestore: 0
+  updateSpriteDirection:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5664354271051113591}
+        m_MethodName: ChangeSideSprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5513816174426868106}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1099209571171220996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,8 +352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 5513816174426868106}
-  rangeMelee: 1
-  impulsePerAttack: 20
+  rangeMelee: 1.5
+  impulsePerAttack: 25
 --- !u!114 &5664354271051113594
 MonoBehaviour:
   m_ObjectHideFlags: 0

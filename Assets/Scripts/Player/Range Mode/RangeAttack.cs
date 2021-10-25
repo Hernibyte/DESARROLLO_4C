@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RangeAttack : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class RangeAttack : MonoBehaviour
     Vector2 mousePosition;
     Animator animator;
     Camera mainCamera;
+    public UnityEvent updateSpriteDirection;
 
     void Start()
     {
@@ -43,6 +45,7 @@ public class RangeAttack : MonoBehaviour
             }
         }
 
+        updateSpriteDirection?.Invoke();
     }
 
     void FixedUpdate()

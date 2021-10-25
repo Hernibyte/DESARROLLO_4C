@@ -204,7 +204,29 @@ MonoBehaviour:
   nodeAmount: 20
   finishGeneration:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1750452483}
+        m_MethodName: IfLevelGenerationEnds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 542938266}
+        m_MethodName: GrowPool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &520213040
 Transform:
   m_ObjectHideFlags: 0
@@ -277,6 +299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5664354271051113588, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5664354271051113591, guid: 70a8bd4d8e543234aba4140b10a3fea6,
         type: 3}
       propertyPath: dodgePivot
@@ -339,12 +366,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70a8bd4d8e543234aba4140b10a3fea6, type: 3}
---- !u!1 &592766811 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5664354271051113588, guid: 70a8bd4d8e543234aba4140b10a3fea6,
-    type: 3}
-  m_PrefabInstance: {fileID: 592766810}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &600448177
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +797,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0246e6b261e93ef42b6204cfba4acf2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 592766811}
+  statsManager: {fileID: 101863015}
+  playerPrefab: {fileID: 5664354271051113588, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+    type: 3}
+  playerTransform: {fileID: 0}
+  playerDodgePivot: {fileID: 600448177}
 --- !u!4 &1750452484
 Transform:
   m_ObjectHideFlags: 0
