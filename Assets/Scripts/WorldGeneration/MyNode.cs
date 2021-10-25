@@ -5,6 +5,7 @@ using UnityEngine;
 public class MyNode : MonoBehaviour, INode
 {
     [SerializeField] GameObject roomPrefab;
+    public bool imFirstNode;
     [HideInInspector] public float xCheckPosition;
     [HideInInspector] public float yCheckPosition;
     [HideInInspector] public MyNode leftNode;
@@ -72,5 +73,7 @@ public class MyNode : MonoBehaviour, INode
         RoomBehaviour roomBehaviour = roomObj.GetComponent<RoomBehaviour>();
         roomBehaviour.DefineNodeReferences(leftNode, rightNode, topNode, downNode);
         roomBehaviour.GenerateGates();
+        if(imFirstNode)
+            roomBehaviour.imFirstRoom = true;
     }
 }

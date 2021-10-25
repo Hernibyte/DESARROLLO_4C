@@ -373,6 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 599d7ef3d114f0a438f551490a32c5d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyGenerator: {fileID: 4056008632670356702}
   gatePrefab: {fileID: 4858676149161699482, guid: a146f6837f26fbc42bbf9e9d2ff64607,
     type: 3}
   nodeXOffSet: 16
@@ -381,6 +382,7 @@ MonoBehaviour:
   gateYOffSet: 8.4
   halfRound: 1
   quarterRound: 0.7071068
+  imFirstRoom: 0
   leftNode: {fileID: 0}
   rightNode: {fileID: 0}
   topNode: {fileID: 0}

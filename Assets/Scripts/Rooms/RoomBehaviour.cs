@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RoomBehaviour : MonoBehaviour
 {
+    [SerializeField] GameObject enemyGenerator;
     [SerializeField] GameObject gatePrefab;
     [SerializeField] float nodeXOffSet;
     [SerializeField] float nodeYOffSet;
@@ -11,6 +12,7 @@ public class RoomBehaviour : MonoBehaviour
     [SerializeField] float gateYOffSet;
     [SerializeField] float halfRound;
     [SerializeField] float quarterRound;
+    public bool imFirstRoom;
     [HideInInspector] public MyNode leftNode;
     [HideInInspector] public MyNode rightNode;
     [HideInInspector] public MyNode topNode;
@@ -19,6 +21,12 @@ public class RoomBehaviour : MonoBehaviour
     // auxilar parameters
     GameObject obj;
     GateBehaviour gateBehaviour;
+
+    void Start()
+    {
+        if(imFirstRoom)
+            Destroy(enemyGenerator);
+    }
 
     public void DefineNodeReferences(MyNode leftNode, MyNode rightNode, MyNode topNode, MyNode downNode)
     {

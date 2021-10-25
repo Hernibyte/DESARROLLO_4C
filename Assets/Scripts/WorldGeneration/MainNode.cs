@@ -30,14 +30,14 @@ public class MainNode : MonoBehaviour
             INode iNode;
             if(colliders.Length == 0)
             {
-                GenerateNode();
+                GenerateNode(i);
             }
             else
                 foreach (Collider2D collider in colliders)
                 {
                     if(!collider.TryGetComponent<INode>(out iNode))
                     {
-                        GenerateNode();
+                        GenerateNode(i);
                     }
                 }
             //
@@ -63,7 +63,7 @@ public class MainNode : MonoBehaviour
         finishGeneration?.Invoke();
     }
 
-    void GenerateNode()
+    void GenerateNode(int index)
     {
         obj = Instantiate(nodePrefab, transform.position, Quaternion.identity, world);
         MyNode myNode = obj.GetComponent<MyNode>();
@@ -71,5 +71,7 @@ public class MainNode : MonoBehaviour
         myNode.yCheckPosition = nodeYDistance;
         checkConections?.AddListener(myNode.CheckNodeConections);
         callGenerationRooms?.AddListener(myNode.GenerateRoom);
+        if(index == 0)
+            myNode.imFirstNode = true;
     }
 }
