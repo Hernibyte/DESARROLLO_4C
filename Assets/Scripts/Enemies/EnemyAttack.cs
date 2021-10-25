@@ -35,10 +35,10 @@ public class EnemyAttack : MonoBehaviour
         return false;
     }
 
-    public void RangeAttack(int damageDelt, float knockBackForce, Transform position)
+    public void RangeAttack(int damageDelt, float knockBackForce, Transform position, Vector2 targetPosition)
     {
         GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity, transform);
         ProjectileBehaviour proj = obj.GetComponent<ProjectileBehaviour>();
-        proj.SetValuesAndShoot(damageDelt, knockBackForce, position);
+        proj.SetValuesAndShoot(damageDelt, knockBackForce, position, targetPosition);
     }
 }

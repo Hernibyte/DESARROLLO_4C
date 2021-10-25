@@ -10,16 +10,23 @@ public class ProjectileBehaviour : MonoBehaviour
     int damageProjectile;
     float knockBack;
 
-    public void SetValuesAndShoot(int damageDelt, float knockBackForce, Transform direction)
+    public void SetValuesAndShoot(int damageDelt, float knockBackForce, Transform upFirePoint, Vector2 targetPosition)
     {
         damageProjectile = damageDelt;
         knockBack = knockBackForce;
-        ShootDirection(direction);
+        Vector2 posUpPoint = upFirePoint.position;
+        ShootDirection(upFirePoint, targetPosition - posUpPoint);
     }
-
-    void ShootDirection(Transform direction)
+    public void FixRotation(Vector2 fireDirection)
     {
-        rb.AddForce(direction.up * speed, ForceMode2D.Impulse);
+        Vector2 directionShoot = fireDirection;
+        float angle = Mathf.Atan2(directionShoot.y, directionShoot.x) * Mathf.Rad2Deg;// - 90f;
+        rb.rotation = angle;
+    }
+    void ShootDirection(Transform upFirePoint, Vector2 direction)
+    {
+        rb.AddForce(upFirePoint.up * speed, ForceMode2D.Impulse);
+        FixRotation(direction);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
