@@ -85,7 +85,6 @@ public class SecondEnemyBehaviour : MonoBehaviour
             auxTimer = 0f;
             //
             enemyAnimator.SetTrigger("Attack");
-            //enemyAttack.RangeAttack((int)stats.damage, stats.knockbackForce, firePointRb.transform, enemyAttack.playerTransform.position);
             //
             if(Random.Range(0, 4) == 0)
                 state = MyUtilities.EnemyState.Placing;

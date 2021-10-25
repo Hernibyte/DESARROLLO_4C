@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public float lifeAmount;
 
     [Header("MOVEMENT STATS")]
     public float forceMovement;
@@ -14,7 +13,7 @@ public class PlayerStats : MonoBehaviour
     [Header("BASIC STATS")]
     [Space(15)]
     public float maxHp;
-    public float actualHp;
+    public float lifeAmount;
     public float defense;
     public float damageReducedByDef;
 
@@ -24,4 +23,9 @@ public class PlayerStats : MonoBehaviour
     public int damageMeleeAttack;
     public float knockbackRange;
     public float knockbackMelee;
+
+    private void Start()
+    {
+        lifeAmount = maxHp;
+    }
 }
