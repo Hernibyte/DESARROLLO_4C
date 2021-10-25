@@ -272,6 +272,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1099209571171220996, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: rangeMelee
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099209571171220996, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: impulsePerAttack
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5664354271051113588, guid: 70a8bd4d8e543234aba4140b10a3fea6,
         type: 3}
       propertyPath: m_Name
@@ -282,6 +292,21 @@ PrefabInstance:
       propertyPath: dodgePivot
       value: 
       objectReference: {fileID: 600448178}
+    - target: {fileID: 5664354271051113591, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664354271051113591, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664354271051113591, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5664354271051113595, guid: 70a8bd4d8e543234aba4140b10a3fea6,
         type: 3}
       propertyPath: m_RootOrder
@@ -337,6 +362,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5664354271051113597, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664354271051113597, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664354271051113597, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 592766817}
+    - target: {fileID: 5664354271051113597, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664354271051113597, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeSideSprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 5664354271051113597, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 592766813}
+    - target: {fileID: 5664354271051113597, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+        type: 3}
+      propertyPath: updateSpriteDirection.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Transform, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70a8bd4d8e543234aba4140b10a3fea6, type: 3}
 --- !u!1 &592766811 stripped
@@ -345,6 +405,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 592766810}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &592766813 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5513816174426868106, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+    type: 3}
+  m_PrefabInstance: {fileID: 592766810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &592766817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5664354271051113591, guid: 70a8bd4d8e543234aba4140b10a3fea6,
+    type: 3}
+  m_PrefabInstance: {fileID: 592766810}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592766811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38db23c5df7a60244b8f75a9d6773af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &600448177
 GameObject:
   m_ObjectHideFlags: 0

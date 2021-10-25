@@ -17,12 +17,14 @@ public class PlayerMovement : MonoBehaviour
     Vector2 auxMovement;
     bool inDodge;
     Animator animator;
+    SpriteRenderer playerSprite;
 
     void Awake()
     {
         body2D = GetComponent<Rigidbody2D>();
         playerStats = GetComponent<PlayerStats>();
         animator = GetComponentInChildren<Animator>();
+        playerSprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     void Update()
@@ -102,6 +104,14 @@ public class PlayerMovement : MonoBehaviour
             lastImagePosX = transform.position.x;
             lastImagePosY = transform.position.y;
         }
+    }
+
+    public void ChangeSideSprite(Transform direction)
+    {
+        if (playerSprite.flipX && direction.up.x > 0)
+            playerSprite.flipX = false;
+        else if (!playerSprite.flipX && direction.up.x < 0)
+            playerSprite.flipX = true;
     }
 
     void OnCollisionStay2D(Collision2D other) 
