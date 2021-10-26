@@ -10,9 +10,21 @@ public class UI_Player : MonoBehaviour
     [SerializeField] Image fillHP; 
     [SerializeField] Image fillDamageEntry;
 
+    private void Update()
+    {
+        
+    }
+
     public void UpdateUIPlayer(float updateHealthPoints, float maxHelathPointsPlayer)
     {
         float porcentActualHP = (updateHealthPoints * 100) / maxHelathPointsPlayer;
         porcentHP.text = porcentActualHP.ToString() + "%";
+
+
+    }
+
+    void UpdateFillHP()
+    {
+
     }
 }
