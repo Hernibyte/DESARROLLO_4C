@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class EnemyManager : MonoBehaviour
 {
+    [SerializeField] RoomDetectPlayer roomDetectPlayer;
     [SerializeField] List<GameObject> enemiesPrefab;
     [SerializeField] UnityEvent switchGatesOpen;
     [SerializeField] GameObject enemyGenerator;
@@ -17,6 +18,11 @@ public class EnemyManager : MonoBehaviour
     void Awake() 
     {
         gameManager = FindObjectOfType<GameManager>();
+    }
+
+    void Start()
+    {
+        roomDetectPlayer.updateCameraPosition.AddListener(gameManager.cameraBehaviour.LookToPoint);
     }
 
     void GenerateEnemy(GameObject prefab, Vector2 position)

@@ -9,7 +9,6 @@ public class PlayerInteractions : MonoBehaviour, IHitabble
 {
     [SerializeField] PlayerStats stats;
     [SerializeField] PlayerMovement movement;
-
     public MyUnityEvent hasRecivedDamage = new MyUnityEvent();
 
     public void ReciveDamage(float amountDamage, float knockBackForce, Vector2 posAttacker)
