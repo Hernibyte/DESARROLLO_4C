@@ -30,6 +30,8 @@ public class EnemyManager : MonoBehaviour
         GameObject obj = Instantiate(prefab, position, Quaternion.identity, transform);
         EnemyAttack enemyAttack = obj.GetComponent<EnemyAttack>();
         enemyAttack.playerTransform = gameManager.playerTransform.transform;
+        Enemy enemy = obj.GetComponent<Enemy>();
+        enemy.die.AddListener(IfEnemyDie);
     }
 
     public void GenerateEnemies()
@@ -67,6 +69,9 @@ public class EnemyManager : MonoBehaviour
     {
         enemiesAmount--;
         if(enemiesAmount <= 0)
+        {
             switchGatesOpen?.Invoke();
+            Destroy(enemyGenerator);
+        }
     }
 }
