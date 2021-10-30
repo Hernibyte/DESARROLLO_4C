@@ -9,6 +9,7 @@ public class UI_Player : MonoBehaviour
     [SerializeField] TextMeshProUGUI porcentHP;
     [SerializeField] Image fillHP; 
     [SerializeField] Image fillDamageEntry;
+    [SerializeField] Animator panelScreen;
 
     private void Update()
     {
@@ -26,5 +27,10 @@ public class UI_Player : MonoBehaviour
     void UpdateFillHP()
     {
 
+    }
+
+    public void OpenAndClosePanelPlayer()
+    {
+        panelScreen.SetBool("PanelIsOpen", !panelScreen.GetBool("PanelIsOpen"));
     }
 }

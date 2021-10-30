@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public float lifeAmount;
+    public float maxLife;
     public float movementForce;
     public float distanceTracking;
     public float distanceToAttack;

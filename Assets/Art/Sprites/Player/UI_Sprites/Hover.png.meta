@@ -140,7 +140,7 @@ TextureImporter:
         width: 339
         height: 412
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -156,13 +156,13 @@ TextureImporter:
       name: Hover_1
       rect:
         serializedVersion: 2
-        x: 768
+        x: 766
         y: 0
         width: 1096
         height: 1428
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 444, y: 617, z: 432, w: 606}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -182,7 +182,7 @@ TextureImporter:
         width: 469
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

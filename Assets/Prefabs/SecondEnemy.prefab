@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6397217175561193419}
-  - component: {fileID: 6397217175561193428}
+  - component: {fileID: 472146742546197286}
   - component: {fileID: 1755697091559497795}
   - component: {fileID: 6397217175561193431}
   - component: {fileID: 6397217175561193430}
@@ -40,8 +40,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &6397217175561193428
-CircleCollider2D:
+--- !u!70 &472146742546197286
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -53,9 +53,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.49
+  m_Offset: {x: 0, y: 0.2}
+  m_Size: {x: 0.7, y: 2}
+  m_Direction: 0
 --- !u!50 &1755697091559497795
 Rigidbody2D:
   serializedVersion: 4
@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeAmount: 0
+  maxLife: 0
   movementForce: 2
   distanceTracking: 15
   distanceToAttack: 12
@@ -178,6 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f0b9e9d4f58934abfb775eb66544d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  die:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6397217175572048382
 GameObject:
   m_ObjectHideFlags: 0

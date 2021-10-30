@@ -11,6 +11,13 @@ public class GameManager : MonoBehaviour
     public Transform playerTransform;
     public GameObject playerDodgePivot;
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            uiManager.uiPlayer.OpenAndClosePanelPlayer();
+        }
+    }
     public void IfLevelGenerationEnds()
     {
         GameObject obj = Instantiate(playerDodgePivot, transform.position, Quaternion.identity);
@@ -21,8 +28,6 @@ public class GameManager : MonoBehaviour
         PlayerInteractions playerInteractions = movement.GetComponent<PlayerInteractions>();
         if (playerInteractions != null)
             playerInteractions.hasRecivedDamage.AddListener(uiManager.uiPlayer.UpdateUIPlayer);
-        else
-            Debug.LogError("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
         //
         statsManager.GetPlayerStatsReference();
     }
