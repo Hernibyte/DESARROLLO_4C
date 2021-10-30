@@ -463,7 +463,7 @@ MonoBehaviour:
   gatePrefab: {fileID: 4858676149161699482, guid: a146f6837f26fbc42bbf9e9d2ff64607,
     type: 3}
   nodeXOffSet: 16
-  nodeYOffSet: 6
+  nodeYOffSet: 4
   gateXOffSet: 18
   gateYOffSet: 8.4
   halfRound: 1
