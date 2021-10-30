@@ -7,6 +7,7 @@ public class MyUnityEvent : UnityEvent<float,float>
 
 public class PlayerInteractions : MonoBehaviour, IHitabble
 {
+    [SerializeField] Player player;
     [SerializeField] PlayerStats stats;
     [SerializeField] PlayerMovement movement;
     public MyUnityEvent hasRecivedDamage = new MyUnityEvent();
@@ -17,5 +18,6 @@ public class PlayerInteractions : MonoBehaviour, IHitabble
         hasRecivedDamage?.Invoke(stats.lifeAmount, stats.maxHp);
         Vector2 difference = new Vector2(transform.position.x, transform.position.y) - posAttacker;
         movement.ImpulseAttack(difference, knockBackForce);
+        player.CheckIfDie(stats.lifeAmount);
     }
 }

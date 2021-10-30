@@ -24,8 +24,6 @@ public class MeleeAttack : MonoBehaviour
         Vector2 directionImpulse = attackPoint.position - transform.position;
         movementPlayer.ImpulseAttack(directionImpulse, impulsePerAttack);
 
-        Debug.Log("ATAQUE Meleeee");
-
         Collider2D [] collisions = Physics2D.OverlapCircleAll(new Vector2(attackPoint.position.x, attackPoint.position.y), rangeMelee, enemyMask);
         foreach (Collider2D coll in collisions)
         {
