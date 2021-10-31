@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,9 +18,10 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Tab))
-        {
             uiManager.uiPlayer.OpenAndClosePanelPlayer();
-        }
+        //
+        if(Input.GetKeyDown(KeyCode.Escape))
+            Pause();
     }
     public void IfLevelGenerationEnds()
     {
@@ -33,5 +35,31 @@ public class GameManager : MonoBehaviour
             playerInteractions.hasRecivedDamage.AddListener(uiManager.uiPlayer.UpdateUIPlayer);
         //
         statsManager.GetPlayerStatsReference();
+    }
+
+    public void Pause()
+    {
+        if(Time.timeScale == 1)
+        {
+            uiManager.ChangePauseView(true);
+            Time.timeScale = 0;
+        }
+        else 
+        {
+            uiManager.ChangePauseView(false);
+            Time.timeScale = 1;
+        }
+    }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1;
+        StartCoroutine(LoadMenuScene());
+    }
+
+    IEnumerator LoadMenuScene()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync("Menu");
+        yield return operation;
     }
 }

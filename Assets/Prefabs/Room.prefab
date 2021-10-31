@@ -328,6 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4015f59303eb9de4ab540ce368ca78d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lootGenerator: {fileID: 5234297983842667341}
   roomDetectPlayer: {fileID: 1349245824357508160}
   enemiesPrefab:
   - {fileID: 2276568717983404206, guid: c20fd72caf311e44daccc455455af611, type: 3}
@@ -351,6 +352,52 @@ MonoBehaviour:
   minEnemiesPerRoom: 1
   maxEnemiesPerRoom: 2
   enemiesAmount: 0
+--- !u!1 &5063957507034536179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572046166040984865}
+  - component: {fileID: 5234297983842667341}
+  m_Layer: 0
+  m_Name: LootGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1572046166040984865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063957507034536179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8827139129596919205}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5234297983842667341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5063957507034536179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1e56e74f7619c4db87a4f6508ee19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ramdomRange: {x: 0, y: 2}
+  lootPrefab: {fileID: 2293766304747104568, guid: fdf8933b9488cc24688846bd0b1ed333,
+    type: 3}
 --- !u!1 &6936002377458514498
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +490,7 @@ Transform:
   - {fileID: 62118900657593432}
   - {fileID: 3441599737810354057}
   - {fileID: 4294397216381701695}
+  - {fileID: 1572046166040984865}
   - {fileID: 8827139129773450817}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -503,7 +551,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8827139129596919205}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8827139129773450818
 SpriteRenderer:
