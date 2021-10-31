@@ -19,6 +19,11 @@ public class StatsManager : MonoBehaviour
         playerStats = gameManager.playerTransform.GetComponent<PlayerStats>();
     }
 
+    public Card GetCardByID(int id)
+    {
+        return listOfCards.cardList[id];
+    }
+
     public void ModifyStats()
     {
         foreach(int id in inventory.idsOfCardsInEquipment)

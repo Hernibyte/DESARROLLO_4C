@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: f3998bdc41f48c34bbd8e3af900bd179
+guid: 1c91013a9dd11384090241735a963326
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6406189502320623755
-    second: Hover_0
+      213: 1214426178236278326
+    second: cartas color_0
   - first:
-      213: -6013465976454335203
-    second: Hover_1
+      213: -7903515274556104764
+    second: cartas color_1
   - first:
-      213: -1617295278473081220
-    second: Hover_2
+      213: -740173431594546341
+    second: cartas color_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,64 +132,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hover_0
+      name: cartas color_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 786
-        width: 339
-        height: 412
+        x: 197
+        y: 596
+        width: 835
+        height: 1288
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8048a1396b57e850800000000000000
-      internalID: 6406189502320623755
+      spriteID: 63665bfbc228ad010800000000000000
+      internalID: 1214426178236278326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hover_1
+      name: cartas color_1
       rect:
         serializedVersion: 2
-        x: 766
-        y: 0
-        width: 1096
-        height: 1428
+        x: 1316
+        y: 596
+        width: 837
+        height: 1288
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 444, y: 617, z: 432, w: 606}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d15ba8c1e80eb8ca0800000000000000
-      internalID: -6013465976454335203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hover_2
-      rect:
-        serializedVersion: 2
-        x: 2006
-        y: 1121
-        width: 469
-        height: 106
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7e02b553863e89e0800000000000000
-      internalID: -1617295278473081220
+      spriteID: 4cf953f7bb2115290800000000000000
+      internalID: -7903515274556104764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartas color_2
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 596
+        width: 835
+        height: 1288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b00a18f206ab5f0800000000000000
+      internalID: -740173431594546341
       vertices: []
       indices: 
       edges: []
@@ -197,7 +197,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: b014e55bfa57b954d88f35c771e7c8ce
     internalID: 0
     vertices: []
     indices: 
