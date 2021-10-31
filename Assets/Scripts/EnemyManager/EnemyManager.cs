@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class EnemyManager : MonoBehaviour
 {
+    [SerializeField] LootGenerator lootGenerator;
     [SerializeField] RoomDetectPlayer roomDetectPlayer;
     [SerializeField] List<GameObject> enemiesPrefab;
     [SerializeField] UnityEvent switchGatesOpen;
@@ -71,6 +72,7 @@ public class EnemyManager : MonoBehaviour
         if(enemiesAmount <= 0)
         {
             switchGatesOpen?.Invoke();
+            lootGenerator.GenerateLoot(transform.position);
             Destroy(enemyGenerator);
         }
     }
