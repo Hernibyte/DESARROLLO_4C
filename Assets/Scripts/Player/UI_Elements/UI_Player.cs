@@ -54,7 +54,7 @@ public class UI_Player : MonoBehaviour
     {
         if(fillDamageEntry.fillAmount > targetFillAmount)
         {
-            fillDamageEntry.fillAmount -= Time.deltaTime;
+            fillDamageEntry.fillAmount -= Time.deltaTime / 4;
         }
         else
         {
