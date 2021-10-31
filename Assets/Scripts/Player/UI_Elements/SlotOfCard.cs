@@ -7,16 +7,18 @@ using TMPro;
 public class SlotOfCard : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler, IPointerExitHandler
 {
     public HoverDescription hoverDescription;
+    public DeckOfCardsBehaviour inventoryPlayer;
     public TextMeshProUGUI textSlot;
     public int idCardTaked;
 
+    StatsManager stats;
+    LootManager loot;
+
     void Start()
     {
-    }
-
-    void Update()
-    {
-        
+        idCardTaked = -1;
+        stats = FindObjectOfType<StatsManager>();
+        loot = FindObjectOfType<LootManager>();
     }
 
     public void SetIdCardTaked(int id)
@@ -26,7 +28,20 @@ public class SlotOfCard : MonoBehaviour, IPointerClickHandler,IPointerEnterHandl
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        if (loot == null)
+            return;
+
+        if(loot.GetLastCardTaked() != - 1)
+        {
+            idCardTaked = loot.GetLastCardTaked();
+            inventoryPlayer.EquipCardByID(idCardTaked, idCardTaked);
+
+            stats.ModifyStats();
+            loot.DiscardIndexCardTaked();
+
+            hoverDescription.UpdateDataCardDescription( stats.GetCardByID(idCardTaked) );
+            textSlot.text = stats.GetCardByID(idCardTaked).data.name;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -35,6 +50,10 @@ public class SlotOfCard : MonoBehaviour, IPointerClickHandler,IPointerEnterHandl
             return;
 
         hoverDescription.ShowHoverDescription();
+        if (idCardTaked != -1)
+            hoverDescription.UpdateDataCardDescription(stats.GetCardByID(idCardTaked));
+        else
+            hoverDescription.HoverDescriptionWhitoutCard();
     }
 
     public void OnPointerExit(PointerEventData eventData)

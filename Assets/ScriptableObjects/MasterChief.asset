@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c96ba15897f5ba74881480d327bf1443, type: 3}
-  m_Name: Tank
+  m_Name: MasterChief
   m_EditorClassIdentifier: 
   data:
-    name: Tank
-    lifeChange: 200
-    defenseChange: 50
-    damageChange: 0
-    moveSpeedChange: -500
+    name: MasterChief
+    lifeChange: 1000
+    defenseChange: 500
+    damageChange: 200
+    moveSpeedChange: 300

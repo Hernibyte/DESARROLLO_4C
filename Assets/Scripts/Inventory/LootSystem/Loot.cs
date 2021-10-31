@@ -14,12 +14,13 @@ public class Loot : MonoBehaviour
     {
         if(MyUtilities.Contains(playerLayer, collision.gameObject.layer))
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if(Input.GetKey(KeyCode.E))
             {
                 int randomCard = Random.Range(0, lootManager.GetCardsAviable().cardList.Count);
                 lootManager.SetLasCardTaked(randomCard);
+                
+                Destroy(gameObject, 0.5f);
             }
         }
-        Destroy(gameObject, 0.5f);
     }
 }
