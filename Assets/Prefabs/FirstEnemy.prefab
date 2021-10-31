@@ -227,8 +227,8 @@ MonoBehaviour:
   distanceTracking: 8
   distanceToAttack: 1.5
   attackDelay: 1
-  attackRadiusArea: 1
-  damage: 10
+  attackRadiusArea: 2
+  damage: 15
   knockbackForce: 20
 --- !u!114 &2276568717983404203
 MonoBehaviour:

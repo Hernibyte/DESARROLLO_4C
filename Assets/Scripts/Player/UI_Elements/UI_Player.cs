@@ -12,6 +12,9 @@ public class UI_Player : MonoBehaviour
     [SerializeField] Animator panelScreen;
 
     bool needUpdateHelathBar;
+
+    float targetFillAmount;
+
     PlayerInteractions player;
 
     private void Start()
@@ -29,7 +32,7 @@ public class UI_Player : MonoBehaviour
     public void UpdateUIPlayer(float updateHealthPoints, float maxHelathPointsPlayer)
     {
         float porcentActualHP = (updateHealthPoints * 100) / maxHelathPointsPlayer;
-        porcentHP.text = porcentActualHP.ToString() + "%";
+        porcentHP.text = porcentActualHP.ToString("0") + "%";
 
         UpdateFillHP(updateHealthPoints, maxHelathPointsPlayer);
     }
@@ -38,11 +41,29 @@ public class UI_Player : MonoBehaviour
     {
         float damageToHP = updateHealthPoints / maxHelathPointsPlayer;
         fillHP.fillAmount = damageToHP;
+
+        targetFillAmount = damageToHP;
+        StartCoroutine(WaitToApplyDamage());
+    }
+
+    IEnumerator WaitToApplyDamage()
+    {
+        yield return new WaitForSeconds(0.15f);
+
+        needUpdateHelathBar = true;
     }
 
     void UpdateFillDamageEntry()
     {
-
+        if(fillDamageEntry.fillAmount > targetFillAmount)
+        {
+            fillDamageEntry.fillAmount -= Time.deltaTime;
+        }
+        else
+        {
+            fillDamageEntry.fillAmount = targetFillAmount;
+            needUpdateHelathBar = false;
+        }
     }
 
     public void OpenAndClosePanelPlayer()

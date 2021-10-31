@@ -283,7 +283,7 @@ MonoBehaviour:
   forceMovement: 7000
   dodgeForce: 30000
   dodgeDistance: 3
-  maxHp: 200
+  maxHp: 450
   lifeAmount: 0
   defense: 20
   damageReducedByDef: 0
