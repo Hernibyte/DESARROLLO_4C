@@ -7,9 +7,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] StatsManager statsManager;
     [SerializeField] GameObject playerPrefab;
     [SerializeField] UI_Manager uiManager;
+    [SerializeField] LootManager lootManager;
     public CameraBehaviour cameraBehaviour;
     public Transform playerTransform;
     public GameObject playerDodgePivot;
+    [Space(20)]
+    [SerializeField] int lastIndexCardTaked;
 
     private void Update()
     {
