@@ -13,4 +13,9 @@ public class EnemyStats : MonoBehaviour
     public float attackRadiusArea;
     public float damage;
     public float knockbackForce;
+
+    private void Start()
+    {
+        lifeAmount = maxLife;
+    }
 }

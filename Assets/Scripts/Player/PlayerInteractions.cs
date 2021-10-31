@@ -1,16 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.Events;
-
-public class MyUnityEvent : UnityEvent<float,float>
-{
-}
 
 public class PlayerInteractions : MonoBehaviour, IHitabble
 {
     [SerializeField] Player player;
     [SerializeField] PlayerStats stats;
     [SerializeField] PlayerMovement movement;
-    public MyUnityEvent hasRecivedDamage = new MyUnityEvent();
+    public MyUtilities.MyUnityEvent hasRecivedDamage = new MyUtilities.MyUnityEvent();
 
     public void ReciveDamage(float amountDamage, float knockBackForce, Vector2 posAttacker)
     {
