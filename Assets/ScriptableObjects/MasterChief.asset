@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MasterChief
   m_EditorClassIdentifier: 
   data:
-    name: MasterChief
+    name: Master
     lifeChange: 1000
     defenseChange: 500
     damageChange: 200
