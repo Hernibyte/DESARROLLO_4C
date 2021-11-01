@@ -1259,6 +1259,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119197735848}
+  idSlotOfCard: 2
   idCardTaked: 0
 --- !u!1 &3482288118833287959
 GameObject:
@@ -2122,6 +2123,7 @@ MonoBehaviour:
   fillHP: {fileID: 3482288119408003736}
   fillDamageEntry: {fileID: 3482288118728779001}
   panelScreen: {fileID: 3482288119300744488}
+  allStats: {fileID: 4017395787908765818}
 --- !u!1 &3482288119073347719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,7 +2760,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +x
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2994,6 +2996,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288118847261059}
+  idSlotOfCard: 1
   idCardTaked: 0
 --- !u!1 &3482288119266222976
 GameObject:
@@ -3530,6 +3533,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119352187597}
+  idSlotOfCard: 0
   idCardTaked: 0
 --- !u!1 &3482288119408003717
 GameObject:
@@ -3937,7 +3941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +x
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4323,6 +4327,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119457930759}
+  idSlotOfCard: 5
   idCardTaked: 0
 --- !u!1 &3482288119592188235
 GameObject:
@@ -4521,7 +4526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'HP: 300'
+  m_text: 'HP:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5083,6 +5088,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119938235205}
+  idSlotOfCard: 6
   idCardTaked: 0
 --- !u!1 &3482288119835946529
 GameObject:
@@ -5148,7 +5154,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +300
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5384,6 +5390,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119773978266}
+  idSlotOfCard: 4
   idCardTaked: 0
 --- !u!1 &3482288119938235207
 GameObject:
@@ -5685,6 +5692,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119073347717}
+  idSlotOfCard: 3
   idCardTaked: 0
 --- !u!1 &3482288119971871773
 GameObject:
@@ -6053,6 +6061,7 @@ GameObject:
   - component: {fileID: 3482288120135525413}
   - component: {fileID: 3482288120135525412}
   - component: {fileID: 3482288120135525415}
+  - component: {fileID: 4017395787908765818}
   m_Layer: 5
   m_Name: AllStats
   m_TagString: Untagged
@@ -6149,6 +6158,26 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4017395787908765818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482288120135525409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e039060dbcefe4ba41d7796c62f70d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicHP: {fileID: 3482288119711872585}
+  cardsExtraHP: {fileID: 3482288119835946535}
+  basicDEF: {fileID: 3482288118803716284}
+  cardsExtraDEF: {fileID: 3482288119467480449}
+  basicDMG: {fileID: 3482288120519096161}
+  cardsExtraDMG: {fileID: 3482288119203202874}
+  basicVEL: {fileID: 3482288120044914875}
+  cardsExtraVEL: {fileID: 3482288120553998539}
 --- !u!1 &3482288120148287560
 GameObject:
   m_ObjectHideFlags: 0
@@ -7322,7 +7351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +x
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

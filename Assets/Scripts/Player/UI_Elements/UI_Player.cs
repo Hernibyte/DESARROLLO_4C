@@ -9,14 +9,16 @@ public class UI_Player : MonoBehaviour
     [SerializeField] Image fillHP; 
     [SerializeField] Image fillDamageEntry;
     [SerializeField] Animator panelScreen;
+    [SerializeField] StatsOnPanel allStats;
+
+    StatsManager statsMng;
 
     bool needUpdateHelathBar;
     float targetFillAmount;
-    PlayerInteractions player;
 
     private void Start()
     {
-        player = FindObjectOfType<PlayerInteractions>();
+        statsMng = FindObjectOfType<StatsManager>();
     }
     private void Update()
     {
@@ -24,6 +26,44 @@ public class UI_Player : MonoBehaviour
         {
             UpdateFillDamageEntry();
         }
+    }
+
+    public void StartStatsPanel()
+    {
+        float hp = statsMng.playerStats.maxHp;
+        float def = statsMng.playerStats.defense;
+        float dmg = statsMng.playerStats.damageMeleeAttack + statsMng.playerStats.damageRangeAttack;
+        float vel = statsMng.playerStats.forceMovement;
+
+        allStats.StartDefaulPanelStats(hp,def,dmg,vel);
+    }
+
+    public void UpdateStatsPanel(DeckOfCardsBehaviour allCardsInDeck, ListOfCards allCards)
+    {
+        float basicHp = statsMng.playerStats.maxHp;
+        float basicDef = statsMng.playerStats.defense;
+        float basicDmg = statsMng.playerStats.damageMeleeAttack + statsMng.playerStats.damageRangeAttack;
+        float basicVel = statsMng.playerStats.forceMovement;
+        float extraHp = 0;
+        float extraDef = 0;
+        float extraDmg = 0;
+        float extraVel = 0;
+
+        foreach (int id in allCardsInDeck.idsOfCardsInEquipment)
+        {
+            if(id != -1)
+            {
+                extraHp += allCards.cardList[id].data.lifeChange;
+
+                extraDef += allCards.cardList[id].data.defenseChange;
+
+                extraDmg += allCards.cardList[id].data.damageChange;
+
+                extraVel += allCards.cardList[id].data.moveSpeedChange;
+            }
+        }
+
+        allStats.UpdateStat(basicHp,extraHp,basicDef,extraDef,basicDmg,extraDmg,basicVel,extraVel);
     }
 
     public void UpdateUIPlayer(float updateHealthPoints, float maxHelathPointsPlayer)

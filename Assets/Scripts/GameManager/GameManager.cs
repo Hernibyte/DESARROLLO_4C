@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
             playerInteractions.hasRecivedDamage.AddListener(uiManager.uiPlayer.UpdateUIPlayer);
         //
         statsManager.GetPlayerStatsReference();
+        uiManager.uiPlayer.StartStatsPanel();
     }
 
     public void FinishedLevel()
