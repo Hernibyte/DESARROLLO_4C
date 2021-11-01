@@ -1259,7 +1259,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119197735848}
-  uiPlayer: {fileID: 3482288119051273517}
+  idSlotOfCard: 2
   idCardTaked: 0
 --- !u!1 &3482288118833287959
 GameObject:
@@ -2996,7 +2996,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288118847261059}
-  uiPlayer: {fileID: 3482288119051273517}
+  idSlotOfCard: 1
   idCardTaked: 0
 --- !u!1 &3482288119266222976
 GameObject:
@@ -3533,7 +3533,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119352187597}
-  uiPlayer: {fileID: 3482288119051273517}
+  idSlotOfCard: 0
   idCardTaked: 0
 --- !u!1 &3482288119408003717
 GameObject:
@@ -4327,7 +4327,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119457930759}
-  uiPlayer: {fileID: 3482288119051273517}
+  idSlotOfCard: 5
   idCardTaked: 0
 --- !u!1 &3482288119592188235
 GameObject:
@@ -5088,7 +5088,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119938235205}
-  uiPlayer: {fileID: 3482288119051273517}
+  idSlotOfCard: 6
   idCardTaked: 0
 --- !u!1 &3482288119835946529
 GameObject:
@@ -5390,7 +5390,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119773978266}
-  uiPlayer: {fileID: 3482288119051273517}
+  idSlotOfCard: 4
   idCardTaked: 0
 --- !u!1 &3482288119938235207
 GameObject:
@@ -5692,7 +5692,7 @@ MonoBehaviour:
   hoverDescription: {fileID: 3482288118653513391}
   inventoryPlayer: {fileID: 0}
   textSlot: {fileID: 3482288119073347717}
-  uiPlayer: {fileID: 3482288119051273517}
+  idSlotOfCard: 3
   idCardTaked: 0
 --- !u!1 &3482288119971871773
 GameObject:

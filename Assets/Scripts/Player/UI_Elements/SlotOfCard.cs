@@ -9,6 +9,7 @@ public class SlotOfCard : MonoBehaviour, IPointerClickHandler,IPointerEnterHandl
     public HoverDescription hoverDescription;
     public DeckOfCardsBehaviour inventoryPlayer;
     public TextMeshProUGUI textSlot;
+    public int idSlotOfCard;
     public int idCardTaked;
 
     StatsManager stats;
@@ -36,7 +37,7 @@ public class SlotOfCard : MonoBehaviour, IPointerClickHandler,IPointerEnterHandl
         if(loot.GetLastCardTaked() != - 1)
         {
             idCardTaked = loot.GetLastCardTaked();
-            inventoryPlayer.EquipCardByID(idCardTaked, idCardTaked);
+            inventoryPlayer.EquipCardByID(idSlotOfCard, idCardTaked);
 
             stats.ModifyStats();
             loot.DiscardIndexCardTaked();
