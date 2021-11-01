@@ -2,16 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIMenuManager : MonoBehaviour
 {
     [SerializeField] GameObject uiCreditsObject;
     [SerializeField] GameObject uiOptionsObject;
+    [SerializeField] GameObject uiLoading;
+    [SerializeField] Text gameVersion;
 
     void Awake()
     {
         uiCreditsObject.SetActive(false);
         uiOptionsObject.SetActive(false);
+        uiLoading.SetActive(false);
+
+        gameVersion.text = "v" + Application.version;
     }
 
     public void Play()
@@ -36,6 +42,7 @@ public class UIMenuManager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
+        uiLoading.SetActive(true);
         StartCoroutine(LoadingScene(sceneName));
     }
 

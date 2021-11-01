@@ -5,13 +5,15 @@ using UnityEngine.Events;
 
 public class UILoadingScreenBehaviour : MonoBehaviour
 {
-    [SerializeField] GameObject mText;
+    [SerializeField] GameObject m_TextContinue;
+    [SerializeField] GameObject m_TextLoading;
     [SerializeField] UnityEvent close;
     bool closeLoadingScreen;
 
     void Start()
     {
-        mText.SetActive(false);
+        m_TextContinue.SetActive(false);
+        m_TextLoading.SetActive(true);
     }
 
     void Update()
@@ -26,6 +28,7 @@ public class UILoadingScreenBehaviour : MonoBehaviour
     public void Close()
     {
         closeLoadingScreen = true;
-        mText.SetActive(true);
+        m_TextContinue.SetActive(true);
+        m_TextLoading.SetActive(false);
     }
 }
