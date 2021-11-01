@@ -333,6 +333,7 @@ MonoBehaviour:
   enemiesPrefab:
   - {fileID: 2276568717983404206, guid: c20fd72caf311e44daccc455455af611, type: 3}
   - {fileID: 6397217175561193418, guid: 40778fec3adad40479b25863a66a12c7, type: 3}
+  - {fileID: 8011611470067475094, guid: 72ee82428171d60449059f5212751edb, type: 3}
   switchGatesOpen:
     m_PersistentCalls:
       m_Calls:
@@ -352,6 +353,7 @@ MonoBehaviour:
   minEnemiesPerRoom: 1
   maxEnemiesPerRoom: 2
   enemiesAmount: 0
+  generateBoss: 0
 --- !u!1 &5063957507034536179
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +518,7 @@ MonoBehaviour:
   gateYOffSet: 8.4
   halfRound: 1
   quarterRound: 0.7071068
+  enemyManager: {fileID: 4023497478044594690}
   imFirstRoom: 0
   leftNode: {fileID: 0}
   rightNode: {fileID: 0}

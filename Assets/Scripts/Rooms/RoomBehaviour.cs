@@ -12,6 +12,7 @@ public class RoomBehaviour : MonoBehaviour
     [SerializeField] float gateYOffSet;
     [SerializeField] float halfRound;
     [SerializeField] float quarterRound;
+    public EnemyManager enemyManager;
     public bool imFirstRoom;
     [HideInInspector] public MyNode leftNode;
     [HideInInspector] public MyNode rightNode;

@@ -37,6 +37,24 @@ public class GameManager : MonoBehaviour
         statsManager.GetPlayerStatsReference();
     }
 
+    public void FinishedLevel()
+    {
+        uiManager.ChangeFinishedLevelView(true);
+        Time.timeScale = 0;
+    }
+
+    public void ReloadGame()
+    {
+        Time.timeScale = 1;
+        StartCoroutine(ReloadGameScene());
+    }
+
+    IEnumerator ReloadGameScene()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync("Game");
+        yield return operation;
+    }
+
     public void Pause()
     {
         if(Time.timeScale == 1)

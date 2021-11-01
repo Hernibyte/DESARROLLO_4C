@@ -11,6 +11,7 @@ public class MainNode : MonoBehaviour
     [SerializeField] float nodeYDistance;
     [SerializeField] int nodeAmount;
     [SerializeField] UnityEvent finishGeneration;
+    [SerializeField] UnityEvent ifBossDie;
     UnityEvent checkConections;
     UnityEvent callGenerationRooms;
     GameObject obj;
@@ -59,8 +60,14 @@ public class MainNode : MonoBehaviour
             checkConections?.Invoke();
             yield return new WaitForSeconds(0.2f);
         }
+        obj.GetComponent<MyNode>().imLastNode = true;
         callGenerationRooms?.Invoke();
         finishGeneration?.Invoke();
+    }
+
+    void IfBossDie()
+    {
+        ifBossDie?.Invoke();
     }
 
     void GenerateNode(int index)
@@ -71,6 +78,7 @@ public class MainNode : MonoBehaviour
         myNode.yCheckPosition = nodeYDistance;
         checkConections?.AddListener(myNode.CheckNodeConections);
         callGenerationRooms?.AddListener(myNode.GenerateRoom);
+        myNode.ifBossDie.AddListener(IfBossDie);
         if(index == 0)
             myNode.imFirstNode = true;
     }

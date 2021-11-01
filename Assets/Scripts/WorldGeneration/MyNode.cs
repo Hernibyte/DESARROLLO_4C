@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MyNode : MonoBehaviour, INode
 {
     [SerializeField] GameObject roomPrefab;
     public bool imFirstNode;
+    public bool imLastNode;
+    public UnityEvent ifBossDie;
     [HideInInspector] public float xCheckPosition;
     [HideInInspector] public float yCheckPosition;
     [HideInInspector] public MyNode leftNode;
@@ -67,6 +70,11 @@ public class MyNode : MonoBehaviour, INode
         }
     }
 
+    void IfBossDie()
+    {
+        ifBossDie?.Invoke();
+    }
+
     public void GenerateRoom()
     {
         GameObject roomObj = Instantiate(roomPrefab, transform.position, Quaternion.identity, transform);
@@ -75,5 +83,10 @@ public class MyNode : MonoBehaviour, INode
         roomBehaviour.GenerateGates();
         if(imFirstNode)
             roomBehaviour.imFirstRoom = true;
+        if(imLastNode)
+        {
+            roomBehaviour.enemyManager.generateBoss = true;
+            roomBehaviour.enemyManager.bossDie.AddListener(IfBossDie);
+        }
     }
 }
