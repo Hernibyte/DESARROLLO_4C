@@ -352,6 +352,9 @@ MonoBehaviour:
   enemiesSpawnOffSet: 0
   minEnemiesPerRoom: 1
   maxEnemiesPerRoom: 2
+  bossDie:
+    m_PersistentCalls:
+      m_Calls: []
   enemiesAmount: 0
   generateBoss: 0
 --- !u!1 &5063957507034536179
@@ -397,7 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1e56e74f7619c4db87a4f6508ee19d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ramdomRange: {x: 0, y: 2}
+  ramdomRange: {x: 0, y: 1}
   lootPrefab: {fileID: 2293766304747104568, guid: fdf8933b9488cc24688846bd0b1ed333,
     type: 3}
 --- !u!1 &6936002377458514498

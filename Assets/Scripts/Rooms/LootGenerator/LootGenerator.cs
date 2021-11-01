@@ -9,7 +9,7 @@ public class LootGenerator : MonoBehaviour
 
     public void GenerateLoot(Vector2 position)
     {
-        if(Random.Range(ramdomRange.x, ramdomRange.y + 1) == ramdomRange.x)
+        if(Random.Range((int)ramdomRange.x, (int)ramdomRange.y + 1) == ramdomRange.x)
         {
             Instantiate(lootPrefab, position, Quaternion.identity, transform);
         }
