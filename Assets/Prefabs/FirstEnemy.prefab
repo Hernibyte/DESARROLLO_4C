@@ -297,9 +297,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeAmount: 0
-  maxLife: 200
+  maxLife: 100
   movementForce: 4
-  distanceTracking: 8
+  distanceTracking: 16
   distanceToAttack: 1.5
   attackDelay: 1
   attackRadiusArea: 2

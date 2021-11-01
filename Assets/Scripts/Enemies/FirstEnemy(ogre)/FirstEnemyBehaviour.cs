@@ -13,6 +13,7 @@ public class FirstEnemyBehaviour : MonoBehaviour
     [HideInInspector] public UnityEvent imDie;
     bool ifSetPositionPivot;
     Animator enemyAnimator;
+    float auxTimer;
 
 
     private void Start()
@@ -68,13 +69,17 @@ public class FirstEnemyBehaviour : MonoBehaviour
     void Attacking()
     {
         if(!ifSetPositionPivot)
-            enemyAttack.SetPivotPosition(transform.position);
-        //
-        if(enemyAttack.MeleeAttack(playerMask))
         {
+            enemyAttack.SetPivotPosition(enemyAttack.playerTransform.position);
             ifSetPositionPivot = true;
+        }
+        auxTimer += Time.deltaTime;
+        if(auxTimer >= stats.attackDelay)
+        {
+            enemyAttack.MeleeAttack(playerMask);
             state = MyUtilities.EnemyState.Chasing;
             enemyAnimator.SetTrigger("Chase");
+            auxTimer = 0f;
         }
     }
 }

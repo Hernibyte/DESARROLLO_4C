@@ -17,22 +17,16 @@ public class EnemyAttack : MonoBehaviour
 
     public bool MeleeAttack(LayerMask objectiveMask)
     {
-        auxTimer += Time.deltaTime;
-        if(auxTimer >= stats.attackDelay)
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPivot.position, stats.attackRadiusArea, objectiveMask);
+        foreach(Collider2D collider in colliders)
         {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(attackPivot.position, stats.attackRadiusArea, objectiveMask);
-            foreach(Collider2D collider in colliders)
+            IHitabble hittable;
+            if(collider.TryGetComponent<IHitabble>(out hittable))
             {
-                IHitabble hittable;
-                if(collider.TryGetComponent<IHitabble>(out hittable))
-                {
-                    hittable.ReciveDamage(stats.damage, stats.knockbackForce, transform.position);
-                }
+                hittable.ReciveDamage(stats.damage, stats.knockbackForce, transform.position);
             }
-            auxTimer = 0f;
-            return true;
         }
-        return false;
+        return true;
     }
 
     public void RangeAttack(int damageDelt, float knockBackForce, Transform position, Vector2 targetPosition)

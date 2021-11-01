@@ -12,6 +12,7 @@ public class FirstBossBehaviour : MonoBehaviour
     [SerializeField] MyUtilities.EnemyState state;
     [HideInInspector] public UnityEvent imDie;
     bool ifSetPositionPivot;
+    float auxTimer;
 
     void Update()
     {
@@ -59,12 +60,16 @@ public class FirstBossBehaviour : MonoBehaviour
     void Attacking()
     {
         if(!ifSetPositionPivot)
-            enemyAttack.SetPivotPosition(transform.position);
-        //
-        if(enemyAttack.MeleeAttack(playerMask))
         {
+            enemyAttack.SetPivotPosition(enemyAttack.playerTransform.position);
             ifSetPositionPivot = true;
+        }
+        auxTimer += Time.deltaTime;
+        if(auxTimer >= stats.attackDelay)
+        {
+            enemyAttack.MeleeAttack(playerMask);
             state = MyUtilities.EnemyState.Chasing;
+            auxTimer = 0f;
         }
     }
 }

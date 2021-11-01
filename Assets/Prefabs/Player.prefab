@@ -288,7 +288,7 @@ MonoBehaviour:
   defense: 20
   damageReducedByDef: 0
   damageRangeAttack: 5
-  damageMeleeAttack: 100
+  damageMeleeAttack: 10
   knockbackRange: 1
   knockbackMelee: 30
 --- !u!114 &5664354271051113591

@@ -504,12 +504,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeAmount: 10
-  maxLife: 200
+  maxLife: 350
   movementForce: 4
-  distanceTracking: 8
-  distanceToAttack: 4
+  distanceTracking: 16
+  distanceToAttack: 3.5
   attackDelay: 1
-  attackRadiusArea: 2
+  attackRadiusArea: 4
   damage: 15
   knockbackForce: 20
 --- !u!114 &8011611470067475090
