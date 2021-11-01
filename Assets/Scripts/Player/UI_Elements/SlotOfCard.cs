@@ -9,15 +9,16 @@ public class SlotOfCard : MonoBehaviour, IPointerClickHandler,IPointerEnterHandl
     public HoverDescription hoverDescription;
     public DeckOfCardsBehaviour inventoryPlayer;
     public TextMeshProUGUI textSlot;
-    public UI_Player uiPlayer;
     public int idCardTaked;
 
     StatsManager stats;
     LootManager loot;
+    UI_Player uiPlayer;
 
     void Start()
     {
         idCardTaked = -1;
+        uiPlayer = GetComponentInParent<UI_Player>();
         stats = FindObjectOfType<StatsManager>();
         loot = FindObjectOfType<LootManager>();
     }
