@@ -33,9 +33,17 @@ public class GameManager : MonoBehaviour
         PlayerInteractions playerInteractions = movement.GetComponent<PlayerInteractions>();
         if (playerInteractions != null)
             playerInteractions.hasRecivedDamage.AddListener(uiManager.uiPlayer.UpdateUIPlayer);
+        Player player = movement.GetComponent<Player>();
+        player.die.AddListener(PlayerIsDead);
         //
         statsManager.GetPlayerStatsReference();
         uiManager.uiPlayer.StartStatsPanel();
+    }
+
+    void PlayerIsDead()
+    {
+        uiManager.ChangePlayerDiedView();
+        Time.timeScale = 0;
     }
 
     public void FinishedLevel()
@@ -52,7 +60,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator ReloadGameScene()
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync("Game");
+        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
         yield return operation;
     }
 

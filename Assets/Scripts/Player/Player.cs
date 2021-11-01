@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
         if(lifeAmount <= 0)
         {
             die?.Invoke();
-            Debug.Log("Murio");
         }
     }
 }
