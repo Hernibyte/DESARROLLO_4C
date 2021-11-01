@@ -45,7 +45,7 @@ public class UI_Enemies : MonoBehaviour
     void UpdateDamageFill()
     {
         if (damageFill.fillAmount > targetDamnageFill)
-            damageFill.fillAmount -= Time.deltaTime;
+            damageFill.fillAmount -= Time.deltaTime / 4;
         else
         {
             damageFill.fillAmount = targetDamnageFill;
