@@ -5,7 +5,7 @@ using UnityEngine;
 public class DeckOfCardsBehaviour : MonoBehaviour
 {
     public int cardsAmount;
-    [HideInInspector] public int[] idsOfCardsInEquipment;
+    public int[] idsOfCardsInEquipment;
 
     void Awake()
     {

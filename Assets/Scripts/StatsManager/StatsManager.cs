@@ -31,24 +31,34 @@ public class StatsManager : MonoBehaviour
 
     public void ModifyStats()
     {
+        float extraCardsHP = 0;
+        float extraCardsDEF = 0;
+        float extraCardsDMG = 0;
+        float extraCardsVEL = 0;
+
         foreach(int id in inventory.idsOfCardsInEquipment)
         {
             if(id != -1)
             {
                 //HEALTH POINTS CHGANGE
-                playerStats.totalMaxHP = playerStats.maxHp + listOfCards.cardList[id].data.lifeChange;
-                
+                extraCardsHP += listOfCards.cardList[id].data.lifeChange;
+
                 //DEFENSE CHGANGE
-                playerStats.totalDefense = playerStats.defense + listOfCards.cardList[id].data.defenseChange;
+                extraCardsDEF += listOfCards.cardList[id].data.defenseChange;
 
                 //DAMAGE CHGANGE
-                playerStats.totalDamageMelee = playerStats.damageMeleeAttack + listOfCards.cardList[id].data.damageChange;
-                playerStats.totalDamageRange = playerStats.damageRangeAttack + listOfCards.cardList[id].data.damageChange;
+                extraCardsDMG += listOfCards.cardList[id].data.damageChange;
 
                 //MOVE SPEED CHGANGE
-                playerStats.totalForceMovement = playerStats.forceMovement + listOfCards.cardList[id].data.moveSpeedChange;
+                extraCardsVEL += listOfCards.cardList[id].data.moveSpeedChange;
             }
             // Modifica todos los valores necesarios del playerstats en relacion a las ids de las cartas
         }
+
+        playerStats.totalMaxHP = playerStats.maxHp + extraCardsHP;
+        playerStats.totalDefense = playerStats.defense + extraCardsDEF;
+        playerStats.totalDamageMelee = playerStats.damageMeleeAttack + extraCardsDMG;
+        playerStats.totalDamageRange = playerStats.damageRangeAttack + extraCardsDMG;
+        playerStats.totalForceMovement = playerStats.forceMovement + extraCardsVEL;
     }
 }
