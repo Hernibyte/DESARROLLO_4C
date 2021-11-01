@@ -36,10 +36,10 @@ public class HoverDescription : MonoBehaviour
     public void HoverDescriptionWhitoutCard()
     {
         nameCard.text = "NO CARD";
-        CheckAndShowSpec(0, lifeSpec, "");
-        CheckAndShowSpec(0, defenseSpec, "");
-        CheckAndShowSpec(0, damageSpec, "");
-        CheckAndShowSpec(0, moveSpeedSpec, "");
+        CheckAndShowSpec(0, lifeSpec, "", "");
+        CheckAndShowSpec(0, defenseSpec, "", "");
+        CheckAndShowSpec(0, damageSpec, "", "");
+        CheckAndShowSpec(0, moveSpeedSpec, "","");
     }
 
     public void UpdateDataCardDescription(Card cardData)
@@ -49,20 +49,32 @@ public class HoverDescription : MonoBehaviour
 
         nameCard.text = cardData.data.name;
 
-        CheckAndShowSpec(cardData.data.lifeChange, lifeSpec, "HP +");
-        CheckAndShowSpec(cardData.data.defenseChange, defenseSpec, "DEF +");
-        CheckAndShowSpec(cardData.data.damageChange, damageSpec, "DMG +");
-        CheckAndShowSpec(cardData.data.moveSpeedChange, moveSpeedSpec, "VEL +");
+        CheckAndShowSpec(cardData.data.lifeChange, lifeSpec, "HP +", "HP ");
+        CheckAndShowSpec(cardData.data.defenseChange, defenseSpec, "DEF +", "DEF ");
+        CheckAndShowSpec(cardData.data.damageChange, damageSpec, "DMG +", "DMG ");
+        CheckAndShowSpec(cardData.data.moveSpeedChange, moveSpeedSpec, "VEL +", "VEL ");
     }
 
-    void CheckAndShowSpec(float spec, TextMeshProUGUI textSpecOnHover, string specStart)
+    void CheckAndShowSpec(float spec, TextMeshProUGUI textSpecOnHover, string positiveSpec, string negativeSpec)
     {
-        if (spec > 0 && !textSpecOnHover.gameObject.activeSelf)
+        if (spec != 0 && !textSpecOnHover.gameObject.activeSelf)
             textSpecOnHover.gameObject.SetActive(true);
 
-        if (spec > 0)
-            textSpecOnHover.text = specStart + spec.ToString();
-        else
+        if (spec == 0)
+        {
             textSpecOnHover.gameObject.SetActive(false);
+            return;
+        }
+
+        if (spec > 0)
+        {
+            textSpecOnHover.color = Color.green;
+            textSpecOnHover.text = positiveSpec + spec.ToString();
+        }
+        else if(spec < 0)
+        {
+            textSpecOnHover.color = Color.red;
+            textSpecOnHover.text = negativeSpec + spec.ToString();
+        }
     }
 }

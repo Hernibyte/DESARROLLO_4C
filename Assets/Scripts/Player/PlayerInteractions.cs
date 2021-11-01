@@ -10,7 +10,7 @@ public class PlayerInteractions : MonoBehaviour, IHitabble
     public void ReciveDamage(float amountDamage, float knockBackForce, Vector2 posAttacker)
     {
         stats.lifeAmount -= amountDamage;
-        hasRecivedDamage?.Invoke(stats.lifeAmount, stats.maxHp);
+        hasRecivedDamage?.Invoke(stats.lifeAmount, stats.totalMaxHP);
         Vector2 difference = new Vector2(transform.position.x, transform.position.y) - posAttacker;
         movement.ImpulseAttack(difference, knockBackForce);
         player.CheckIfDie(stats.lifeAmount);

@@ -11,7 +11,10 @@ public class DeckOfCardsBehaviour : MonoBehaviour
     {
         idsOfCardsInEquipment = new int[cardsAmount];
         for(int i = 0; i < cardsAmount; i++)
+        {
             idsOfCardsInEquipment[i] = new int();
+            idsOfCardsInEquipment[i] = -1;
+        }
     }
 
     public void EquipCardByID(int index, int id)

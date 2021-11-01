@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class TransitionOneBehaviour : StateMachineBehaviour
 {
+    Rigidbody2D playerRb;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        playerRb = animator.gameObject.GetComponentInParent<Rigidbody2D>();
         ComboSystem.Instance.canReciveInput = true;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if(ComboSystem.Instance.inputRecived)
+        playerRb.velocity = Vector2.zero;
+
+        if (ComboSystem.Instance.inputRecived)
         {
             animator.SetTrigger("AttackTwo");
             ComboSystem.Instance.InputHandler();
