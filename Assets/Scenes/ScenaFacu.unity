@@ -226,6 +226,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 1990647496}
   listOfCards: {fileID: 1351193857}
+  minSpeedPlayer: 70
+  minMaxHP: 100
+  minDefense: 20
+  minDamage: 10
+  capSpeedPlayer: 350
+  capMaxHP: 50000
+  capDefense: 1000
+  capDamage: 200
   playerStats: {fileID: 0}
 --- !u!4 &101863016
 Transform:
@@ -933,7 +941,7 @@ MonoBehaviour:
     type: 3}
   nodeXDistance: 50
   nodeYDistance: 30
-  nodeAmount: 3
+  nodeAmount: 15
   finishGeneration:
     m_PersistentCalls:
       m_Calls:
