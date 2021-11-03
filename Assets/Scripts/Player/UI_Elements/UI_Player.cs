@@ -8,10 +8,10 @@ public class UI_Player : MonoBehaviour
     [SerializeField] TextMeshProUGUI porcentHP;
     [SerializeField] Image fillHP; 
     [SerializeField] Image fillDamageEntry;
-    [SerializeField] Animator panelScreen;
     [SerializeField] StatsOnPanel allStats;
 
     [HideInInspector] public StatsManager statsMng;
+    public Animator panelScreen;
 
     bool needUpdateHelathBar;
     float targetFillAmount;
@@ -101,7 +101,7 @@ public class UI_Player : MonoBehaviour
     {
         if(fillDamageEntry.fillAmount > targetFillAmount)
         {
-            fillDamageEntry.fillAmount -= Time.deltaTime / 4;
+            fillDamageEntry.fillAmount -= Time.deltaTime / targetFillAmount;
         }
         else
         {
