@@ -10,6 +10,7 @@ public class UI_Player : MonoBehaviour
     [SerializeField] Image fillDamageEntry;
     [SerializeField] Animator panelScreen;
     [SerializeField] StatsOnPanel allStats;
+    [SerializeField] GameObject cheatSystem;
 
     StatsManager statsMng;
 
@@ -19,12 +20,23 @@ public class UI_Player : MonoBehaviour
     private void Start()
     {
         statsMng = FindObjectOfType<StatsManager>();
+        cheatSystem.SetActive(false);
     }
     private void Update()
     {
         if(needUpdateHelathBar)
         {
             UpdateFillDamageEntry();
+        }
+
+        EnableCheatSystem();
+    }
+
+    public void EnableCheatSystem()
+    {
+        if(Input.GetKey(KeyCode.LeftAlt))
+        {
+            cheatSystem.SetActive(!cheatSystem.activeSelf);
         }
     }
 

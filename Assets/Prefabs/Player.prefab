@@ -280,17 +280,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba58d2baa570004cb13665241298e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMovement: 7000
-  dodgeForce: 30000
+  forceMovement: 120
+  dodgeForce: 500
   dodgeDistance: 3
+  totalForceMovement: 0
   maxHp: 450
   lifeAmount: 0
   defense: 20
   damageReducedByDef: 0
+  totalMaxHP: 0
+  totalDefense: 0
   damageRangeAttack: 5
   damageMeleeAttack: 10
   knockbackRange: 1
   knockbackMelee: 30
+  totalDamageMelee: 0
+  totalDamageRange: 0
 --- !u!114 &5664354271051113591
 MonoBehaviour:
   m_ObjectHideFlags: 0

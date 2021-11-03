@@ -3457,6 +3457,7 @@ MonoBehaviour:
   uiPlayer: {fileID: 1499861623}
   uiPause: {fileID: 1176261768}
   uiFinishedLevel: {fileID: 1382435874}
+  uiPlayerDied: {fileID: 0}
 --- !u!1 &1705875188
 GameObject:
   m_ObjectHideFlags: 0
