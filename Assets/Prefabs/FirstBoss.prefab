@@ -185,7 +185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2.96}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6065529407184553685
@@ -488,8 +488,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.12}
-  m_Size: {x: 1.4, y: 3.2}
+  m_Offset: {x: 0.015461743, y: 1.4783106}
+  m_Size: {x: 1.5690767, y: 5.916621}
   m_Direction: 0
 --- !u!114 &8011611470067475089
 MonoBehaviour:
@@ -507,9 +507,9 @@ MonoBehaviour:
   maxLife: 350
   movementForce: 4
   distanceTracking: 16
-  distanceToAttack: 3.5
+  distanceToAttack: 1.5
   attackDelay: 1
-  attackRadiusArea: 4
+  attackRadiusArea: 2
   damage: 15
   knockbackForce: 20
 --- !u!114 &8011611470067475090
@@ -603,8 +603,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8011611470856260493}
   - component: {fileID: 8011611470856260492}
+  - component: {fileID: 8647983371178564173}
   m_Layer: 9
-  m_Name: New Sprite
+  m_Name: Boss_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -618,8 +619,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8011611470856260494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 16, y: 16, z: 1}
+  m_LocalPosition: {x: 0, y: -1.39, z: 0}
+  m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 8011611470067475093}
   m_RootOrder: 1
@@ -662,11 +663,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 1891780017945334795, guid: 1a41068c9c6f59141a798dc6a43ec9e2,
+  m_SortingOrder: 3
+  m_Sprite: {fileID: -2884469498576300739, guid: b62360e4e4b49224496ed1a3fc8589fd,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.16, y: 0.16}
@@ -675,3 +676,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8647983371178564173
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011611470856260494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 31ada237f9a3a3341958370117d4796b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

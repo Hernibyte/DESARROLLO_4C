@@ -28,14 +28,6 @@ public class UI_Player : MonoBehaviour
         }
     }
 
-    //public void EnableCheatSystem()
-    //{
-    //    if(Input.GetKey(KeyCode.LeftAlt))
-    //    {
-    //        cheatSystem.SetActive(!cheatSystem.activeSelf);
-    //    }
-    //}
-
     public void StartStatsPanel()
     {
         float hp = statsMng.playerStats.maxHp;

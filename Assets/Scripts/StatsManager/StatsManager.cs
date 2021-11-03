@@ -6,7 +6,21 @@ public class StatsManager : MonoBehaviour
 {
     [SerializeField] DeckOfCardsBehaviour inventory;
     [SerializeField] ListOfCards listOfCards;
-    public PlayerStats playerStats;
+
+    [Header("MIN STATS")]
+    [Space(15)]
+    [SerializeField] float minSpeedPlayer;
+    [SerializeField] float minMaxHP;
+    [SerializeField] float minDefense;
+    [SerializeField] float minDamage;
+    [Header("MAX STATS")]
+    [Space(15)]
+    [SerializeField] float capSpeedPlayer;
+    [SerializeField] float capMaxHP;
+    [SerializeField] float capDefense;
+    [SerializeField] float capDamage;
+
+    [HideInInspector] public PlayerStats playerStats;
     GameManager gameManager;
 
     void Start()
@@ -55,10 +69,25 @@ public class StatsManager : MonoBehaviour
             // Modifica todos los valores necesarios del playerstats en relacion a las ids de las cartas
         }
 
-        playerStats.totalMaxHP = playerStats.maxHp + extraCardsHP;
-        playerStats.totalDefense = playerStats.defense + extraCardsDEF;
-        playerStats.totalDamageMelee = playerStats.damageMeleeAttack + extraCardsDMG;
-        playerStats.totalDamageRange = playerStats.damageRangeAttack + extraCardsDMG;
-        playerStats.totalForceMovement = playerStats.forceMovement + extraCardsVEL;
+        SetValueStat(ref playerStats.totalMaxHP, (playerStats.maxHp + extraCardsHP), minMaxHP, capMaxHP);
+        SetValueStat(ref playerStats.totalDefense, (playerStats.defense + extraCardsDEF), minDefense, capDefense);
+        SetValueStat(ref playerStats.totalDamageMelee, (playerStats.damageMeleeAttack + extraCardsDMG), minDamage, capDamage);
+        SetValueStat(ref playerStats.totalDamageRange, (playerStats.damageRangeAttack + extraCardsDMG), minDamage, capDamage);
+        SetValueStat(ref playerStats.totalForceMovement, (playerStats.forceMovement + extraCardsVEL), minSpeedPlayer, capSpeedPlayer);
+    }
+
+    void SetValueStat(ref float stat, float value, float minimumCondition, float maximumCondition)
+    {
+        if (value > minimumCondition)
+        {
+            if (value < maximumCondition)
+                stat = value;
+            else
+                stat = maximumCondition;
+        }
+        else
+        {
+            stat = minimumCondition;
+        }
     }
 }
