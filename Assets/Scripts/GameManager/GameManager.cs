@@ -18,11 +18,22 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Tab))
-            uiManager.uiPlayer.OpenAndClosePanelPlayer();
+            HandleTabPanelAndInventory();
         //
         if(Input.GetKeyDown(KeyCode.Escape))
             Pause();
     }
+
+    void HandleTabPanelAndInventory()
+    {
+        uiManager.uiPlayer.OpenAndClosePanelPlayer();
+
+        //if (uiManager.uiPlayer.panelScreen.GetBool("PanelIsOpen"))
+        //    Time.timeScale = 0;
+        //else
+        //    Time.timeScale = 1;
+    }
+
     public void IfLevelGenerationEnds()
     {
         GameObject obj = Instantiate(playerDodgePivot, transform.position, Quaternion.identity);
