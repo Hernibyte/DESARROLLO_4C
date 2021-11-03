@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
         if(lifeAmount <= 0)
         {
             die?.Invoke();
-            Destroy(gameObject);
+            Destroy(gameObject, 0.2f);
         }
     }
 }

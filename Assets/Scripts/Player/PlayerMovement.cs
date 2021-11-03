@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             dodgePivot.position = transform.position;
             movement.x = Input.GetAxis("Horizontal");
             movement.y = Input.GetAxis("Vertical");
-            body2D.AddForce(movement * playerStats.forceMovement);
+            body2D.AddForce(movement * playerStats.totalForceMovement, ForceMode2D.Impulse);
             animator.SetFloat("Velocity", body2D.velocity.magnitude);
         }
     }
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
             MakeAfterImageOnDodge();
 
-            body2D.AddForce(auxMovement * playerStats.dodgeForce);
+            body2D.AddForce(auxMovement * playerStats.dodgeForce, ForceMode2D.Impulse);
             if(Vector2.Distance(transform.position, dodgePivot.position) >= playerStats.dodgeDistance)
             {
                 body2D.velocity = Vector2.zero;
