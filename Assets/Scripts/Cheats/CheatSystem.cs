@@ -40,18 +40,18 @@ public class CheatSystem : MonoBehaviour
         switch (command)
         {
             case "god":
-                pj.totalMaxHP = 1000000f;
-                pj.lifeAmount = 1000000f;
+                pj.totalMaxHP = 100000f;
+                pj.lifeAmount = 100000f;
                 pj.totalDamageMelee = 100000;
                 pj.totalDamageRange = 100000;
-                pj.forceMovement = 500;//Es dios dejalo romper el cap pa
+                pj.totalForceMovement = 300;//Es dios dejalo romper el cap pa
                 break;
             case "max damage":
-                pj.damageMeleeAttack = 100000;
-                pj.damageRangeAttack = 100000;
+                pj.totalDamageMelee = 100000;
+                pj.totalDamageRange = 100000;
                 break;
             case "max hp":
-                pj.maxHp = 1000000f;
+                pj.totalMaxHP = 1000000f;
                 pj.lifeAmount = 1000000f;
                 break;
         }

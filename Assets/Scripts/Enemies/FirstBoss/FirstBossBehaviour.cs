@@ -14,6 +14,13 @@ public class FirstBossBehaviour : MonoBehaviour
     bool ifSetPositionPivot;
     float auxTimer;
 
+    Animator animBoss;
+
+    void Start()
+    {
+        animBoss = gameObject.GetComponentInChildren<Animator>();
+    }
+
     void Update()
     {
         switch(state)
@@ -63,6 +70,7 @@ public class FirstBossBehaviour : MonoBehaviour
         {
             enemyAttack.SetPivotPosition(enemyAttack.playerTransform.position);
             ifSetPositionPivot = true;
+            animBoss.SetTrigger("Attack");
         }
         auxTimer += Time.deltaTime;
         if(auxTimer >= stats.attackDelay)

@@ -1,12 +1,57 @@
 fileFormatVersion: 2
 guid: b62360e4e4b49224496ed1a3fc8589fd
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2884469498576300739
+    second: boss anim geo_0
+  - first:
+      213: -8897804607497291256
+    second: boss anim geo_1
+  - first:
+      213: 1970741250220426332
+    second: boss anim geo_2
+  - first:
+      213: -6210492706610486565
+    second: boss anim geo_3
+  - first:
+      213: 5958770394681566284
+    second: boss anim geo_4
+  - first:
+      213: 1840643999616545410
+    second: boss anim geo_5
+  - first:
+      213: -1672489360611860524
+    second: boss anim geo_6
+  - first:
+      213: -3910903277716052731
+    second: boss anim geo_7
+  - first:
+      213: 8227268495864500995
+    second: boss anim geo_8
+  - first:
+      213: -1346113631771866140
+    second: boss anim geo_9
+  - first:
+      213: -324557124076649615
+    second: boss anim geo_10
+  - first:
+      213: 8254534670119996967
+    second: boss anim geo_11
+  - first:
+      213: 6787129636665088690
+    second: boss anim geo_12
+  - first:
+      213: 7236324982600442295
+    second: boss anim geo_14
+  - first:
+      213: 1891957096071890828
+    second: boss anim geo_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +76,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 2000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -64,7 +109,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -76,7 +121,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +145,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,11 +166,326 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: boss anim geo_0
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 6803
+        width: 446
+        height: 1027
+      alignment: 9
+      pivot: {x: 0.5142518, y: 0.03580143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3519eb064e48f7d0800000000000000
+      internalID: -2884469498576300739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_1
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 6786
+        width: 629
+        height: 984
+      alignment: 9
+      pivot: {x: 0.54547495, y: 0.015516328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a3a412ad5a48480800000000000000
+      internalID: -8897804607497291256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_2
+      rect:
+        serializedVersion: 2
+        x: 2635
+        y: 6833
+        width: 446
+        height: 1027
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02342276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c540993c9ba795b10800000000000000
+      internalID: 1970741250220426332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_3
+      rect:
+        serializedVersion: 2
+        x: 3133
+        y: 6815
+        width: 450
+        height: 1015
+      alignment: 9
+      pivot: {x: 0.5, y: 0.024050858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2e356b9c5efc9a0800000000000000
+      internalID: -6210492706610486565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_4
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 5690
+        width: 537
+        height: 1018
+      alignment: 9
+      pivot: {x: 0.43489698, y: 0.028575486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44eb116a1ec1b250800000000000000
+      internalID: 5958770394681566284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_5
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 5697
+        width: 677
+        height: 1013
+      alignment: 9
+      pivot: {x: 0.6126693, y: 0.029386047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282391b27f74b8910800000000000000
+      internalID: 1840643999616545410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_6
+      rect:
+        serializedVersion: 2
+        x: 3111
+        y: 5690
+        width: 514
+        height: 1019
+      alignment: 9
+      pivot: {x: 0.46908295, y: 0.025919158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df1c1aa9cf1ac8e0800000000000000
+      internalID: -1672489360611860524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_7
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 4271
+        width: 1161
+        height: 1035
+      alignment: 9
+      pivot: {x: 0.7217357, y: 0.02710645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505e2d4903ea9b9c0800000000000000
+      internalID: -3910903277716052731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_8
+      rect:
+        serializedVersion: 2
+        x: 2146
+        y: 4271
+        width: 911
+        height: 1008
+      alignment: 9
+      pivot: {x: 0.41627103, y: 0.020745656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30314c76b112d2270800000000000000
+      internalID: 8227268495864500995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_9
+      rect:
+        serializedVersion: 2
+        x: 3111
+        y: 4260
+        width: 514
+        height: 1019
+      alignment: 9
+      pivot: {x: 0.45671633, y: 0.025919158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb4deea8c4a15de0800000000000000
+      internalID: -1346113631771866140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_10
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 3013
+        width: 967
+        height: 1153
+      alignment: 9
+      pivot: {x: 0.27979293, y: 0.020373778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173c616e301fe7bf0800000000000000
+      internalID: -324557124076649615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_11
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 3017
+        width: 1264
+        height: 1090
+      alignment: 9
+      pivot: {x: 0.74138325, y: 0.036389273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e06ae4c8ffd8270800000000000000
+      internalID: 8254534670119996967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_12
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 3022
+        width: 932
+        height: 1186
+      alignment: 9
+      pivot: {x: 0.6398137, y: 0.017640498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bad2fdd17ab03e50800000000000000
+      internalID: 6787129636665088690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_14
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 2034
+        width: 1085
+        height: 756
+      alignment: 9
+      pivot: {x: 0.71969193, y: 0.029153168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b12f236b379c6460800000000000000
+      internalID: 7236324982600442295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss anim geo_15
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 2034
+        width: 1085
+        height: 839
+      alignment: 9
+      pivot: {x: 0.7372673, y: 0.030276056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8705a174f4914a10800000000000000
+      internalID: 1891957096071890828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 29b3afcf184ac04459c0d6599329c34f
     internalID: 0
     vertices: []
     indices: 

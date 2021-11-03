@@ -35,4 +35,9 @@ public class EnemyAttack : MonoBehaviour
         ProjectileBehaviour proj = obj.GetComponent<ProjectileBehaviour>();
         proj.SetValuesAndShoot(damageDelt, knockBackForce, position, targetPosition);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPivot.position, stats.attackRadiusArea);
+    }
 }
