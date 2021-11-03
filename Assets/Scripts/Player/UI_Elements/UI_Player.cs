@@ -10,9 +10,8 @@ public class UI_Player : MonoBehaviour
     [SerializeField] Image fillDamageEntry;
     [SerializeField] Animator panelScreen;
     [SerializeField] StatsOnPanel allStats;
-    [SerializeField] GameObject cheatSystem;
 
-    StatsManager statsMng;
+    [HideInInspector] public StatsManager statsMng;
 
     bool needUpdateHelathBar;
     float targetFillAmount;
@@ -20,7 +19,6 @@ public class UI_Player : MonoBehaviour
     private void Start()
     {
         statsMng = FindObjectOfType<StatsManager>();
-        cheatSystem.SetActive(false);
     }
     private void Update()
     {
@@ -28,17 +26,15 @@ public class UI_Player : MonoBehaviour
         {
             UpdateFillDamageEntry();
         }
-
-        EnableCheatSystem();
     }
 
-    public void EnableCheatSystem()
-    {
-        if(Input.GetKey(KeyCode.LeftAlt))
-        {
-            cheatSystem.SetActive(!cheatSystem.activeSelf);
-        }
-    }
+    //public void EnableCheatSystem()
+    //{
+    //    if(Input.GetKey(KeyCode.LeftAlt))
+    //    {
+    //        cheatSystem.SetActive(!cheatSystem.activeSelf);
+    //    }
+    //}
 
     public void StartStatsPanel()
     {
@@ -48,6 +44,13 @@ public class UI_Player : MonoBehaviour
         float vel = statsMng.playerStats.forceMovement;
 
         allStats.StartDefaulPanelStats(hp,def,dmg,vel);
+    }
+
+    public void UpdateStatsAfterCheat()
+    {
+        allStats.UpdateStat(statsMng.playerStats.totalMaxHP, 0, statsMng.playerStats.totalDefense, 0,
+            statsMng.playerStats.totalDamageMelee+ statsMng.playerStats.totalDamageRange, 0,
+            statsMng.playerStats.totalForceMovement, 0);
     }
 
     public void UpdateStatsPanel(DeckOfCardsBehaviour allCardsInDeck, ListOfCards allCards)

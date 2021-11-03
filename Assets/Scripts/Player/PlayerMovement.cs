@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
             dodgePivot.position = transform.position;
             movement.x = Input.GetAxis("Horizontal");
             movement.y = Input.GetAxis("Vertical");
-            body2D.AddForce(movement * playerStats.forceMovement, ForceMode2D.Impulse);
+            body2D.AddForce(movement * playerStats.totalForceMovement, ForceMode2D.Impulse);
             animator.SetFloat("Velocity", body2D.velocity.magnitude);
         }
     }

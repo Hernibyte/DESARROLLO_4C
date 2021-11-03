@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class CheatSystem : MonoBehaviour
 {
     [SerializeField] GameObject inputField;
+    UI_Manager uiManager;
     bool inputState;
 
     private void Start()
     {
+        uiManager = FindObjectOfType<UI_Manager>();
         inputField.SetActive(inputState);
     }
 
@@ -34,15 +36,14 @@ public class CheatSystem : MonoBehaviour
     {
         string command = inputField.GetComponent<InputField>().text;
         PlayerStats pj = FindObjectOfType<PlayerStats>();
-        //UI_Boss bossRef = FindObjectOfType<UI_Boss>();
-        //
+
         switch (command)
         {
             case "god":
-                pj.maxHp = 1000000f;
+                pj.totalMaxHP = 1000000f;
                 pj.lifeAmount = 1000000f;
-                pj.damageMeleeAttack = 100000;
-                pj.damageRangeAttack = 100000;
+                pj.totalDamageMelee = 100000;
+                pj.totalDamageRange = 100000;
                 pj.forceMovement = 500;//Es dios dejalo romper el cap pa
                 break;
             case "max damage":
@@ -53,26 +54,8 @@ public class CheatSystem : MonoBehaviour
                 pj.maxHp = 1000000f;
                 pj.lifeAmount = 1000000f;
                 break;
-            //case "tp BossRoom":
-            //    //int index = rp.roomList.Count - 1;
-            //    //Vector3 bossPosition = rp.roomList[index].transform.position;
-            //    //pj.gameObject.transform.position = bossPosition;
-            //    break;
-            //case "actuallyDefy":
-            //    if(bossRef.boss != null)
-            //    {
-            //        bossRef.boss.bossMAX_HP = 5000000f;
-            //        bossRef.boss.bossDamage = 5000;
-            //        bossRef.boss.bossSpeed = 6f;
-            //    }
-            //    else
-            //    {
-            //        Debug.Log("NULO BOSSS");
-            //    }
-            //    break;
-            //case "heal!":
-            //    //pj.FullHealPlayer();
-            //    break;
         }
+
+        uiManager.uiPlayer.UpdateStatsAfterCheat();
     }
 }

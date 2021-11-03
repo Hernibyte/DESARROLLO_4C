@@ -60,6 +60,6 @@ public class RangeAttack : MonoBehaviour
         tToRestore = 0;
         ProjectileBehaviour projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         if (projectile != null)
-            projectile.SetValuesAndShoot(playerData.damageRangeAttack, playerData.knockbackRange, firePoint, transform.position);
+            projectile.SetValuesAndShoot((int)playerData.totalDamageRange, playerData.knockbackRange, firePoint, transform.position);
     }
 }
