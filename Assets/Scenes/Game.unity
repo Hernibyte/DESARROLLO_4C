@@ -781,7 +781,6 @@ GameObject:
   m_Component:
   - component: {fileID: 517524988}
   - component: {fileID: 517524987}
-  - component: {fileID: 517524989}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -796,7 +795,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517524986}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3e16c9fcb13e404d91525d163e73174, type: 3}
   m_Name: 
@@ -829,30 +828,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &517524989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517524986}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b87e76951410e40b794eab886433d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1 &551081377
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,6 +3363,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardList:
   - {fileID: 11400000, guid: 93912126df47929408fd16cc70e8d835, type: 2}
+  - {fileID: 11400000, guid: 00a6b517a28bf3f409d69edb4effeb6a, type: 2}
+  - {fileID: 11400000, guid: e789c3973d964814ab022120091d4671, type: 2}
+  - {fileID: 11400000, guid: 9b75ca1033db11840933e739b2baf952, type: 2}
+  - {fileID: 11400000, guid: cd0864746a934d948bd982eaa2444b51, type: 2}
 --- !u!1 &1347779873
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,6 +3540,7 @@ GameObject:
   - component: {fileID: 1404678076}
   - component: {fileID: 1404678077}
   - component: {fileID: 1404678072}
+  - component: {fileID: 1404678078}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3704,6 +3684,30 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1404678078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404678071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b87e76951410e40b794eab886433d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1426034826
 GameObject:
   m_ObjectHideFlags: 0

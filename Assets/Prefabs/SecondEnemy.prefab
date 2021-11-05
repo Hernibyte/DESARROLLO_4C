@@ -388,7 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1086030876172098719, guid: 054825c4edd7b5f4589c27d207b8f2f9,
     type: 3}
-  attackPivot: {fileID: 0}
+  attackPivot: {fileID: 6397217177134218692}
   stats: {fileID: 6397217175561193431}
   playerTransform: {fileID: 0}
 --- !u!114 &6397217175561193424
