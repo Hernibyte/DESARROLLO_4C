@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Transform dodgePivot;
     [SerializeField] LayerMask environmentMask;
+    [SerializeField] LayerMask enemyMask;
     [Tooltip("The distance between the images on the afterImage effect on dodge")]
     public float distanceBetweenImages;
     private float lastImagePosX;
@@ -112,7 +113,16 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D other) 
     {
-        if(MyUtilities.Contains(environmentMask, other.gameObject.layer) && inDodge)
+        if(MyUtilities.Contains(environmentMask, other.gameObject.layer) && inDodge )
+        {
+            inDodge = false;
+            body2D.velocity = Vector2.zero;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(MyUtilities.Contains(enemyMask, other.gameObject.layer) && inDodge)
         {
             inDodge = false;
             body2D.velocity = Vector2.zero;

@@ -210,10 +210,10 @@ TextureImporter:
       name: asstes_5
       rect:
         serializedVersion: 2
-        x: 23
-        y: 1811
-        width: 192
-        height: 638
+        x: 18
+        y: 1812
+        width: 206
+        height: 668
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: asstes_6
       rect:
         serializedVersion: 2
-        x: 295
-        y: 1811
-        width: 192
-        height: 641
+        x: 288
+        y: 1812
+        width: 206
+        height: 668
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +252,10 @@ TextureImporter:
       name: asstes_8
       rect:
         serializedVersion: 2
-        x: 524
-        y: 1811
+        x: 530
+        y: 1812
         width: 206
-        height: 669
+        height: 668
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,11 +273,11 @@ TextureImporter:
       name: asstes_11
       rect:
         serializedVersion: 2
-        x: 796
-        y: 1811
+        x: 802
+        y: 1812
         width: 206
-        height: 655
-      alignment: 0
+        height: 668
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
