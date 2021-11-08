@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="play_orco" ID="{8028BDF6-D473-4F4B-9CD8-F8D4B8B7E54F}">
+					<ChildrenList>
+						<Action Name="" ID="{CD8FE55D-87F0-4442-A374-494285FCF336}" ShortID="247823707">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Idle" ID="{AA677BE4-5A4D-4241-8312-B22440980C02}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6865CD43-9D02-44E1-A489-472B98C96718}" ShortID="300935792">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Breathe" ID="{05829211-475C-4C88-A615-157940BB9993}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_demonio" ID="{C16A740D-E908-4BB6-97FD-344C6FA87C03}">
+					<ChildrenList>
+						<Action Name="" ID="{28712DB4-345B-4516-811B-0205BD1EDEB7}" ShortID="766960630">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Idle" ID="{E709C165-AF70-49EC-83D4-26D0BAA84680}" WorkUnitID="{6A421439-AEEE-48A8-A5E4-16B5ACFDF72E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_orco_pasos" ID="{FDD152CE-0E75-4669-A67F-D722951DEF6F}">
+					<ChildrenList>
+						<Action Name="" ID="{43FC677B-C357-4C46-BDC5-47054592F596}" ShortID="895241738">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pasos" ID="{5530CC3E-FC14-4258-B73B-BA8598F43430}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_orco_attack" ID="{E130EFA2-A39C-44E9-B6A1-6732351F42F9}">
+					<ChildrenList>
+						<Action Name="" ID="{989759F9-5EC2-41D1-A6F1-2693AD68DF49}" ShortID="441545868">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hit" ID="{D3A4416A-B70B-4DE8-97B6-0AAF66B0FA6C}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_demonio_attack" ID="{9F41E7FB-7D2D-4611-8A59-BFD10D22ED7E}">
+					<ChildrenList>
+						<Action Name="" ID="{11891A05-6A9A-4F43-BD69-174E6A6DBDCD}" ShortID="293249184">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Attack" ID="{7B35635B-1D11-4581-AB78-2F6E93B08A89}" WorkUnitID="{6A421439-AEEE-48A8-A5E4-16B5ACFDF72E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

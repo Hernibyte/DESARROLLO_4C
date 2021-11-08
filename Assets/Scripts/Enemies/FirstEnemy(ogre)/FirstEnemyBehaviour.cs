@@ -20,6 +20,7 @@ public class FirstEnemyBehaviour : MonoBehaviour
     {
         enemyAnimator = GetComponentInChildren<Animator>();
     }
+
     void Update()
     {
         switch(state)
