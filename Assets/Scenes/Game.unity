@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 0
     m_SelectOnUp: {fileID: 1091324914}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1080,6 +1080,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482288118728062609, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482288118803716287, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1138,6 +1143,11 @@ PrefabInstance:
     - target: {fileID: 3482288118827127969, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482288118827127972, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3482288118827127974, guid: bfa9df6785fb15645a0a37bc711483ec,
@@ -1145,6 +1155,11 @@ PrefabInstance:
       propertyPath: inventoryPlayer
       value: 
       objectReference: {fileID: 1840690541}
+    - target: {fileID: 3482288118972517407, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482288118991151978, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1345,11 +1360,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482288119234259704, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482288119234259706, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: inventoryPlayer
       value: 
       objectReference: {fileID: 1840690541}
+    - target: {fileID: 3482288119355056170, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482288119355056212, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: inventoryPlayer
@@ -1490,6 +1515,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482288119560777204, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482288119560777206, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: inventoryPlayer
@@ -1615,6 +1645,11 @@ PrefabInstance:
       propertyPath: inventoryPlayer
       value: 
       objectReference: {fileID: 1840690541}
+    - target: {fileID: 3482288119820492015, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482288119835946534, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1680,6 +1715,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482288119852579802, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482288119946428017, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1708,6 +1748,11 @@ PrefabInstance:
     - target: {fileID: 3482288119946428017, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482288119946428020, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3482288119946428022, guid: bfa9df6785fb15645a0a37bc711483ec,
@@ -1825,6 +1870,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3482288120475863136, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482288120475863139, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1933,6 +1983,11 @@ PrefabInstance:
     - target: {fileID: 3482288120560769577, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482288120560769582, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2424,7 +2479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 0
     m_SelectOnUp: {fileID: 1455895436}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2612,7 +2667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 1740085128}
     m_SelectOnLeft: {fileID: 0}
@@ -2743,7 +2798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 551081379}
     m_SelectOnLeft: {fileID: 0}
@@ -3748,7 +3803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 993180697}
     m_SelectOnLeft: {fileID: 0}
@@ -4151,7 +4206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 0
     m_SelectOnUp: {fileID: 1081556412}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
