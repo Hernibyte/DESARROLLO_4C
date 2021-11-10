@@ -1,13 +1,26 @@
 ﻿using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Loot : MonoBehaviour
 {
     [SerializeField] LayerMask playerLayer;
+    [SerializeField] Light2D point2D;
+    Animator animController;
     LootManager lootManager;
 
     private void Start()
     {
+        animController = GetComponentInChildren<Animator>();
+        point2D.gameObject.SetActive(false);
         lootManager = FindObjectOfType<LootManager>();
+    }
+
+    public void GiveLootAndDestroy()
+    {
+        point2D.gameObject.SetActive(true);
+        int randomCard = Random.Range(0, lootManager.GetCardsAviable().cardList.Count);
+        lootManager.SetLasCardTaked(randomCard);
+        Destroy(gameObject, 2f);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -16,11 +29,13 @@ public class Loot : MonoBehaviour
         {
             if(Input.GetKey(KeyCode.E))
             {
-                int randomCard = Random.Range(0, lootManager.GetCardsAviable().cardList.Count);
-                lootManager.SetLasCardTaked(randomCard);
-                
-                Destroy(gameObject, 0.5f);
+                OpenChest();
             }
         }
+    }
+
+    void OpenChest()
+    {
+        animController.SetTrigger("Open");
     }
 }
