@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class CameraBehaviour : MonoBehaviour
 {
@@ -15,24 +13,23 @@ public class CameraBehaviour : MonoBehaviour
     IEnumerator SetLook(Transform point)
     {
         Vector3 targetPosition = new Vector3(point.position.x, point.position.y, transform.position.z);
+        float finalSpeedLerp=0;
+
+        /*Aumentamos la velocidad un poco cuando es
+        horizontal debido a que la distancia recorrida
+        es mas grande*/
+
+        if (targetPosition.y == transform.position.y)
+            finalSpeedLerp = speedLerp * 1.5f;
+        else
+            finalSpeedLerp = speedLerp;
 
         while (transform.position != targetPosition)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speedLerp * Time.fixedDeltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, finalSpeedLerp * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
         transform.position = targetPosition;
         yield return null;
-        
-        //float aux = 0f;
-        //Vector3 positionAux = transform.position;
-        //for(int i = 0; i < 20; i++)
-        //{
-        //    if(aux >= 1.0f)
-        //        break;
-        //    transform.position =  Vector3.LerpUnclamped(positionAux, new Vector3(point.x, point.y, -10), aux);
-        //    aux += 0.1f;
-        //    yield return new WaitForFixedUpdate();
-        //}
     }
 }
