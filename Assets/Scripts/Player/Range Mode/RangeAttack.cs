@@ -58,8 +58,11 @@ public class RangeAttack : MonoBehaviour
     public void ShootProjectile()
     {
         tToRestore = 0;
-        ProjectileBehaviour projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        ProjectileBehaviour projectile = Instantiate(projectilePrefab, firePointRb.position, Quaternion.identity);
         if (projectile != null)
+        {
+            projectile.transform.localRotation = firePoint.rotation;
             projectile.SetValuesAndShoot((int)playerData.totalDamageRange, playerData.knockbackRange, firePoint, transform.position);
+        }
     }
 }
