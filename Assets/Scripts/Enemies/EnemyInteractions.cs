@@ -11,6 +11,8 @@ public class EnemyInteractions : MonoBehaviour, IHitabble
 
     public void ReciveDamage(float amountDamage, float knockBackForce, Vector2 posAttacker)
     {
+        stats.distanceTracking = 80;
+
         stats.lifeAmount -= amountDamage;
         hasRecivedDamage?.Invoke(stats.lifeAmount, stats.maxLife);
         Vector2 difference = new Vector2(transform.position.x, transform.position.y) - posAttacker;

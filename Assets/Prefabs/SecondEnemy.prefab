@@ -428,8 +428,8 @@ MonoBehaviour:
   lifeAmount: 0
   maxLife: 50
   movementForce: 2
-  distanceTracking: 16
-  distanceToAttack: 12
+  distanceTracking: 80
+  distanceToAttack: 70
   attackDelay: 1
   attackRadiusArea: 0
   damage: 10
