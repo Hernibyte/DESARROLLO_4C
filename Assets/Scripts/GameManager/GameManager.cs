@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     void HandleTabPanelAndInventory()
     {
         uiManager.uiPlayer.OpenAndClosePanelPlayer();
+        playerTransform.GetComponent<PlayerMovement>().canIMove = !playerTransform.GetComponent<PlayerMovement>().canIMove;
 
         //if (uiManager.uiPlayer.panelScreen.GetBool("PanelIsOpen"))
         //    Time.timeScale = 0;

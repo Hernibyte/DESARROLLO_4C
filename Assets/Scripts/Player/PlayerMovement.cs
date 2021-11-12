@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask enemyMask;
     [Tooltip("The distance between the images on the afterImage effect on dodge")]
     public float distanceBetweenImages;
+    public bool canIMove;
     private float lastImagePosX;
     private float lastImagePosY;
 
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         playerStats = GetComponent<PlayerStats>();
         animator = GetComponentInChildren<Animator>();
         playerSprite = GetComponentInChildren<SpriteRenderer>();
+        canIMove = true;
     }
 
     void Update()
@@ -50,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
-        if(!inDodge)
+        if(!inDodge && canIMove)
         {
             dodgePivot.position = transform.position;
             movement.x = Input.GetAxis("Horizontal");
@@ -58,11 +60,16 @@ public class PlayerMovement : MonoBehaviour
             body2D.AddForce(movement * playerStats.totalForceMovement, ForceMode2D.Impulse);
             animator.SetFloat("Velocity", body2D.velocity.magnitude);
         }
+        if(!canIMove)
+        {
+            animator.SetFloat("Velocity", body2D.velocity.magnitude);
+            inDodge = false;
+        }
     }
 
     void Dodge()
     {
-        if(inDodge)
+        if(inDodge && canIMove)
         {
             if(movement.x < 0)
                 auxMovement.x = -1;
