@@ -100,6 +100,9 @@ public class FirstEnemyBehaviour : MonoBehaviour
 
     void SetHitAnimation()
     {
+        state = MyUtilities.EnemyState.Chasing;
+        auxTimer = 0f;
+
         enemyMovement.StopMove();
         enemyAnimator.SetTrigger("Damage");
         IEnumerator DelayToMove()

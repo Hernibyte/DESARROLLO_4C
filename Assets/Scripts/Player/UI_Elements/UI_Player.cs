@@ -13,6 +13,8 @@ public class UI_Player : MonoBehaviour
     [HideInInspector] public StatsManager statsMng;
     public Animator panelScreen;
 
+    public MyUtilities.MyUnityEventNoParam OnPanelChangeState = new MyUtilities.MyUnityEventNoParam();
+
     bool needUpdateHelathBar;
     float targetFillAmount;
 
@@ -113,5 +115,6 @@ public class UI_Player : MonoBehaviour
     public void OpenAndClosePanelPlayer()
     {
         panelScreen.SetBool("PanelIsOpen", !panelScreen.GetBool("PanelIsOpen"));
+        OnPanelChangeState?.Invoke();
     }
 }
