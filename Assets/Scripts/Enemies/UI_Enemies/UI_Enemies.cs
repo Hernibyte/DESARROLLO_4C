@@ -7,6 +7,7 @@ public class UI_Enemies : MonoBehaviour
     [SerializeField] Image hpFill;
     [SerializeField] Image damageFill;
 
+    CanvasGroup groupAlapha;
     bool needUpdateHealthBar;
     float targetDamnageFill;
     EnemyInteractions enemyData;
@@ -14,6 +15,7 @@ public class UI_Enemies : MonoBehaviour
     void Start()
     {
         needUpdateHealthBar = false;
+        groupAlapha = GetComponent<CanvasGroup>();
         enemyData = gameObject.GetComponentInParent<EnemyInteractions>();
         
         if(enemyData != null)
@@ -57,5 +59,22 @@ public class UI_Enemies : MonoBehaviour
     {
         yield return new WaitForSeconds(0.15f);
         needUpdateHealthBar = true;
+    }
+
+    public void HideUIEnemy()
+    {
+        if (groupAlapha == null)
+            return;
+
+        IEnumerator FadeCanvas()
+        {
+            while (groupAlapha.alpha > 0)
+            {
+                groupAlapha.alpha -= Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+            groupAlapha.alpha = 0;
+        }
+        StartCoroutine(FadeCanvas());
     }
 }
