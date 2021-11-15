@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BanishAfterEndAnim : StateMachineBehaviour
+public class BanishAfterEndAnimMelee : StateMachineBehaviour
 {
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -19,8 +19,7 @@ public class BanishAfterEndAnim : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Destroy(animator.transform.parent.gameObject, 0.1f);
-        animator.ResetTrigger("Die");
+        Destroy(animator.transform.parent.gameObject);
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
