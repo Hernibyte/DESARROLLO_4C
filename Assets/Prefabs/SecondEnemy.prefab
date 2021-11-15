@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 8552503950911981858}
   - component: {fileID: 5591220519539398713}
   - component: {fileID: 1337443332462031925}
+  - component: {fileID: 5428411206575120252}
   - component: {fileID: 9188249886847230926}
   m_Layer: 9
   m_Name: UI_Enemy
@@ -246,6 +247,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &5428411206575120252
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308593099633356270}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &9188249886847230926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,6 +531,31 @@ MonoBehaviour:
   die:
     m_PersistentCalls:
       m_Calls: []
+  atDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 166928058115622777}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Die
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9188249886847230926}
+        m_MethodName: HideUIEnemy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6397217175572048382
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +689,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ec4c0e95e06d5884793d51588fe254cf,
       type: 2}
+  attackEventVariant:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   reciveDamageEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -661,6 +703,18 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9f1fe10d67328ae4983444874bc37849,
       type: 2}
+  extraSoundAnim_1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  extraSoundAnim_2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  extraSoundAnim_3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &6397217177134218683
 GameObject:
   m_ObjectHideFlags: 0

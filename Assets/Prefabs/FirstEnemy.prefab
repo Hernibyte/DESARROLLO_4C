@@ -452,6 +452,31 @@ MonoBehaviour:
   die:
     m_PersistentCalls:
       m_Calls: []
+  atDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7315592522303999868}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Die
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2821669669241034571}
+        m_MethodName: HideUIEnemy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4163335022596011431
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +756,7 @@ GameObject:
   - component: {fileID: 308481663534673533}
   - component: {fileID: 4623250931803960059}
   - component: {fileID: 199446789535826607}
+  - component: {fileID: 9110706025164055576}
   - component: {fileID: 2821669669241034571}
   m_Layer: 9
   m_Name: UI_Enemy
@@ -819,6 +845,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &9110706025164055576
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626935256477777400}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &2821669669241034571
 MonoBehaviour:
   m_ObjectHideFlags: 0

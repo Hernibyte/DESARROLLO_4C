@@ -36,7 +36,10 @@ public class FirstEnemyBehaviour : MonoBehaviour
 
     void Update()
     {
-        switch(state)
+        if (stats.lifeAmount <= 0)
+            return;
+
+        switch (state)
         {
             case MyUtilities.EnemyState.Idle:
                 Idle();
