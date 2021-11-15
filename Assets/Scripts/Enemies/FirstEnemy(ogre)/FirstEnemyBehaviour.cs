@@ -5,9 +5,9 @@ using UnityEngine.Events;
 
 public class FirstEnemyBehaviour : MonoBehaviour
 {
-    [SerializeField] EnemyStats stats;
-    [SerializeField] EnemyMovement enemyMovement;
-    [SerializeField] EnemyAttack enemyAttack;
+    public EnemyStats stats;
+    public EnemyMovement enemyMovement;
+    public EnemyAttack enemyAttack;
     [SerializeField] LayerMask playerMask;
     [SerializeField] MyUtilities.EnemyState state;
 
@@ -50,6 +50,11 @@ public class FirstEnemyBehaviour : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        idleOgre.Stop(gameObject);
+    }
+
     void Idle()
     {
         if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceTracking)
@@ -71,7 +76,6 @@ public class FirstEnemyBehaviour : MonoBehaviour
         if (Vector2.Distance(transform.position, enemyAttack.playerTransform.position) <= stats.distanceToAttack)
         {
             state = MyUtilities.EnemyState.Attacking;
-            enemyAnimator.SetTrigger("Attack");
             ifSetPositionPivot = false;
         }
         //
@@ -87,26 +91,25 @@ public class FirstEnemyBehaviour : MonoBehaviour
         {
             enemyAttack.SetPivotPosition(enemyAttack.playerTransform.position);
             ifSetPositionPivot = true;
+            enemyAnimator.SetTrigger("Attack");
         }
-        auxTimer += Time.deltaTime;
-        if(auxTimer >= stats.attackDelay)
-        {
-            enemyAttack.MeleeAttack(playerMask);
-            state = MyUtilities.EnemyState.Chasing;
-            enemyAnimator.SetTrigger("Chase");
-            auxTimer = 0f;
-        }
+        //auxTimer += Time.deltaTime;
+        //if(auxTimer >= stats.attackDelay)
+        //{
+        //    enemyAnimator.SetTrigger("Attack");
+        //}
     }
 
     void SetHitAnimation()
     {
         enemyMovement.StopMove();
-        enemyAnimator.SetTrigger("Damage");
-        IEnumerator DelayToMove()
-        {
-            yield return new WaitForSeconds(0.1f);
-            enemyMovement.RestoreMove();
-        }
-        StartCoroutine(DelayToMove());
+        enemyAnimator.SetTrigger("Damage"); //Ejecuta al final de esta animacion un evento que llama lo de abajo
+    }
+
+    public void SetChaseState()
+    {
+        auxTimer = 0f;
+        state = MyUtilities.EnemyState.Chasing;
+        enemyAnimator.SetTrigger("Chase");
     }
 }

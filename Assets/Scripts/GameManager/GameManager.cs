@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         AkSoundEngine.SetRTPCValue("rtpc_mastervolume", gameVolume);
+
+        uiManager.uiPlayer.OnPanelChangeState.AddListener(ChangeStateMovementPlayer);
     }
 
     private void Update()
@@ -33,15 +35,19 @@ public class GameManager : MonoBehaviour
             Pause();
     }
 
+    private void OnDisable()
+    {
+        uiManager.uiPlayer.OnPanelChangeState.RemoveListener(ChangeStateMovementPlayer);
+    }
+
     void HandleTabPanelAndInventory()
     {
         uiManager.uiPlayer.OpenAndClosePanelPlayer();
-        playerTransform.GetComponent<PlayerMovement>().canIMove = !playerTransform.GetComponent<PlayerMovement>().canIMove;
+    }
 
-        //if (uiManager.uiPlayer.panelScreen.GetBool("PanelIsOpen"))
-        //    Time.timeScale = 0;
-        //else
-        //    Time.timeScale = 1;
+    void ChangeStateMovementPlayer()
+    {
+        playerTransform.GetComponent<PlayerMovement>().canIMove = !playerTransform.GetComponent<PlayerMovement>().canIMove;
     }
 
     public void IfLevelGenerationEnds()

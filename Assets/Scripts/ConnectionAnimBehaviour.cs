@@ -13,6 +13,21 @@ public class ConnectionAnimBehaviour : MonoBehaviour
     [SerializeField] AK.Wwise.Event extraSoundAnim_2;
     [SerializeField] AK.Wwise.Event extraSoundAnim_3;
 
+
+    private void OnDisable()
+    {
+    //--------------------------------------
+        attackEvent.Stop(gameObject);
+        attackEventVariant.Stop(gameObject);
+        reciveDamageEvent.Stop(gameObject);
+        footStepEvent.Stop(gameObject);
+    //--------------------------------------
+        extraSoundAnim_1.Stop(gameObject);
+        extraSoundAnim_2.Stop(gameObject);
+        extraSoundAnim_3.Stop(gameObject);
+    //--------------------------------------
+    }
+
     //=========================================================
 
     public void MakeSoundAttack_1()

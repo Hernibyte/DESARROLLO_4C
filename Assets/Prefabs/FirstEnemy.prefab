@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 2276568716931850987}
   - component: {fileID: 2276568716931850980}
   - component: {fileID: 7315592522303999868}
+  - component: {fileID: 4192742186072267118}
   - component: {fileID: 536708391282907688}
   m_Layer: 9
   m_Name: EnemySprite
@@ -207,6 +208,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4192742186072267118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2276568716931850986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46c4c5ffc9e80e14cafe2be85550cd1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &536708391282907688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +240,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 390795a33d8b81747a01ea5fa9ba5ab3,
       type: 2}
+  attackEventVariant:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   reciveDamageEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -234,6 +254,18 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e3caf875cbe82c749b84641829853b92,
       type: 2}
+  extraSoundAnim_1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  extraSoundAnim_2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  extraSoundAnim_3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &2276568717983404206
 GameObject:
   m_ObjectHideFlags: 0
