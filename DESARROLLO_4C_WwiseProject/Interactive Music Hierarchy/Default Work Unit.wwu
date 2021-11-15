@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{355C4C97-B724-450F-993F-643D35675E84}" SchemaVersion="103">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{355C4C97-B724-450F-993F-643D35675E84}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{355C4C97-B724-450F-993F-643D35675E84}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="Propuesta 1 - Main Theme - LOOP" ID="{88A52C0F-4D6E-4D50-8DBB-39D2EF095389}" ShortID="774398229">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="45608.6621315193"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Propuesta 1 - Main Theme - LOOP" ID="{07135975-DF92-410F-AC62-B381A53CE6BD}" ShortID="423591779">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Propuesta 1 - Main Theme - LOOP" ID="{92D83BDB-279E-4065-B862-4D147EF6777F}">
+									<Language>SFX</Language>
+									<AudioFile>Propuesta 1 - Main Theme - LOOP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="885833662"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{7151A2D7-D6A6-4076-AC5F-97C6021AB29E}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<Reference>
+										<Local>
+											<MusicTrackSequence Name="" ID="{B5D7A3D1-06F7-4E01-9807-77972D450622}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<Reference>
+															<Local>
+																<MusicClip Name="Propuesta 1 - Main Theme - LOOP" ID="{0FBFFAB8-CB8A-4AA4-B992-CC5423F96FAC}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="45608.6621315193"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Propuesta 1 - Main Theme - LOOP" ID="{92D83BDB-279E-4065-B862-4D147EF6777F}"/>
+																</MusicClip>
+															</Local>
+														</Reference>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<Reference>
+								<Local>
+									<MusicCue Name="Entry Cue" ID="{EF2D642B-BA3F-489E-B02D-CCB8FF3E6CA9}"/>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MusicCue Name="Exit Cue" ID="{7E9DE80E-43E8-4B87-9705-94F0D639ACF5}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="45608.6621315193"/>
+										</PropertyList>
+									</MusicCue>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
