@@ -5,10 +5,13 @@ using UnityEngine.Animations;
 
 public class RefreshTriggers : StateMachineBehaviour
 {
+    ReferenceFirstEnemy referenceEnemy;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        referenceEnemy = animator.GetComponent<ReferenceFirstEnemy>();
+
         animator.ResetTrigger("Damage");
     }
 
@@ -23,8 +26,9 @@ public class RefreshTriggers : StateMachineBehaviour
     {
         animator.ResetTrigger("Idle");
         animator.ResetTrigger("Attack");
-        animator.ResetTrigger("Chase");
         animator.ResetTrigger("Damage");
+
+        referenceEnemy.RestoreMovement();
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
