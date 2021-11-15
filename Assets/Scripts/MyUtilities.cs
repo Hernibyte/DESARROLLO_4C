@@ -5,7 +5,11 @@ using UnityEngine.Events;
 
 public struct MyUtilities
 {
-    public class MyUnityEvent : UnityEvent<float, float>
+    public class MyUnityEvent2F : UnityEvent<float, float>
+    {
+    }
+
+    public class MyUnityEventNoParam : UnityEvent
     {
     }
 

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
     //Temporal
     [Space(15)]
-    [SerializeField][Range(0,1)] float gameVolume;
+    [SerializeField][Range(0,100)] float gameVolume;
 
     private void Start()
     {

@@ -6,6 +6,7 @@ public class ConnectionAnimBehaviour : MonoBehaviour
 {
     [SerializeField] AK.Wwise.Event attackEvent;
     [SerializeField] AK.Wwise.Event reciveDamageEvent;
+    [SerializeField] AK.Wwise.Event footStepEvent;
 
     public void MakeSoundAttack()
     {
@@ -15,5 +16,10 @@ public class ConnectionAnimBehaviour : MonoBehaviour
     public void MakeSoundHitRecived()
     {
         reciveDamageEvent.Post(gameObject);
+    }
+
+    public void MakeFootStepEvent()
+    {
+        footStepEvent.Post(gameObject);
     }
 }

@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     SpriteRenderer enemySprite;
     float auxTimer;
     float auxDistante;
+    bool stopMove = false;
 
     private void Start()
     {
@@ -18,6 +19,9 @@ public class EnemyMovement : MonoBehaviour
 
     public void Move(Vector2 position)
     {
+        if (stopMove)
+            return;
+
         float distance = Vector2.Distance(transform.position, position);
         if(auxDistante != distance)
         {
@@ -37,5 +41,15 @@ public class EnemyMovement : MonoBehaviour
     public void ImpulseAttack(Vector2 directionImpulse, float impulseForce)
     {
         body2D.velocity = new Vector2(directionImpulse.x * impulseForce, directionImpulse.y * impulseForce);
+    }
+
+    public void StopMove()
+    {
+        stopMove = true;
+    }
+
+    public void RestoreMove()
+    {
+        stopMove = false;
     }
 }

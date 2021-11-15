@@ -3776,7 +3776,7 @@ MonoBehaviour:
   playerDodgePivot: {fileID: 2929031046826904698, guid: 3d09a150ebb01b34b973d7845bc60806,
     type: 3}
   lastIndexCardTaked: 0
-  gameVolume: 1
+  gameVolume: 50
 --- !u!1 &1735150036
 GameObject:
   m_ObjectHideFlags: 0
