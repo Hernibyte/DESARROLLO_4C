@@ -11,21 +11,27 @@ public class FirstEnemyBehaviour : MonoBehaviour
     [SerializeField] LayerMask playerMask;
     [SerializeField] MyUtilities.EnemyState state;
 
-    [Space(20)]
     [Header("Wwise Events")]
+    [Space(20)]
     [SerializeField] AK.Wwise.Event idleOgre;
-    [SerializeField] AK.Wwise.Event ogreDamage;
-    [SerializeField] AK.Wwise.Event ogreChase;
 
     [HideInInspector] public UnityEvent imDie;
     bool ifSetPositionPivot;
     Animator enemyAnimator;
+    EnemyInteractions enemyInteract;
     float auxTimer;
-
 
     private void Start()
     {
         enemyAnimator = GetComponentInChildren<Animator>();
+        enemyInteract = GetComponent<EnemyInteractions>();
+
+        idleOgre.Post(gameObject);
+
+        if (enemyInteract != null)
+        {
+            enemyInteract.hasBeenHited.AddListener(SetHitAnimation);
+        }
     }
 
     void Update()
@@ -58,6 +64,7 @@ public class FirstEnemyBehaviour : MonoBehaviour
         if(Vector2.Distance(transform.position, enemyAttack.playerTransform.position) >= stats.distanceTracking)
         {
             state = MyUtilities.EnemyState.Idle;
+            idleOgre.Post(gameObject);
             enemyAnimator.SetTrigger("Idle");
         }
         //
@@ -89,5 +96,17 @@ public class FirstEnemyBehaviour : MonoBehaviour
             enemyAnimator.SetTrigger("Chase");
             auxTimer = 0f;
         }
+    }
+
+    void SetHitAnimation()
+    {
+        enemyMovement.StopMove();
+        enemyAnimator.SetTrigger("Damage");
+        IEnumerator DelayToMove()
+        {
+            yield return new WaitForSeconds(0.1f);
+            enemyMovement.RestoreMove();
+        }
+        StartCoroutine(DelayToMove());
     }
 }

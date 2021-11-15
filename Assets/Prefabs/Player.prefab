@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 5664354270066988785}
   - component: {fileID: 8997573096484091573}
   - component: {fileID: 8420174484372529765}
+  - component: {fileID: 7890845608341941870}
   m_Layer: 10
   m_Name: PlayerSprite
   m_TagString: Player
@@ -262,6 +263,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbbf9428ac2593469e493d0f85f5a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7890845608341941870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5664354270066988783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88d8cbcacc1e38848981dbd460132599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ebefc6b18a9c39749bf075d3d11a1772,
+      type: 2}
+  attackEventVariant:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3ee48470ff5991a4c9d17f5804e226d2,
+      type: 2}
+  reciveDamageEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: feeba8752d23d5e4ca130bb54ad934d5,
+      type: 2}
+  footStepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9a12e08ab53811f449350c4894f3cd1c,
+      type: 2}
+  extraSoundAnim_1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2114cbf52f6f34a4c8bd1444e565c870,
+      type: 2}
+  extraSoundAnim_2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: acaa5c324aa12a748b89fc0e273accde,
+      type: 2}
+  extraSoundAnim_3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &5664354271051113588
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +436,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   distanceBetweenImages: 0.2
+  canIMove: 0
 --- !u!114 &5664354271051113597
 MonoBehaviour:
   m_ObjectHideFlags: 0

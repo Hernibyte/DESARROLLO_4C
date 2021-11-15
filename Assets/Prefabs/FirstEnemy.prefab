@@ -224,6 +224,16 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 390795a33d8b81747a01ea5fa9ba5ab3,
       type: 2}
+  reciveDamageEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 57563c4917fc078469829ff481f881ad,
+      type: 2}
+  footStepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e3caf875cbe82c749b84641829853b92,
+      type: 2}
 --- !u!1 &2276568717983404206
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +382,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   state: 0
+  idleOgre:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9f467151722dbc241a0662b163668541,
+      type: 2}
   imDie:
     m_PersistentCalls:
       m_Calls: []

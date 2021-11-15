@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.7}
-  m_SizeDelta: {x: 6, y: 0.7791748}
+  m_AnchoredPosition: {x: 0.09, y: -0.542}
+  m_SizeDelta: {x: 8, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5602610117372475984
 CanvasRenderer:
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4e9e4692f7af972419ed03f2b33fb940, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fef1fec198c6404418e89452a8a2602d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -299,7 +299,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -2.58}
-  m_SizeDelta: {x: 10, y: 0.7791748}
+  m_SizeDelta: {x: 10.99, y: 0.7791748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4040127462505740897
 CanvasRenderer:
@@ -604,6 +604,7 @@ GameObject:
   - component: {fileID: 8011611470856260493}
   - component: {fileID: 8011611470856260492}
   - component: {fileID: 8647983371178564173}
+  - component: {fileID: 5664601333449307738}
   m_Layer: 9
   m_Name: Boss_1
   m_TagString: Untagged
@@ -667,10 +668,10 @@ SpriteRenderer:
   m_Sprite: {fileID: -2884469498576300739, guid: b62360e4e4b49224496ed1a3fc8589fd,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.485, y: 0.5780008}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -695,3 +696,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5664601333449307738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011611470856260494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88d8cbcacc1e38848981dbd460132599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: afc00d40593943e4e801b81a85cff18c,
+      type: 2}
+  attackEventVariant:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  reciveDamageEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4470db1183babb3489347cb0cc2828c4,
+      type: 2}
+  footStepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  extraSoundAnim_1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  extraSoundAnim_2:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  extraSoundAnim_3:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
