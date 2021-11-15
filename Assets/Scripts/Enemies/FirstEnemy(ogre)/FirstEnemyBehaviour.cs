@@ -104,7 +104,7 @@ public class FirstEnemyBehaviour : MonoBehaviour
         enemyAnimator.SetTrigger("Damage");
         IEnumerator DelayToMove()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.1f);
             enemyMovement.RestoreMove();
         }
         StartCoroutine(DelayToMove());
