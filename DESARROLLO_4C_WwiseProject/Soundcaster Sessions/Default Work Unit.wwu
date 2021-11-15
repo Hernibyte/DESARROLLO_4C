@@ -6,51 +6,49 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{14693AA8-61C2-4234-AD13-47350BDF6758}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Idle" ID="{AA677BE4-5A4D-4241-8312-B22440980C02}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
+							<ObjectRef Name="on_click" ID="{C6A1680F-AC6D-4A80-A515-F39AF04CBD10}" WorkUnitID="{6114A86A-3FAA-4EAE-8675-49DB976B3FAA}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Breathe" ID="{05829211-475C-4C88-A615-157940BB9993}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
+							<ObjectRef Name="on_enter" ID="{563C593E-1D3B-4275-84C8-7B70B39E60AE}" WorkUnitID="{6114A86A-3FAA-4EAE-8675-49DB976B3FAA}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Pasos" ID="{5530CC3E-FC14-4258-B73B-BA8598F43430}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
-							<Position X="0" Y="2"/>
+							<ObjectRef Name="ogre_receivedamage" ID="{C34A3799-7940-49FD-B1A7-78D095AD2294}" WorkUnitID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}"/>
+							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Damage" ID="{987C9EB2-7D1A-4C78-9ED1-99A06BDEB307}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
+							<ObjectRef Name="ogre_attack" ID="{10823E28-1D93-4A23-B6A4-E58B3EBAEDBA}" WorkUnitID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Hit" ID="{D3A4416A-B70B-4DE8-97B6-0AAF66B0FA6C}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
-							<Position X="1" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Dead" ID="{697C50EF-7306-462F-8127-3E31F4102794}" WorkUnitID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}"/>
+							<ObjectRef Name="ogre_die" ID="{BEDC736D-A8CF-4CE3-97E1-1BD2A6795EC0}" WorkUnitID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="pausa_in" ID="{FD595585-6768-4AC6-B343-5B522569FBF5}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 				<SoundcasterSession Name="demon" ID="{48BAF4BC-F082-46F3-85EA-86A5C43FEBCF}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Movement" ID="{BC1E2BB0-C768-4C76-B504-2CB0FD73F0B0}" WorkUnitID="{6A421439-AEEE-48A8-A5E4-16B5ACFDF72E}"/>
+							<ObjectRef Name="Idle" ID="{E709C165-AF70-49EC-83D4-26D0BAA84680}" WorkUnitID="{52EA2C7A-80F4-4D84-83A2-BCC7514F6BEB}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Idle" ID="{E709C165-AF70-49EC-83D4-26D0BAA84680}" WorkUnitID="{6A421439-AEEE-48A8-A5E4-16B5ACFDF72E}"/>
+							<ObjectRef Name="Movement" ID="{BC1E2BB0-C768-4C76-B504-2CB0FD73F0B0}" WorkUnitID="{52EA2C7A-80F4-4D84-83A2-BCC7514F6BEB}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Attack" ID="{7B35635B-1D11-4581-AB78-2F6E93B08A89}" WorkUnitID="{6A421439-AEEE-48A8-A5E4-16B5ACFDF72E}"/>
-							<Position X="1" Y="1"/>
+							<ObjectRef Name="Attack" ID="{7B35635B-1D11-4581-AB78-2F6E93B08A89}" WorkUnitID="{52EA2C7A-80F4-4D84-83A2-BCC7514F6BEB}"/>
+							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Dead" ID="{9AB34B76-FCD5-4455-958C-4F3BFDC4DFE9}" WorkUnitID="{6A421439-AEEE-48A8-A5E4-16B5ACFDF72E}"/>
-							<Position X="2" Y="1"/>
+							<ObjectRef Name="Dead" ID="{9AB34B76-FCD5-4455-958C-4F3BFDC4DFE9}" WorkUnitID="{52EA2C7A-80F4-4D84-83A2-BCC7514F6BEB}"/>
+							<Position X="1" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>

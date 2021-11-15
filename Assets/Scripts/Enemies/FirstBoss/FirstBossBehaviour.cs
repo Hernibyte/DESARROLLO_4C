@@ -75,6 +75,7 @@ public class FirstBossBehaviour : MonoBehaviour
         auxTimer += Time.deltaTime;
         if(auxTimer >= stats.attackDelay)
         {
+            AkSoundEngine.PostEvent("boss_attack", gameObject);
             enemyAttack.MeleeAttack(playerMask);
             state = MyUtilities.EnemyState.Chasing;
             auxTimer = 0f;

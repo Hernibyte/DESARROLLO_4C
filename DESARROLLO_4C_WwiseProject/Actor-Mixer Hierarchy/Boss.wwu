@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{78234100-6945-4FAE-B114-6A3DBAC7E788}" SchemaVersion="103" RootDocumentID="{755940C0-E993-41D2-94AF-F2956CB7490D}" ParentDocumentID="{755940C0-E993-41D2-94AF-F2956CB7490D}">
+	<AudioObjects>
+		<WorkUnit Name="Boss" ID="{78234100-6945-4FAE-B114-6A3DBAC7E788}" OwnerID="{755940C0-E993-41D2-94AF-F2956CB7490D}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Battle Theme - Ver 1" ID="{EE876859-39AB-4B83-B676-73943B8A06FE}" ShortID="761151218">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Battle Theme - Ver 1" ID="{D931437E-BC3E-4D49-8CA5-AB60C1B5DAB0}">
+							<Language>SFX</Language>
+							<AudioFile>Battle Theme - Ver 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="506922106"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Battle Theme - Ver 1" ID="{D931437E-BC3E-4D49-8CA5-AB60C1B5DAB0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

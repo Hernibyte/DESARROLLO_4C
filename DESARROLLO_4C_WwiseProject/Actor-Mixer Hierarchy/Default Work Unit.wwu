@@ -3,8 +3,11 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{755940C0-E993-41D2-94AF-F2956CB7490D}" PersistMode="Standalone">
 			<ChildrenList>
-				<WorkUnit Name="Demonio" ID="{6A421439-AEEE-48A8-A5E4-16B5ACFDF72E}" PersistMode="Reference"/>
-				<WorkUnit Name="Orco" ID="{D0451DD6-218B-4FA5-9C10-0392EDA5E504}" PersistMode="Reference"/>
+				<WorkUnit Name="Enemigos" ID="{52EA2C7A-80F4-4D84-83A2-BCC7514F6BEB}" PersistMode="Reference"/>
+				<WorkUnit Name="Boss" ID="{78234100-6945-4FAE-B114-6A3DBAC7E788}" PersistMode="Reference"/>
+				<WorkUnit Name="Monje" ID="{D1F7CA4E-663F-4C5F-991B-17B976FDA495}" PersistMode="Reference"/>
+				<WorkUnit Name="Interfaz" ID="{6114A86A-3FAA-4EAE-8675-49DB976B3FAA}" PersistMode="Reference"/>
+				<WorkUnit Name="Generales" ID="{E79F30B8-5A73-4D15-86F5-57710240CE9D}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

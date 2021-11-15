@@ -10,6 +10,13 @@ public class FirstEnemyBehaviour : MonoBehaviour
     [SerializeField] EnemyAttack enemyAttack;
     [SerializeField] LayerMask playerMask;
     [SerializeField] MyUtilities.EnemyState state;
+
+    [Space(20)]
+    [Header("Wwise Events")]
+    [SerializeField] AK.Wwise.Event idleOgre;
+    [SerializeField] AK.Wwise.Event ogreDamage;
+    [SerializeField] AK.Wwise.Event ogreChase;
+
     [HideInInspector] public UnityEvent imDie;
     bool ifSetPositionPivot;
     Animator enemyAnimator;

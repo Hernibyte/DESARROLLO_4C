@@ -15,6 +15,15 @@ public class GameManager : MonoBehaviour
     [Space(20)]
     [SerializeField] int lastIndexCardTaked;
 
+    //Temporal
+    [Space(15)]
+    [SerializeField][Range(0,1)] float gameVolume;
+
+    private void Start()
+    {
+        AkSoundEngine.SetRTPCValue("rtpc_mastervolume", gameVolume);
+    }
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Tab))

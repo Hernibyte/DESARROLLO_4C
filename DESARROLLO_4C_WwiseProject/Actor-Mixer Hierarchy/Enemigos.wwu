@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{52EA2C7A-80F4-4D84-83A2-BCC7514F6BEB}" SchemaVersion="103" RootDocumentID="{755940C0-E993-41D2-94AF-F2956CB7490D}" ParentDocumentID="{755940C0-E993-41D2-94AF-F2956CB7490D}">
+	<AudioObjects>
+		<WorkUnit Name="Enemigos" ID="{52EA2C7A-80F4-4D84-83A2-BCC7514F6BEB}" OwnerID="{755940C0-E993-41D2-94AF-F2956CB7490D}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Demonio" ID="{4D5E1EF4-9CCF-4020-B75C-3480203B79C5}" ShortID="286813789">
+					<ChildrenList>
+						<ActorMixer Name="Dx" ID="{7EFD0673-F7D7-4FB4-992D-4E73E949D5F6}" ShortID="742979788">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Idle" ID="{E709C165-AF70-49EC-83D4-26D0BAA84680}" ShortID="607976378">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{977707D6-EC9A-47C3-971C-699A3B85C5ED}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="303"/>
+															<Property Name="Min" Type="Real64" Value="-227"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Demon_Dx_iddle1" ID="{0DAB7DFC-3883-4614-B3B0-4EF8BE5B389E}" ShortID="709710217">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Dx_iddle1" ID="{F45705F2-EBA9-4C46-8785-F5E4473DE94B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.39741013367052"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.29389827191715"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Demon_Dx_iddle1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1028601640"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Dx_iddle1" ID="{F45705F2-EBA9-4C46-8785-F5E4473DE94B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Demon_Dx_iddle2" ID="{5CF97E37-F081-433A-85AB-B493DDE3BBB4}" ShortID="568726301">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Dx_iddle2" ID="{323828DA-2517-424A-AE8B-4707902DFAE1}">
+													<Language>SFX</Language>
+													<AudioFile>Demon_Dx_iddle2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="295466494"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Dx_iddle2" ID="{323828DA-2517-424A-AE8B-4707902DFAE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Demon_Dx_iddle3" ID="{08E51B0E-180B-404E-A34C-3F57A00A8657}" ShortID="136459373">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Dx_iddle3" ID="{6E190BC1-90B6-4449-A7E9-C6CFBC58B860}">
+													<Language>SFX</Language>
+													<AudioFile>Demon_Dx_iddle3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="920448570"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Dx_iddle3" ID="{6E190BC1-90B6-4449-A7E9-C6CFBC58B860}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Dead" ID="{9AB34B76-FCD5-4455-958C-4F3BFDC4DFE9}" ShortID="577581486">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Demon_Dx_dead1" ID="{C8D7DA90-98CF-4E46-BFE7-781A550DD64A}" ShortID="357256126">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Dx_dead1" ID="{498535C3-EDE8-4F17-83E3-9E99DAAE7EAF}">
+													<Language>SFX</Language>
+													<AudioFile>Demon_Dx_dead1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="635388004"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Dx_dead1" ID="{498535C3-EDE8-4F17-83E3-9E99DAAE7EAF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Demon_Dx_dead2" ID="{A5248BB3-F852-4292-BA1A-E3B1CBCD4073}" ShortID="931280863">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Dx_dead2" ID="{0F101536-FD5E-4C82-A94A-065B7F001E56}">
+													<Language>SFX</Language>
+													<AudioFile>Demon_Dx_dead2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="313702848"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Dx_dead2" ID="{0F101536-FD5E-4C82-A94A-065B7F001E56}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Demon_Dx_dead3" ID="{10F8BE2A-A4D8-4A8A-BA07-B349C9EBC4DA}" ShortID="616324974">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Dx_dead3" ID="{F8B17CEE-8354-47CB-A044-B286A9175FD7}">
+													<Language>SFX</Language>
+													<AudioFile>Demon_Dx_dead3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="7638481"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Dx_dead3" ID="{F8B17CEE-8354-47CB-A044-B286A9175FD7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Fx" ID="{349282E9-0A16-4457-B891-2C9E3F671357}" ShortID="360787125">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Movement" ID="{BC1E2BB0-C768-4C76-B504-2CB0FD73F0B0}" ShortID="621875998">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-30</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Demon_Fx_movement" ID="{7C2D253D-F024-4700-8F80-A86AB0F3D462}" ShortID="1017734140">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Fx_movement" ID="{50132E5E-0E78-463D-9CF6-86FC04B587B5}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.377364884393063"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.534600252890173"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.503153179190751"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.96233128612717"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Demon_Fx_movement.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="629121119"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Fx_movement" ID="{50132E5E-0E78-463D-9CF6-86FC04B587B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Demon_Fx_movement_01" ID="{9F2881B4-873E-4489-890F-E3D1DA90F6A0}" ShortID="795811963">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Fx_movement" ID="{996ED498-F4FC-4C86-9E4B-B8D1D4886900}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.283023663294797"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.251576589595375"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.64786054913295"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.20137987716763"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Demon_Fx_movement.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="654081637"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Fx_movement" ID="{996ED498-F4FC-4C86-9E4B-B8D1D4886900}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Demon_Fx_movement_02" ID="{0809A03E-BC2A-4FD6-9FA4-8D769DEE05C1}" ShortID="1005172222">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Fx_movement" ID="{368F9CB8-746D-4B19-A9E1-1E3D7F8634C4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.220129515895954"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.251576589595375"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.49701625722543"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.9876414378613"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Demon_Fx_movement.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="618328925"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Fx_movement" ID="{368F9CB8-746D-4B19-A9E1-1E3D7F8634C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Demon_Fx_movement_03" ID="{49330567-3582-4C3D-AEFF-1FFA20297497}" ShortID="1032210962">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Fx_movement" ID="{B9EC0F10-4DA5-4018-99BE-D8A5B6E640AE}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.566047326589594"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.566047326589594"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="14.6228892702312"/>
+														<Property Name="TrimEnd" Type="Real64" Value="18.5223264089595"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Demon_Fx_movement.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="422172478"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Fx_movement" ID="{B9EC0F10-4DA5-4018-99BE-D8A5B6E640AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Demon_Fx_movement_04" ID="{9F24E2D7-6860-4A9D-AE62-6A2B6F2CE116}" ShortID="730039475">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Fx_movement" ID="{48E93B19-4F47-4C65-B705-DD8B165DA4F2}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.566047326589594"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.31447073699422"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="18.0506203034682"/>
+														<Property Name="TrimEnd" Type="Real64" Value="21.6670337789017"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Demon_Fx_movement.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="706253243"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Fx_movement" ID="{48E93B19-4F47-4C65-B705-DD8B165DA4F2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<BlendContainer Name="Attack" ID="{7B35635B-1D11-4581-AB78-2F6E93B08A89}" ShortID="771841297">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{85D85FBF-2C81-4A20-88B9-E40FA210834F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="400"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Demon_Dx_attackcombo" ID="{F660B5C2-2BD1-4AB4-A263-157C6409CCB2}" ShortID="1071476359">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{75040EFA-60A3-4A7F-AC10-CA8163C1F723}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="400"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Demon_Dx_attackcombo" ID="{286629C5-4B44-4849-AF9B-389917EDDE11}">
+													<Language>SFX</Language>
+													<AudioFile>Demon_Dx_attackcombo.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019961496"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Demon_Dx_attackcombo" ID="{286629C5-4B44-4849-AF9B-389917EDDE11}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ogro" ID="{00E4A56D-DE70-4F3C-A2A2-183BBC092406}" ShortID="1047151856">
+					<ChildrenList>
+						<ActorMixer Name="Dx" ID="{D136D20F-4B40-43A3-9422-C41F4040CA00}" ShortID="524292377">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Breathe" ID="{05829211-475C-4C88-A615-157940BB9993}" ShortID="979719985">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{705200FE-FA29-4C07-AB27-4BF5F7A0CE2B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-32</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Breathe_in" ID="{6D3408A2-0DF9-41E4-8592-E24715C3EC84}" ShortID="70717211">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Orco_Dx_breathe-001" ID="{A1EDC2C7-1EC1-421F-BAA5-3DDA0C11D6C7}" ShortID="750190559">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Dx_breathe-001" ID="{CAA73229-15A6-4319-AF6C-5D51C475CC78}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00451767220616571"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00129076348747592"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Dx_breathe-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="301788336"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Dx_breathe-001" ID="{CAA73229-15A6-4319-AF6C-5D51C475CC78}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Dx_breathe-003" ID="{CD25F52F-1B3E-4873-B289-86CC629A2E0F}" ShortID="830136670">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Dx_breathe-003" ID="{78D0C655-2667-40A6-A025-AB4EC298EFD8}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00531090438342967"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00303480250481697"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Dx_breathe-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="693104905"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Dx_breathe-003" ID="{78D0C655-2667-40A6-A025-AB4EC298EFD8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Breathe_out" ID="{9F28230E-7981-4DD5-9E0B-65F068A66337}" ShortID="344577152">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Orco_Dx_breathe_out-001" ID="{D88349EF-FEFD-4E8E-B841-457B7DACEA50}" ShortID="867650087">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Dx_breathe_out-001" ID="{09585BA7-25E5-4961-8B21-91E9E16FCF1B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0176965317919075"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0211375240847784"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Dx_breathe_out-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="581925326"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Dx_breathe_out-001" ID="{09585BA7-25E5-4961-8B21-91E9E16FCF1B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Dx_breathe_out-003" ID="{673D2EBE-6346-4E68-AA77-7B8E0EF8DC10}" ShortID="985600709">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Dx_breathe_out-003" ID="{CF1CC6FF-AFA8-4BA0-A1EE-ED2D64798B09}">
+															<Language>SFX</Language>
+															<AudioFile>Orco_Dx_breathe_out-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="167962525"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Dx_breathe_out-003" ID="{CF1CC6FF-AFA8-4BA0-A1EE-ED2D64798B09}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<Sound Name="Silence" ID="{672EA02F-16C3-4814-902F-7DD480200001}" ShortID="333504213">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{63B5280C-D0F1-4BAE-B494-DCED81CF7366}" ShortID="23784958" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="0.8"/>
+														<Property Name="LengthMax" Type="Real32" Value="0.5"/>
+														<Property Name="LengthMin" Type="Real32" Value="-0.2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{63B5280C-D0F1-4BAE-B494-DCED81CF7366}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Breathe_in" ID="{6D3408A2-0DF9-41E4-8592-E24715C3EC84}"/>
+										<ItemRef Name="Silence" ID="{672EA02F-16C3-4814-902F-7DD480200001}"/>
+										<ItemRef Name="Breathe_out" ID="{9F28230E-7981-4DD5-9E0B-65F068A66337}"/>
+										<ItemRef Name="Silence" ID="{672EA02F-16C3-4814-902F-7DD480200001}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Idle" ID="{AA677BE4-5A4D-4241-8312-B22440980C02}" ShortID="787483221">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-28</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Orco_Dx_idle(con_efecto)" ID="{0FC6AE53-1228-441D-A721-9347E9C78E2D}" ShortID="877203480">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Orco_Dx_idle(con_efecto)" ID="{651DBDB8-6327-4411-B652-363724A16C5F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.470829660404625"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0896818400770711"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.99084188342969"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Orco_Dx_idle(con_efecto).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="551509563"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Orco_Dx_idle(con_efecto)" ID="{651DBDB8-6327-4411-B652-363724A16C5F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Orco_Dx_idle(con_efecto)_01" ID="{547FCB5C-18B5-48AD-9F12-71F01E6B803A}" ShortID="255839489">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Orco_Dx_idle(con_efecto)" ID="{D0860F74-75F8-4512-A7BF-8B4A07B431CB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.179363680154143"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.134522760115606"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.67695544315993"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.39875180635838"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Orco_Dx_idle(con_efecto).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="469552280"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Orco_Dx_idle(con_efecto)" ID="{D0860F74-75F8-4512-A7BF-8B4A07B431CB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Orco_Dx_idle(con_efecto)_02" ID="{F271E948-7976-4806-95EC-49B5C9FE03F6}" ShortID="493963970">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Orco_Dx_idle(con_efecto)" ID="{05FBF61C-706C-4784-B184-AA9926AECA22}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.179363680154143"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0448409200385367"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.71263824662813"/>
+														<Property Name="TrimEnd" Type="Real64" Value="11.4120141498073"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Orco_Dx_idle(con_efecto).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="715023574"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Orco_Dx_idle(con_efecto)" ID="{05FBF61C-706C-4784-B184-AA9926AECA22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Orco_Dx_idle(con_efecto)_03" ID="{5226A279-160E-4C0D-B7CD-3CA336896706}" ShortID="876978176">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Orco_Dx_idle(con_efecto)" ID="{5A67CFA8-2D3F-4651-93A1-E04DCC6D94CA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.224204600192678"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0896818400770716"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="12.6675599108863"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Orco_Dx_idle(con_efecto).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="516182575"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Orco_Dx_idle(con_efecto)" ID="{5A67CFA8-2D3F-4651-93A1-E04DCC6D94CA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Dead" ID="{697C50EF-7306-462F-8127-3E31F4102794}" ShortID="155507294">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Orco_Dx_Muerte-001" ID="{824B83D0-07DE-4861-9DD4-D9124A0B5699}" ShortID="917918641">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Orco_Dx_Muerte-001" ID="{C8207241-8DEC-4A65-8968-4559FA5C61C6}">
+													<Language>SFX</Language>
+													<AudioFile>Orco_Dx_Muerte-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1026018932"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Orco_Dx_Muerte-001" ID="{C8207241-8DEC-4A65-8968-4559FA5C61C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Orco_Dx_Muerte-002" ID="{A01A2798-2C8C-4A06-90D2-3757DD47FC73}" ShortID="114765124">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Orco_Dx_Muerte-002" ID="{EBB47A8F-8E31-4B58-8885-85E298936143}">
+													<Language>SFX</Language>
+													<AudioFile>Orco_Dx_Muerte-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="812105577"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Orco_Dx_Muerte-002" ID="{EBB47A8F-8E31-4B58-8885-85E298936143}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Damage" ID="{987C9EB2-7D1A-4C78-9ED1-99A06BDEB307}" ShortID="653225223">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Orco_Dx_Recibe_golpe-001" ID="{86CAC8D0-2471-4ED8-BC95-19746DE25A02}" ShortID="733052431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Orco_Dx_Recibe_golpe-001" ID="{5899A90C-668A-4C91-B430-7FFD0080BC6C}">
+													<Language>SFX</Language>
+													<AudioFile>Orco_Dx_Recibe_golpe-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="973310588"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Orco_Dx_Recibe_golpe-001" ID="{5899A90C-668A-4C91-B430-7FFD0080BC6C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Orco_Dx_Recibe_golpe-002" ID="{81DFBC63-3038-4860-A42B-831F890EAF32}" ShortID="542594957">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Orco_Dx_Recibe_golpe-002" ID="{08E6C307-8C4C-4821-AB96-3224EF095C00}">
+													<Language>SFX</Language>
+													<AudioFile>Orco_Dx_Recibe_golpe-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="413174192"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Orco_Dx_Recibe_golpe-002" ID="{08E6C307-8C4C-4821-AB96-3224EF095C00}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Foley" ID="{68D35288-4DE4-435C-B16C-3BA9E1BF5220}" ShortID="949991147">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Pasos" ID="{5530CC3E-FC14-4258-B73B-BA8598F43430}" ShortID="971032471">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Pasos_der" ID="{11891792-8AE4-4DD7-8177-733D5B5AA6EB}" ShortID="840668306">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Orco_Fx_Pasoderecha-001" ID="{D755D78B-87C2-4D5D-9768-BE9CF047BD04}" ShortID="901936736">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Fx_Pasoderecha-001" ID="{D3CC1642-4F30-4FBC-8721-798ACE9A0DB9}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00612210564399421"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00306105282199709"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Fx_Pasoderecha-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1044057678"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Fx_Pasoderecha-001" ID="{D3CC1642-4F30-4FBC-8721-798ACE9A0DB9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Fx_Pasoderecha-002" ID="{13D1B940-C726-4802-90E4-AAA9A7855E3F}" ShortID="1006835202">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Fx_Pasoderecha-002" ID="{52358EB5-1237-4D74-A278-0484027733B2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0058193137964303"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00465545103714426"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Fx_Pasoderecha-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="241520495"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Fx_Pasoderecha-002" ID="{52358EB5-1237-4D74-A278-0484027733B2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Fx_Pasoderecha-003" ID="{C9994F59-37D6-4FCA-8666-4E2DECE148A2}" ShortID="67999574">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Fx_Pasoderecha-003" ID="{DD6CB537-CF2C-4824-AADF-7AD5B0E4180C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00889055716353111"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00381023878437048"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Fx_Pasoderecha-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="664099092"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Fx_Pasoderecha-003" ID="{DD6CB537-CF2C-4824-AADF-7AD5B0E4180C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Pasos_izq" ID="{5D94CFAE-D492-40A0-902B-48773F9D3BE7}" ShortID="679282697">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Orco_Fx_Pasoizquierda-001" ID="{59079F78-8E50-4D0F-9050-03A0296693F3}" ShortID="1002068572">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Fx_Pasoizquierda-001" ID="{A164882F-CD42-4EC3-BDDE-8D7E2E6EB43C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0111845754944525"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00671074529667148"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Fx_Pasoizquierda-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="306534468"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Fx_Pasoizquierda-001" ID="{A164882F-CD42-4EC3-BDDE-8D7E2E6EB43C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Fx_Pasoizquierda-002" ID="{40628A1E-EF96-415E-B31B-DEE0EEAD5583}" ShortID="932504678">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Fx_Pasoizquierda-002" ID="{97A0655B-7FB4-4FF5-9441-632F1006A09F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00670007235890015"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00558339363241678"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Fx_Pasoizquierda-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="341149171"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Fx_Pasoizquierda-002" ID="{97A0655B-7FB4-4FF5-9441-632F1006A09F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Fx_Pasoizquierda-003" ID="{ADB20854-46FB-416D-80B8-C9891D0AA043}" ShortID="816830030">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Fx_Pasoizquierda-003" ID="{E04840B3-9CF1-4BA7-BE28-663A284EDAA9}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00565168234442837"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.00339100940665693"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Orco_Fx_Pasoizquierda-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="999109316"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Fx_Pasoizquierda-003" ID="{E04840B3-9CF1-4BA7-BE28-663A284EDAA9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Pasos_der" ID="{11891792-8AE4-4DD7-8177-733D5B5AA6EB}"/>
+										<ItemRef Name="Pasos_izq" ID="{5D94CFAE-D492-40A0-902B-48773F9D3BE7}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<ActorMixer Name="Fx" ID="{FAEB22AF-D1C2-45D3-9895-32565F56341C}" ShortID="598222649">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Hit" ID="{D3A4416A-B70B-4DE8-97B6-0AAF66B0FA6C}" ShortID="387992483">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Hit_voice" ID="{C94227B6-1CA3-477F-A12E-F94110939753}" ShortID="231159531">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Orco_Dx_attack-001" ID="{4325F108-7EDB-4801-8106-35A2B89A6650}" ShortID="386154593">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Dx_attack-001" ID="{5C5290BE-AC86-4960-9AFA-FEA50426097B}">
+															<Language>SFX</Language>
+															<AudioFile>Orco_Dx_attack-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="647895068"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Dx_attack-001" ID="{5C5290BE-AC86-4960-9AFA-FEA50426097B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Dx_attack-002" ID="{A2E682AA-E962-449C-930B-BF99C14A5EDD}" ShortID="852590002">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Dx_attack-002" ID="{C4B7CD27-4D76-4683-87F1-C1DAECA427FB}">
+															<Language>SFX</Language>
+															<AudioFile>Orco_Dx_attack-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="596316658"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Dx_attack-002" ID="{C4B7CD27-4D76-4683-87F1-C1DAECA427FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Dx_attack-003" ID="{AA772F23-5F64-4CA9-8D9B-DEE900A8C626}" ShortID="648327265">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Dx_attack-003" ID="{2EC508DD-E2BC-4892-827F-48B23A6CEA90}">
+															<Language>SFX</Language>
+															<AudioFile>Orco_Dx_attack-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="24665574"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Dx_attack-003" ID="{2EC508DD-E2BC-4892-827F-48B23A6CEA90}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Hit_arma" ID="{68E23B53-5CB6-4B82-9948-EA4D4A3A8C66}" ShortID="222692826">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-100</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6D90E6E2-895C-4354-82AB-F2164B9D87C2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Orco_Fx_golpe-001" ID="{5F4B766C-CCC4-4B9A-81CD-9204E85367D5}" ShortID="320742260">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Fx_golpe-001" ID="{D341A5D6-F87E-4ED5-B01F-7617723E9C52}">
+															<Language>SFX</Language>
+															<AudioFile>Orco_Fx_golpe-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="468469706"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Fx_golpe-001" ID="{D341A5D6-F87E-4ED5-B01F-7617723E9C52}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Orco_Fx_golpe-002" ID="{D06DF9AC-E0A7-4B00-BD34-F7A7E62C7712}" ShortID="438892312">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Orco_Fx_golpe-002" ID="{C58FF0C4-A94C-48A8-A1EE-C6E6F17E6C67}">
+															<Language>SFX</Language>
+															<AudioFile>Orco_Fx_golpe-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="308800202"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Orco_Fx_golpe-002" ID="{C58FF0C4-A94C-48A8-A1EE-C6E6F17E6C67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
