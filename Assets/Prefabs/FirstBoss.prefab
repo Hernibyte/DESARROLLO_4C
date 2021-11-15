@@ -725,7 +725,8 @@ MonoBehaviour:
   footStepEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 69f6601eebcf7c240a032e6184f7e7c2,
+      type: 2}
   extraSoundAnim_1:
     idInternal: 0
     valueGuidInternal: 
