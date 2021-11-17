@@ -83,6 +83,9 @@ public class EnemyManager : MonoBehaviour
         {
             if(generateBoss)
                 bossDie?.Invoke();
+
+            AkSoundEngine.PostEvent("clear_room", gameObject);
+
             switchGatesOpen?.Invoke();
             lootGenerator.GenerateLoot(transform.position);
             Destroy(enemyGenerator);

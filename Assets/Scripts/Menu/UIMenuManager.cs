@@ -13,6 +13,8 @@ public class UIMenuManager : MonoBehaviour
 
     void Awake()
     {
+        AkSoundEngine.PostEvent("inicio_menu", gameObject);
+
         uiCreditsObject.SetActive(false);
         uiOptionsObject.SetActive(false);
         uiLoading.SetActive(false);

@@ -29,6 +29,7 @@ public class Loot : MonoBehaviour
         {
             if(Input.GetKey(KeyCode.E))
             {
+                AkSoundEngine.PostEvent("open_loot", gameObject);
                 OpenChest();
             }
         }
