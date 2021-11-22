@@ -95,11 +95,13 @@ public class GameManager : MonoBehaviour
     {
         if(Time.timeScale == 1)
         {
+            AkSoundEngine.PostEvent("pause_in", gameObject);
             uiManager.ChangePauseView(true);
             Time.timeScale = 0;
         }
         else 
         {
+            AkSoundEngine.PostEvent("pause_out", gameObject);
             uiManager.ChangePauseView(false);
             Time.timeScale = 1;
         }
