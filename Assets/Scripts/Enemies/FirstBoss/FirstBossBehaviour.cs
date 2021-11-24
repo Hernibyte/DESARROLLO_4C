@@ -7,22 +7,27 @@ public class FirstBossBehaviour : MonoBehaviour
 {
     [SerializeField] EnemyStats stats;
     [SerializeField] EnemyMovement enemyMovement;
-    [SerializeField] EnemyAttack enemyAttack;
+    public EnemyAttack enemyAttack;
     [SerializeField] LayerMask playerMask;
     [SerializeField] MyUtilities.EnemyState state;
+    [SerializeField] SpriteRenderer spriteBoss;
     [HideInInspector] public UnityEvent imDie;
     bool ifSetPositionPivot;
-    float auxTimer;
+    //float auxTimer;
 
     Animator animBoss;
 
     void Start()
     {
         animBoss = gameObject.GetComponentInChildren<Animator>();
+        spriteBoss.enabled = false;
     }
 
     void Update()
     {
+        if (!animBoss.GetBool("Spawned"))
+            return;
+
         switch(state)
         {
             case MyUtilities.EnemyState.Idle:
@@ -72,13 +77,20 @@ public class FirstBossBehaviour : MonoBehaviour
             ifSetPositionPivot = true;
             animBoss.SetTrigger("Attack");
         }
-        auxTimer += Time.deltaTime;
-        if(auxTimer >= stats.attackDelay)
-        {
-            AkSoundEngine.PostEvent("boss_attack", gameObject);
-            enemyAttack.MeleeAttack(playerMask);
-            state = MyUtilities.EnemyState.Chasing;
-            auxTimer = 0f;
-        }
+        //auxTimer += Time.deltaTime;
+        //if(auxTimer >= stats.attackDelay)
+        //{
+        //    //enemyAttack.MeleeAttack(playerMask);
+        //    state = MyUtilities.EnemyState.Chasing;
+        //    auxTimer = 0f;
+        //}
+    }
+
+    public void SetChaseState()
+    {
+        Debug.Log("Cambio state chase boss");
+        state = MyUtilities.EnemyState.Chasing;
+        animBoss.ResetTrigger("Attack");
+        //auxTimer = 0f;
     }
 }

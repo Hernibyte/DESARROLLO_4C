@@ -344,6 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8649611545236229477}
   - component: {fileID: 4040127462505740897}
+  - component: {fileID: 1023017915393392136}
   m_Layer: 9
   m_Name: HelathBarSystem
   m_TagString: Untagged
@@ -382,6 +383,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7324649308241357733}
   m_CullTransparentMesh: 0
+--- !u!225 &1023017915393392136
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7324649308241357733}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7928968912901728098
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,8 +574,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015461743, y: 1.4783106}
-  m_Size: {x: 1.5690767, y: 5.916621}
+  m_Offset: {x: 0.015461743, y: 1.4987011}
+  m_Size: {x: 1.5690767, y: 5.14178}
   m_Direction: 0
 --- !u!114 &8011611470067475089
 MonoBehaviour:
@@ -580,11 +593,11 @@ MonoBehaviour:
   maxLife: 350
   movementForce: 4
   distanceTracking: 16
-  distanceToAttack: 1.5
+  distanceToAttack: 2
   attackDelay: 1
-  attackRadiusArea: 2
-  damage: 15
-  knockbackForce: 20
+  attackRadiusArea: 3.5
+  damage: 25
+  knockbackForce: 15
 --- !u!114 &8011611470067475090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,6 +679,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   state: 0
+  spriteBoss: {fileID: 8011611470856260492}
   imDie:
     m_PersistentCalls:
       m_Calls: []
@@ -681,6 +695,7 @@ GameObject:
   - component: {fileID: 8011611470856260492}
   - component: {fileID: 8647983371178564173}
   - component: {fileID: 5664601333449307738}
+  - component: {fileID: 5390978701500361048}
   m_Layer: 9
   m_Name: Boss_1
   m_TagString: Untagged
@@ -787,17 +802,17 @@ MonoBehaviour:
   attackEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: afc00d40593943e4e801b81a85cff18c,
+    WwiseObjectReference: {fileID: 11400000, guid: e1f0ad67e0818564a896f5c4173f153f,
       type: 2}
   attackEventVariant:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 21adf14bc4af558458b3bdfe3d274ba2,
+      type: 2}
   reciveDamageEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4470db1183babb3489347cb0cc2828c4,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   footStepEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -815,3 +830,18 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+--- !u!114 &5390978701500361048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011611470856260494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f034d9f7adb8474eaa8dd65e189f760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 1024
