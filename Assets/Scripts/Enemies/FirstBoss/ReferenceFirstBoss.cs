@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class ReferenceFirstBoss : MonoBehaviour
 {
     [SerializeField] LayerMask playerLayer;
+    [Header("Events")]
+    [Space(30)]
+    [SerializeField] UnityEvent onBoostedAttack;
+    [SerializeField] UnityEvent onStartChaseAgain;
     EnemyStats enemyStats;
 
     FirstBossBehaviour enemy;
@@ -34,6 +39,11 @@ public class ReferenceFirstBoss : MonoBehaviour
         enemy.enemyAttack.MeleeAttack(playerLayer);
     }
 
+    public void TriggerEffectorZone()
+    {
+        onBoostedAttack?.Invoke();
+    }
+
     public void MeleeAttackBoosted()
     {
         BoostRadiusZone();
@@ -43,6 +53,7 @@ public class ReferenceFirstBoss : MonoBehaviour
 
     public void StartChaseAgain()
     {
+        onStartChaseAgain?.Invoke();
         ResetRadiusZone();
         enemy.SetChaseState();
     }

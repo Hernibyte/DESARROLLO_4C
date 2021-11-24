@@ -8,7 +8,6 @@ public class FirstBossBehaviour : MonoBehaviour
     public EnemyAttack enemyAttack;
     [SerializeField] LayerMask playerMask;
     [SerializeField] MyUtilities.EnemyState state;
-    [SerializeField] SpriteRenderer spriteBoss;
     [HideInInspector] public UnityEvent imDie;
     bool ifSetPositionPivot;
     //float auxTimer;
@@ -18,7 +17,7 @@ public class FirstBossBehaviour : MonoBehaviour
     void Start()
     {
         animBoss = gameObject.GetComponentInChildren<Animator>();
-        spriteBoss.enabled = false;
+        enemyMovement.enemySprite.enabled = false;
     }
 
     void Update()
