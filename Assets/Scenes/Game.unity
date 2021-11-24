@@ -3077,6 +3077,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1245722889}
+  - component: {fileID: 1245722891}
   - component: {fileID: 1245722890}
   m_Layer: 0
   m_Name: CameraHolder
@@ -3112,6 +3113,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ee5392404162240b90d4868dbd52d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1245722891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245722888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660be9fbb377e5044a860086ef300b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedLerp: 200
 --- !u!1 &1305998962
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,7 +3423,6 @@ GameObject:
   - component: {fileID: 1404678075}
   - component: {fileID: 1404678077}
   - component: {fileID: 1404678072}
-  - component: {fileID: 1404678076}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3519,19 +3532,6 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &1404678076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404678071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 660be9fbb377e5044a860086ef300b3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedLerp: 200
 --- !u!114 &1404678077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4069,7 +4069,7 @@ MonoBehaviour:
     type: 3}
   uiManager: {fileID: 958355223}
   lootManager: {fileID: 808913527}
-  cameraBehaviour: {fileID: 1404678076}
+  cameraBehaviour: {fileID: 1245722891}
   playerTransform: {fileID: 0}
   playerDodgePivot: {fileID: 2929031046826904698, guid: 3d09a150ebb01b34b973d7845bc60806,
     type: 3}

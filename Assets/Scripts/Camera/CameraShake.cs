@@ -23,4 +23,9 @@ public class CameraShake : MonoBehaviour
 
         Camera.main.transform.localPosition = originalPosition;
     }
+
+    public void ExecuteShake(float duration, float magnitud)
+    {
+        StartCoroutine(Shake(duration, magnitud));
+    }
 }
