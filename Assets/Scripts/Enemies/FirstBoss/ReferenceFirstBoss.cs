@@ -6,15 +6,11 @@ public class ReferenceFirstBoss : MonoBehaviour
     EnemyStats enemyStats;
 
     FirstBossBehaviour enemy;
-    CameraShake shakeReference;
-
     float radiusAttackOriginal;
     float radiusAttackBoosted;
 
     void Start()
     {
-        shakeReference = FindObjectOfType<CameraShake>();
-
         enemy = GetComponentInParent<FirstBossBehaviour>();
         enemyStats = GetComponentInParent<EnemyStats>();
 
@@ -34,12 +30,14 @@ public class ReferenceFirstBoss : MonoBehaviour
 
     public void MeleeAttack()
     {
+        CameraShake.Instance?.ExecuteShake(.2f, .1f);
         enemy.enemyAttack.MeleeAttack(playerLayer);
     }
 
     public void MeleeAttackBoosted()
     {
         BoostRadiusZone();
+        CameraShake.Instance.ExecuteShake(.2f, .4f);
         enemy.enemyAttack.MeleeAttack(playerLayer);
     }
 
@@ -51,10 +49,7 @@ public class ReferenceFirstBoss : MonoBehaviour
 
     public void MakeScreenShake()
     {
-        if (shakeReference == null)
-            return;
-
-        shakeReference.ExecuteShake(1f,1f);
+        CameraShake.Instance.ExecuteShake(1f, 1f);
     }
 
     public void ZoneAttack()

@@ -9,6 +9,8 @@ public class PlayerInteractions : MonoBehaviour, IHitabble
 
     public void ReciveDamage(float amountDamage, float knockBackForce, Vector2 posAttacker)
     {
+        CameraShake.Instance?.ExecuteShake(0.2f, 0.2f);
+
         stats.lifeAmount -= amountDamage;
         hasRecivedDamage?.Invoke(stats.lifeAmount, stats.totalMaxHP);
         Vector2 difference = new Vector2(transform.position.x, transform.position.y) - posAttacker;

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyInteractions : MonoBehaviour, IHitabble
 {
@@ -12,6 +10,8 @@ public class EnemyInteractions : MonoBehaviour, IHitabble
 
     public void ReciveDamage(float amountDamage, float knockBackForce, Vector2 posAttacker)
     {
+        CameraShake.Instance?.ExecuteShake(0.2f, 0.2f);
+
         stats.distanceTracking = 80;
 
         stats.lifeAmount -= amountDamage;

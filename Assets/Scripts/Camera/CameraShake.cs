@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
+using Utilities;
 
-public class CameraShake : MonoBehaviour
+public class CameraShake : MyUtilities.MonoBehaviourSingleton<CameraShake>
 {
     public IEnumerator Shake(float duration, float magnitud)
     {
