@@ -47,7 +47,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 2.4444444
+        time: 2.288889
         value: {x: 12.5, y: 12.5, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -56,7 +56,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 2.488889
+        time: 2.3333333
         value: {x: 12, y: 12, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -92,19 +92,19 @@ AnimationClip:
     - time: 1.3333334
       value: {fileID: 8557976715604833510, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 2.0444446
+    - time: 1.8888888
       value: {fileID: 2869180633191244274, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 2.2666667
+    - time: 2.1111112
       value: {fileID: 8273466564971783008, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 2.488889
+    - time: 2.3333333
       value: {fileID: 8273466564971783008, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 2.711111
+    - time: 2.5555556
       value: {fileID: -2762692795315519035, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 2.9333334
+    - time: 2.7777777
       value: {fileID: 2048117238889508557, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
     attribute: m_Sprite
@@ -150,7 +150,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.9555557
+    m_StopTime: 2.8
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -197,7 +197,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2.4444444
+        time: 2.288889
         value: 12.5
         inSlope: 0
         outSlope: 0
@@ -206,7 +206,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2.488889
+        time: 2.3333333
         value: 12
         inSlope: 0
         outSlope: 0
@@ -252,7 +252,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2.4444444
+        time: 2.288889
         value: 12.5
         inSlope: 0
         outSlope: 0
@@ -261,7 +261,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2.488889
+        time: 2.3333333
         value: 12
         inSlope: 0
         outSlope: 0
@@ -307,7 +307,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2.4444444
+        time: 2.288889
         value: 1
         inSlope: 0
         outSlope: 0
@@ -316,7 +316,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2.488889
+        time: 2.3333333
         value: 1
         inSlope: 0
         outSlope: 0
@@ -342,7 +342,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.84444445
+  - time: 0.75555557
     functionName: MakeSoundAttack_1
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -363,14 +363,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.2666667
+  - time: 2.1111112
     functionName: MeleeAttackBoosted
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.8222222
+  - time: 2.6666667
     functionName: StartChaseAgain
     data: 
     objectReferenceParameter: {fileID: 0}

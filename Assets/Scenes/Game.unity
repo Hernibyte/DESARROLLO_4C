@@ -4975,7 +4975,7 @@ MonoBehaviour:
     type: 3}
   nodeXDistance: 50
   nodeYDistance: 30
-  nodeAmount: 3
+  nodeAmount: 15
   finishGeneration:
     m_PersistentCalls:
       m_Calls:
