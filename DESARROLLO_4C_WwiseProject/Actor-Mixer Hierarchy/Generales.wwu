@@ -196,7 +196,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Fantasy_Game_Door_Close" ID="{A6AB988F-4CDD-4E3A-8353-0CFC0F0B06C3}" ShortID="94222782">
+								<Sound Name="door_Fx_close" ID="{23CAFDE2-4F5D-47E5-9CD6-C9E702C984E0}" ShortID="1030829195">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -206,28 +206,30 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Fantasy_Game_Door_Close" ID="{632A8E52-E716-445F-99DD-D9EA7733420F}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.00451690623483746"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.00580745087336243"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
+										<AudioFileSource Name="door_Fx_close" ID="{B9CA2202-955C-4BD0-96A0-FC05B2A2DBF2}">
 											<Language>SFX</Language>
-											<AudioFile>Fantasy_Game_Door_Close.wav</AudioFile>
+											<AudioFile>door_Fx_close.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="283656089"/>
+												<MediaID ID="177055058"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Fantasy_Game_Door_Close" ID="{632A8E52-E716-445F-99DD-D9EA7733420F}" Platform="Linked"/>
+										<ActiveSource Name="door_Fx_close" ID="{B9CA2202-955C-4BD0-96A0-FC05B2A2DBF2}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
 						<BlendContainer Name="door_open" ID="{180198D4-474C-4271-B95E-A1D69149FB4D}" ShortID="131788038">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -237,7 +239,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Fantasy_Game_Door_Open" ID="{1A78BDF1-9A41-4334-BADA-60F47CFDCB9F}" ShortID="904980689">
+								<Sound Name="door_Fx_open" ID="{E64E588C-7E16-41E4-9F86-2EDB4AC61C5F}" ShortID="494121699">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -247,27 +249,341 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Fantasy_Game_Door_Open" ID="{E56B28C5-965E-4642-94D0-EDC1BAE390F6}">
+										<AudioFileSource Name="door_Fx_open" ID="{DB57BF6E-5052-48FE-9060-A5D04BA448BC}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.00462154294032023"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.00385128578360022"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.406628649635037"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Fantasy_Game_Door_Open.wav</AudioFile>
+											<AudioFile>door_Fx_open.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="464954186"/>
+												<MediaID ID="13440766"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Fantasy_Game_Door_Open" ID="{E56B28C5-965E-4642-94D0-EDC1BAE390F6}" Platform="Linked"/>
+										<ActiveSource Name="door_Fx_open" ID="{DB57BF6E-5052-48FE-9060-A5D04BA448BC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Loot" ID="{027E2350-07F9-44E5-8BE5-E3456B451092}" ShortID="289580566">
+					<ChildrenList>
+						<BlendContainer Name="aparece_loot" ID="{9E78E6B2-FFC8-4D77-BE93-0D58BB1EC68E}" ShortID="93597562">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="cofre" ID="{A003A3B9-4FD4-445E-B408-D260D71390C8}" ShortID="355259247">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="aparece loot-001" ID="{66B07A50-93C6-4F1A-89A2-C8BBEB598081}" ShortID="1030826973">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="aparece loot-001" ID="{D1C1FD2B-C4CE-4D5B-B8ED-43C424219DCC}">
+													<Language>SFX</Language>
+													<AudioFile>aparece loot-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="562460157"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="aparece loot-001" ID="{D1C1FD2B-C4CE-4D5B-B8ED-43C424219DCC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="aparece loot-002" ID="{75465627-BD6D-41FC-917F-CE77DF1E2F06}" ShortID="493903312">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="aparece loot-002" ID="{BF5FDC75-0170-46A5-BBE0-FFA6C540154A}">
+													<Language>SFX</Language>
+													<AudioFile>aparece loot-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="652156168"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="aparece loot-002" ID="{BF5FDC75-0170-46A5-BBE0-FFA6C540154A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="musica" ID="{45509353-AE9A-48F6-9358-A8D6FC1ECEEF}" ShortID="196806357">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="aparece loot_music" ID="{84282B3F-EC35-4FD9-B1A8-EF4CDA560444}" ShortID="977657949">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="aparece loot_music" ID="{6C4921FF-53C4-4ED4-A5EF-44F84F246C84}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0856447688564477"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0856447688564477"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.44817518248175"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.71727493917275"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>aparece loot_music.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="364815523"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="aparece loot_music" ID="{6C4921FF-53C4-4ED4-A5EF-44F84F246C84}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="aparece loot_music_01" ID="{6C1BDC60-A7BE-460F-8AAB-2F8308008623}" ShortID="898172826">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="aparece loot_music" ID="{54AAAD37-047F-4DA2-8395-2A7B774D3046}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0778588807785888"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0934306569343064"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.51824817518248"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>aparece loot_music.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="837298047"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="aparece loot_music" ID="{54AAAD37-047F-4DA2-8395-2A7B774D3046}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="aparece loot_music_02" ID="{4112C0CF-BF72-4116-966B-EBA81AA6068E}" ShortID="474331498">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="aparece loot_music" ID="{0DDCBACE-06EA-4BA4-88AF-E3E43E66741E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.155717761557178"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.163503649635036"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.60827250608273"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.04866180048662"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>aparece loot_music.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="972092062"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="aparece loot_music" ID="{0DDCBACE-06EA-4BA4-88AF-E3E43E66741E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="aparece loot_music_03" ID="{5B5D54E2-2C1E-466B-BBD1-4086CAC2015D}" ShortID="312154146">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="aparece loot_music" ID="{C0E14393-2A4A-4BF4-A64D-88B449141593}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0700729927007302"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0778588807785887"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.06423357664234"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>aparece loot_music.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="241286790"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="aparece loot_music" ID="{C0E14393-2A4A-4BF4-A64D-88B449141593}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+						<RandomSequenceContainer Name="open_loot" ID="{6EED5FEC-972B-4B11-8BB1-8D3665BB5C8B}" ShortID="269582763">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="open_loot-001" ID="{AB8CCA54-D8CC-42B2-9171-F7FB3FA8A03C}" ShortID="456442532">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="open_loot-001" ID="{D31FABF7-0955-4CAF-814D-2EFB03401919}">
+											<Language>SFX</Language>
+											<AudioFile>open_loot-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="385097772"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="open_loot-001" ID="{D31FABF7-0955-4CAF-814D-2EFB03401919}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="open_loot-002" ID="{75D14FB6-8722-47CC-8665-E747898884ED}" ShortID="181212621">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="open_loot-002" ID="{B575039F-1E08-47FF-BFB3-F0634D2CA721}">
+											<Language>SFX</Language>
+											<AudioFile>open_loot-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="670274005"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="open_loot-002" ID="{B575039F-1E08-47FF-BFB3-F0634D2CA721}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="open_loot-003" ID="{BD188B65-E5C4-403E-8868-50DD67068D91}" ShortID="40375596">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="open_loot-003" ID="{362A8884-348A-4F79-A54D-3AE7303B530C}">
+											<Language>SFX</Language>
+											<AudioFile>open_loot-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="464573880"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="open_loot-003" ID="{362A8884-348A-4F79-A54D-3AE7303B530C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

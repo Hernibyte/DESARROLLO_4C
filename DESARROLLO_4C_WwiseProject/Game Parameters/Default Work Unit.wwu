@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DA7D5F4B-CF8E-4651-AF2D-315C35DB62FC}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{DA7D5F4B-CF8E-4651-AF2D-315C35DB62FC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DA7D5F4B-CF8E-4651-AF2D-315C35DB62FC}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="boss_life" ID="{A82FE595-0041-4998-A165-3BC23528F5CF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="rtpc_mastervolume" ID="{79C0EBCE-05AC-4C45-8371-247A549C4333}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

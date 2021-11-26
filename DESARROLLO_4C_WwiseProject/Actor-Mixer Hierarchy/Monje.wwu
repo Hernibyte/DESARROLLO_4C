@@ -14,7 +14,7 @@
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="50"/>
-													<Property Name="Min" Type="Real64" Value="-200"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -22,7 +22,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -35,7 +35,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Monje_distance-001" ID="{CA6516EF-B3EE-4F62-BEFD-FB0F0859D72A}" ShortID="524241398">
+								<Sound Name="monk_distance-001" ID="{10F55DA8-F6F7-4C9A-901D-0282D529AC25}" ShortID="90595273">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -45,20 +45,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Monje_distance-001" ID="{45A104BE-E3D9-4147-BB89-DA891FC1F014}">
+										<AudioFileSource Name="monk_distance-001" ID="{1AAFCE9B-9A1A-460B-9689-ADF255E2264F}">
 											<Language>SFX</Language>
-											<AudioFile>Monje_distance-001.wav</AudioFile>
+											<AudioFile>monk_distance-001.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="531468086"/>
+												<MediaID ID="435700791"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Monje_distance-001" ID="{45A104BE-E3D9-4147-BB89-DA891FC1F014}" Platform="Linked"/>
+										<ActiveSource Name="monk_distance-001" ID="{1AAFCE9B-9A1A-460B-9689-ADF255E2264F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Monje_distance-002" ID="{E9209C6B-3108-4C0A-98BA-90CC9269A857}" ShortID="29572869">
+								<Sound Name="monk_distance-002" ID="{7DDA7BAE-D1F9-42C0-9173-B342171C3C48}" ShortID="630097337">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -68,20 +68,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Monje_distance-002" ID="{FB789DDE-A132-4C15-8C9F-92FF79513F0B}">
+										<AudioFileSource Name="monk_distance-002" ID="{185041B7-5822-4408-B628-EC5F98D1396B}">
 											<Language>SFX</Language>
-											<AudioFile>Monje_distance-002.wav</AudioFile>
+											<AudioFile>monk_distance-002.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="754885789"/>
+												<MediaID ID="953620692"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Monje_distance-002" ID="{FB789DDE-A132-4C15-8C9F-92FF79513F0B}" Platform="Linked"/>
+										<ActiveSource Name="monk_distance-002" ID="{185041B7-5822-4408-B628-EC5F98D1396B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Monje_distance-003" ID="{6091A461-3973-4EFD-90CC-268EC9D88017}" ShortID="448046578">
+								<Sound Name="monk_distance-003" ID="{20216466-E911-4317-A93A-5E97B7BA00AE}" ShortID="152247999">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -91,17 +91,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Monje_distance-003" ID="{B75340CB-91CA-49DE-AACE-E58107635103}">
+										<AudioFileSource Name="monk_distance-003" ID="{A8636D99-8801-4927-BBDF-65444B87C085}">
 											<Language>SFX</Language>
-											<AudioFile>Monje_distance-003.wav</AudioFile>
+											<AudioFile>monk_distance-003.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="587975474"/>
+												<MediaID ID="236766836"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Monje_distance-003" ID="{B75340CB-91CA-49DE-AACE-E58107635103}" Platform="Linked"/>
+										<ActiveSource Name="monk_distance-003" ID="{A8636D99-8801-4927-BBDF-65444B87C085}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -124,7 +124,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-16</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -218,7 +218,7 @@
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="50"/>
-													<Property Name="Min" Type="Real64" Value="-200"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -226,7 +226,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-16</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -239,7 +239,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Monje_dash-001" ID="{68509289-D2E3-4531-BF26-6AAC98F8464E}" ShortID="1005369657">
+								<Sound Name="monk_dash2" ID="{82ECE944-E4D7-4FF7-990B-72C45B6AA1B4}" ShortID="199040909">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -249,20 +249,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Monje_dash-001" ID="{20DF9FFF-C5A3-4B0F-B7EC-896BF284314A}">
+										<AudioFileSource Name="monk_dash2" ID="{19268333-7656-4AF1-B99B-65DE24DC6098}">
 											<Language>SFX</Language>
-											<AudioFile>Monje_dash-001.wav</AudioFile>
+											<AudioFile>monk_dash2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="184516524"/>
+												<MediaID ID="62939478"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Monje_dash-001" ID="{20DF9FFF-C5A3-4B0F-B7EC-896BF284314A}" Platform="Linked"/>
+										<ActiveSource Name="monk_dash2" ID="{19268333-7656-4AF1-B99B-65DE24DC6098}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Monje_dash-002" ID="{1D1FFFEF-68CD-49D8-8A26-2FFAF63C124F}" ShortID="319515904">
+								<Sound Name="monk_dash3" ID="{90F93907-057F-4469-BDB6-903939101F17}" ShortID="824313726">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -272,20 +272,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Monje_dash-002" ID="{DA27388B-FCB9-4101-BBD0-78C73BD0ABB5}">
+										<AudioFileSource Name="monk_dash3" ID="{EAD37654-FFC7-4D51-AE7B-1C6751E9A74A}">
 											<Language>SFX</Language>
-											<AudioFile>Monje_dash-002.wav</AudioFile>
+											<AudioFile>monk_dash3.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="44388307"/>
+												<MediaID ID="729802019"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Monje_dash-002" ID="{DA27388B-FCB9-4101-BBD0-78C73BD0ABB5}" Platform="Linked"/>
+										<ActiveSource Name="monk_dash3" ID="{EAD37654-FFC7-4D51-AE7B-1C6751E9A74A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Monje_dash-003" ID="{EA784327-C693-4B0E-8E4D-082DA486BA58}" ShortID="722587617">
+								<Sound Name="monk_dash" ID="{8EF6892D-08A4-4407-8DD4-2BBC6BE83974}" ShortID="924387390">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
@@ -295,21 +295,823 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Monje_dash-003" ID="{D5178971-E15A-435D-9AAF-283A8466A0A5}">
+										<AudioFileSource Name="monk_dash" ID="{3D33AE24-15D3-45C6-9E15-3DB93647D7E5}">
 											<Language>SFX</Language>
-											<AudioFile>Monje_dash-003.wav</AudioFile>
+											<AudioFile>monk_dash.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="740130391"/>
+												<MediaID ID="423832390"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ObjectLists/>
 									<ActiveSourceList>
-										<ActiveSource Name="Monje_dash-003" ID="{D5178971-E15A-435D-9AAF-283A8466A0A5}" Platform="Linked"/>
+										<ActiveSource Name="monk_dash" ID="{3D33AE24-15D3-45C6-9E15-3DB93647D7E5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Strike_uno" ID="{A2D55C8A-CC17-4AA5-87AE-CCE05C5F6586}" ShortID="503175824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Dx" ID="{7B32CD21-0669-4922-AA43-49F19E77C482}" ShortID="1053012137">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="monk_hit_dx-001" ID="{A34959E2-9117-4F71-AD66-7518ABE93F4D}" ShortID="398718833">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hit_dx-001" ID="{74BDAD48-26CC-44E3-B6F3-46BAB4A7576F}">
+													<Language>SFX</Language>
+													<AudioFile>monk_hit_dx-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="718042823"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hit_dx-001" ID="{74BDAD48-26CC-44E3-B6F3-46BAB4A7576F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="monk_hit_dx-002" ID="{0E99BE84-7FD8-47E8-AB49-AE5D50B4689A}" ShortID="710889812">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hit_dx-002" ID="{5C489C67-40E2-4AE1-BAF1-D74A4F5154D1}">
+													<Language>SFX</Language>
+													<AudioFile>monk_hit_dx-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="315565834"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hit_dx-002" ID="{5C489C67-40E2-4AE1-BAF1-D74A4F5154D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="monk_hit_dx-003" ID="{12D311A4-83B3-4E86-A4B8-D4A122F05A78}" ShortID="1037678892">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hit_dx-003" ID="{105B94D0-2D09-411C-A112-984D3C3799EF}">
+													<Language>SFX</Language>
+													<AudioFile>monk_hit_dx-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="698268410"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hit_dx-003" ID="{105B94D0-2D09-411C-A112-984D3C3799EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Fx" ID="{42720221-D37D-41B0-A48B-810FC2834FCC}" ShortID="623711198">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="monk_hit_fx2" ID="{F9A5A63A-ED0B-4FB2-9006-5C0947A0C753}" ShortID="787754038">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hit_fx2" ID="{DF169DE1-4FBA-422A-89E9-E684D3D6F856}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0169671228710462"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0242387469586375"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>monk_hit_fx2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="444980386"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hit_fx2" ID="{DF169DE1-4FBA-422A-89E9-E684D3D6F856}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="monk_hit_fx3" ID="{7344127C-FD74-400C-8789-FF10ECB72BDE}" ShortID="964253961">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hit_fx3" ID="{8F6551CF-2D7A-4E4A-9CDA-0721F9A922EE}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0169671228710462"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0169671228710462"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>monk_hit_fx3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="302502130"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hit_fx3" ID="{8F6551CF-2D7A-4E4A-9CDA-0721F9A922EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="monk_hit_fx" ID="{F123848D-5C1B-4A65-8146-714F455446AF}" ShortID="516853936">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hit_fx" ID="{EE3ED386-41E6-453C-859E-253CD5E42316}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0339342457420925"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0218148722627737"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>monk_hit_fx.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="597880745"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hit_fx" ID="{EE3ED386-41E6-453C-859E-253CD5E42316}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+						<BlendContainer Name="Strike_dos" ID="{AC2CF297-8123-4185-B45E-6091B7D78A0F}" ShortID="252329348">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Dx" ID="{7B8876C2-00D1-498C-B91A-C668FAB2E691}" ShortID="342769275">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="monk_hitcomb_dx-001" ID="{77034707-0969-4788-8F8D-1618C79C0EF4}" ShortID="43105441">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hitcomb_dx-001" ID="{066A3991-F8A6-4359-9F62-E0496D47EE1A}">
+													<Language>SFX</Language>
+													<AudioFile>monk_hitcomb_dx-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="436213662"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hitcomb_dx-001" ID="{066A3991-F8A6-4359-9F62-E0496D47EE1A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="monk_hitcomb_dx-002" ID="{BB9E4DED-9C81-449B-A558-C9275FF730DE}" ShortID="160624168">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hitcomb_dx-002" ID="{89E55808-44E8-4828-8D1C-2F7E2EFD297D}">
+													<Language>SFX</Language>
+													<AudioFile>monk_hitcomb_dx-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="740443677"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hitcomb_dx-002" ID="{89E55808-44E8-4828-8D1C-2F7E2EFD297D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="monk_hitcomb_dx-003" ID="{D8725E62-76BD-4577-A82C-0ABB667A510F}" ShortID="777593076">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hitcomb_dx-003" ID="{6E29EA5A-42D7-46AA-9FA2-26D799757287}">
+													<Language>SFX</Language>
+													<AudioFile>monk_hitcomb_dx-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="417203932"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hitcomb_dx-003" ID="{6E29EA5A-42D7-46AA-9FA2-26D799757287}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Fx" ID="{F4E201E3-102D-4999-AB90-F7681836BB73}" ShortID="261372798">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="monk_hitcomb_fx-001" ID="{323587CB-6A07-4D01-816B-B1A9340A22A6}" ShortID="531958901">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hitcomb_fx-001" ID="{E2A9BAA4-DFA4-4483-82FE-8553DBBD5627}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.195645255474452"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.195645255474452"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>monk_hitcomb_fx-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="548884856"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hitcomb_fx-001" ID="{E2A9BAA4-DFA4-4483-82FE-8553DBBD5627}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="monk_hitcomb_fx-002" ID="{FD9E9D1C-5D52-4093-92C1-1B76573AA77F}" ShortID="658714637">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="monk_hitcomb_fx-002" ID="{E0E8D428-C001-430A-8CCE-8FDD985B612E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.199530261557178"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.199530261557178"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>monk_hitcomb_fx-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="359562049"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="monk_hitcomb_fx-002" ID="{E0E8D428-C001-430A-8CCE-8FDD985B612E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Foley" ID="{CD7AFE6E-300F-4452-9447-6E2F106DBC8C}" ShortID="510153245">
+					<ChildrenList>
+						<RandomSequenceContainer Name="paso_completo" ID="{FE050199-F073-4E52-8494-FE2E90CD6A5C}" ShortID="85441460">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D01BE17E-A2FD-4482-9807-D3F54996F6B8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Pasos_derecha" ID="{6E5D0B6E-E53B-41AF-BE75-021FDC873837}" ShortID="806155677">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Tacon" ID="{4E3E033B-3E47-4534-8E6B-EF0D3237BD83}" ShortID="787937031">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="monk_stepright-001" ID="{9ABE77B4-5F49-4EC4-9B4C-EDB4B616918A}" ShortID="208379983">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepright-001" ID="{748E7858-8577-401D-8C73-EE689BB18FF9}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepright-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="911376123"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepright-001" ID="{748E7858-8577-401D-8C73-EE689BB18FF9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="monk_stepright-002" ID="{DCF2ECF4-57E4-4E0B-BE6F-B1EFCAD49F21}" ShortID="549008674">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepright-002" ID="{9ABCC840-BFA2-43C7-8142-77ADC71B7C90}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepright-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="196463260"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepright-002" ID="{9ABCC840-BFA2-43C7-8142-77ADC71B7C90}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="monk_stepright-003" ID="{737D46E0-5969-407E-A77C-7B8C83B11168}" ShortID="904713850">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepright-003" ID="{3CC80230-D0CD-432B-91F2-BA34A7351B3E}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepright-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="274648691"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepright-003" ID="{3CC80230-D0CD-432B-91F2-BA34A7351B3E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Punta" ID="{2FF0E9DF-084F-423B-B80E-FECAD7BEDB0E}" ShortID="538822566">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="monk_stepright_end1" ID="{8ADF5FAA-9BD1-4BA1-9205-EB841A8FDC1E}" ShortID="829217226">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepright_end1" ID="{990D8D7A-ECE1-4034-B71A-04938B000478}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepright_end1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="970412414"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepright_end1" ID="{990D8D7A-ECE1-4034-B71A-04938B000478}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="monk_stepright_end2" ID="{39D0F182-DB4B-4F0F-BE3E-922C661410B6}" ShortID="1056370065">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepright_end2" ID="{FC2283A6-3A52-4218-BED7-CD839A851502}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepright_end2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="68538077"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepright_end2" ID="{FC2283A6-3A52-4218-BED7-CD839A851502}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="monk_stepright_end3" ID="{97773CE2-C8E2-4BF0-820A-D188302A6AC5}" ShortID="775414798">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepright_end3" ID="{0FA601C1-F123-44B3-A046-0E79D53BD8E8}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepright_end3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="516920478"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepright_end3" ID="{0FA601C1-F123-44B3-A046-0E79D53BD8E8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Tacon" ID="{4E3E033B-3E47-4534-8E6B-EF0D3237BD83}"/>
+										<ItemRef Name="Punta" ID="{2FF0E9DF-084F-423B-B80E-FECAD7BEDB0E}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Pasos_izquierda" ID="{B93D03C6-4908-4E0A-9C8D-464158E929D0}" ShortID="199399219">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Tacon" ID="{23C0EBD9-7769-4B72-8DF5-C87EEBB0D40D}" ShortID="848373092">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="monk_stepleft-001" ID="{7B36DBA8-BA7E-495D-851D-8E2A0E87F613}" ShortID="662088230">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepleft-001" ID="{544E6F82-0EE2-412B-B57A-BFD2CDDB4200}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepleft-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="278355826"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepleft-001" ID="{544E6F82-0EE2-412B-B57A-BFD2CDDB4200}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="monk_stepleft-002" ID="{7C6EEF02-C4CA-40C1-BA57-01F52DA889F5}" ShortID="939560401">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepleft-002" ID="{C3CD0CC5-C4A8-4F22-A423-597A55445E5B}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepleft-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="846189855"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepleft-002" ID="{C3CD0CC5-C4A8-4F22-A423-597A55445E5B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="monk_stepleft-003" ID="{2AB2C87A-107A-4117-8C9D-C2AEA0936946}" ShortID="144482389">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepleft-003" ID="{9B3A6615-D9E4-4DF3-8087-A368F40D4789}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepleft-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="638695364"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepleft-003" ID="{9B3A6615-D9E4-4DF3-8087-A368F40D4789}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Punta" ID="{57C4BEDD-F1D4-4DCD-92C0-F0D75063E0B9}" ShortID="503140352">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="monk_stepleft_end1" ID="{79BD1239-A458-4992-9A41-E0D988E79BDD}" ShortID="337067759">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepleft_end1" ID="{A0EE7206-1617-45D6-9A00-6A529367BDD8}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepleft_end1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="306806010"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepleft_end1" ID="{A0EE7206-1617-45D6-9A00-6A529367BDD8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="monk_stepleft_end2" ID="{1EF084F1-4016-4CC6-805C-68BA7F58E481}" ShortID="772186758">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepleft_end2" ID="{E2BEC745-3F8A-4C59-B6F5-0DC320B09C9B}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepleft_end2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="805644031"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepleft_end2" ID="{E2BEC745-3F8A-4C59-B6F5-0DC320B09C9B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="monk_stepleft_end3" ID="{0A01F42F-5237-4C28-BFEC-D3C963881C48}" ShortID="609713413">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="monk_stepleft_end3" ID="{A8FB9C39-BFE6-46B4-B460-F5529547FFF9}">
+															<Language>SFX</Language>
+															<AudioFile>monk_stepleft_end3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="15648755"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="monk_stepleft_end3" ID="{A8FB9C39-BFE6-46B4-B460-F5529547FFF9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Tacon" ID="{23C0EBD9-7769-4B72-8DF5-C87EEBB0D40D}"/>
+										<ItemRef Name="Punta" ID="{57C4BEDD-F1D4-4DCD-92C0-F0D75063E0B9}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<Sound Name="Silence" ID="{EBDC3262-C455-4414-A7E4-C1CDB13F2349}" ShortID="512425511">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4872844-544C-4D54-BC0A-8AD1DA0507E9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D52CA736-AC7B-426A-8063-094A81D8AEED}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{515C2659-4E7B-4F02-9238-2EFD5DF7DB7D}" ShortID="550767385" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="0.001"/>
+												<Property Name="LengthMax" Type="Real32" Value="1"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{515C2659-4E7B-4F02-9238-2EFD5DF7DB7D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="Pasos_derecha" ID="{6E5D0B6E-E53B-41AF-BE75-021FDC873837}"/>
+								<ItemRef Name="Silence" ID="{EBDC3262-C455-4414-A7E4-C1CDB13F2349}"/>
+								<ItemRef Name="Pasos_izquierda" ID="{B93D03C6-4908-4E0A-9C8D-464158E929D0}"/>
+								<ItemRef Name="Silence" ID="{EBDC3262-C455-4414-A7E4-C1CDB13F2349}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>

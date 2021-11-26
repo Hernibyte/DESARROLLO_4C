@@ -25,7 +25,7 @@ public class GateBehaviour : MonoBehaviour
         if(isGateOpen)
             if(MyUtilities.Contains(playerMask, other.gameObject.layer))
             {
-                AkSoundEngine.PostEvent("enter_room", gameObject);
+                //AkSoundEngine.PostEvent("enter_room", gameObject);
                 other.transform.position = teleportPosition;
             }
     }

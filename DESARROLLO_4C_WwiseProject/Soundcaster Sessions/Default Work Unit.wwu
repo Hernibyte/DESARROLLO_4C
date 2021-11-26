@@ -4,33 +4,23 @@
 		<WorkUnit Name="Default Work Unit" ID="{7E37A0B2-2F5A-4B95-9D6D-9000B1E1F03E}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{14693AA8-61C2-4234-AD13-47350BDF6758}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="on_click" ID="{C6A1680F-AC6D-4A80-A515-F39AF04CBD10}" WorkUnitID="{6114A86A-3FAA-4EAE-8675-49DB976B3FAA}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="on_enter" ID="{563C593E-1D3B-4275-84C8-7B70B39E60AE}" WorkUnitID="{6114A86A-3FAA-4EAE-8675-49DB976B3FAA}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="ogre_receivedamage" ID="{C34A3799-7940-49FD-B1A7-78D095AD2294}" WorkUnitID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="ogre_attack" ID="{10823E28-1D93-4A23-B6A4-E58B3EBAEDBA}" WorkUnitID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="ogre_die" ID="{BEDC736D-A8CF-4CE3-97E1-1BD2A6795EC0}" WorkUnitID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}"/>
-							<Position X="2" Y="1"/>
-						</Module>
-					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="boss_life" ID="{A82FE595-0041-4998-A165-3BC23528F5CF}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="rtpc_mastervolume" ID="{79C0EBCE-05AC-4C45-8371-247A549C4333}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="pausa_in" ID="{FD595585-6768-4AC6-B343-5B522569FBF5}"/>
+						<CurrentStateRef Name="None" ID="{CA873F40-2F3D-4F92-859E-D5DEC1E62F6A}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Alta" ID="{B6C9432A-B904-4A81-BEAE-BC20962F2C68}"/>
+						<CurrentSwitchRef Name="Inicio" ID="{7930A091-93E7-4B61-98D8-B8F78E856F7C}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="demon" ID="{48BAF4BC-F082-46F3-85EA-86A5C43FEBCF}">
 					<ModuleList>
@@ -53,6 +43,23 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="aa" ID="{2C6ACB03-63CC-46CA-BCD7-B77FC1233580}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="monk_strikeuno" ID="{71334B7A-7FFE-4FBA-86C1-110E6A4EC9D8}" WorkUnitID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="monk_strikedos" ID="{051946DF-47AC-4C8E-8F05-DEF7381BAFC8}" WorkUnitID="{C40F0D08-8C0F-4586-A235-738B6EA97F40}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{CA873F40-2F3D-4F92-859E-D5DEC1E62F6A}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

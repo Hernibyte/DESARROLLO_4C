@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] EnemyStats stats;
     Rigidbody2D body2D;
-    SpriteRenderer enemySprite;
+    [HideInInspector] public SpriteRenderer enemySprite;
     float auxTimer;
     float auxDistante;
     bool stopMove = false;

@@ -10,6 +10,14 @@
 						<State Name="pausa_out" ID="{8710CE2F-7D3A-4AD6-B903-130BE05AA501}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Musica_Juego" ID="{E08A8D77-0F9A-49E2-AF23-763754F681C8}">
+					<ChildrenList>
+						<State Name="None" ID="{D155B1C8-57C0-4FBE-A344-93BEB9B10652}"/>
+						<State Name="Pantalla_Inicio" ID="{539F7EBC-1128-4263-B6D1-773DAE34A198}"/>
+						<State Name="Menu" ID="{BCAA2FCC-2F10-4DCE-96FC-CC9FCC1E0D69}"/>
+						<State Name="Batalla" ID="{127AA53B-580C-4C2F-90D2-FE30AB2D8FF4}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
