@@ -1,0 +1,7 @@
+/.cache
+/*_Test-of-Faith-wwise-repo.*.validationcache
+/*_Test-of-Faith-wwise-repo.*.wsettings
+/**/*.akd
+/*.prof
+*.validationcache
+*.wsettings

@@ -353,6 +353,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="musica" ID="{45509353-AE9A-48F6-9358-A8D6FC1ECEEF}" ShortID="196806357">
 									<PropertyList>
+										<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>

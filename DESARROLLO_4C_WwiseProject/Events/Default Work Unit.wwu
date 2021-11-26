@@ -108,6 +108,17 @@
 						</Event>
 						<Event Name="open_loot" ID="{00958420-1BDF-441C-91A1-EA54C5946B94}">
 							<ChildrenList>
+								<Action Name="" ID="{04F5559C-8604-42FE-99B1-397D7A9EC21F}" ShortID="870201049">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="aparece_loot" ID="{9E78E6B2-FFC8-4D77-BE93-0D58BB1EC68E}" WorkUnitID="{E79F30B8-5A73-4D15-86F5-57710240CE9D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{50550420-28B4-4792-A0D2-9C5E9F26D478}" ShortID="866780533">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
@@ -115,16 +126,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="open_loot" ID="{6EED5FEC-972B-4B11-8BB1-8D3665BB5C8B}" WorkUnitID="{E79F30B8-5A73-4D15-86F5-57710240CE9D}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{04F5559C-8604-42FE-99B1-397D7A9EC21F}" ShortID="870201049">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="aparece_loot" ID="{9E78E6B2-FFC8-4D77-BE93-0D58BB1EC68E}" WorkUnitID="{E79F30B8-5A73-4D15-86F5-57710240CE9D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
