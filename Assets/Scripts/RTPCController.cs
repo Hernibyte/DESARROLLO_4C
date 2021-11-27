@@ -19,6 +19,8 @@ public class RTPCController : MonoBehaviour
 
     void Start()
     {
+        AkSoundEngine.PostEvent("inicio_start", gameObject);
+        AkSoundEngine.PostEvent("inicio_menu", gameObject);
         UpdatemasterVolume();
     }
 

@@ -21,8 +21,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        AkSoundEngine.SetRTPCValue("rtpc_mastervolume", gameVolume);
-
         uiManager.uiPlayer.OnPanelChangeState.AddListener(ChangeStateMovementPlayer);
     }
 
@@ -95,13 +93,13 @@ public class GameManager : MonoBehaviour
     {
         if(Time.timeScale == 1)
         {
-            AkSoundEngine.PostEvent("pause_in", gameObject);
+            AkSoundEngine.PostEvent("pausa_in", gameObject);
             uiManager.ChangePauseView(true);
             Time.timeScale = 0;
         }
         else 
         {
-            AkSoundEngine.PostEvent("pause_out", gameObject);
+            AkSoundEngine.PostEvent("pausa_out", gameObject);
             uiManager.ChangePauseView(false);
             Time.timeScale = 1;
         }
@@ -110,6 +108,7 @@ public class GameManager : MonoBehaviour
     public void BackToMenu()
     {
         Time.timeScale = 1;
+        AkSoundEngine.PostEvent("pausa_out", gameObject);
         StartCoroutine(LoadMenuScene());
     }
 

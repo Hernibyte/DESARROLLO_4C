@@ -10,12 +10,9 @@ public class UIMenuManager : MonoBehaviour
     [SerializeField] GameObject uiOptionsObject;
     [SerializeField] GameObject uiLoading;
     [SerializeField] Text gameVersion;
-    [SerializeField] AK.Wwise.Event inicio_menu;
 
     void Awake()
     {
-        inicio_menu.Post(gameObject);
-
         uiCreditsObject.SetActive(false);
         uiOptionsObject.SetActive(false);
         uiLoading.SetActive(false);
