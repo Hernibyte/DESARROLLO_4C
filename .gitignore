@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/DESARROLLO_4C_WwiseProject/
 
 # Archivos de instalación
 WwiseUnityIntegration_*_Src.zip
@@ -17,7 +18,7 @@ WwiseUnityIntegration_*_Src.zip
 /[Aa]ssets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
 
 # Sound Banks: NO VERSIONARLOS. REGENERARLOS CADA VEZ.
-*WwiseProject/GeneratedSoundBanks/
+*DESARROLLO_4C_WwiseProject/GeneratedSoundBanks/
 
 # Documentación: NO VERSIONARLA.
 /[Aa]ssets/Wwise/Documentation.meta
