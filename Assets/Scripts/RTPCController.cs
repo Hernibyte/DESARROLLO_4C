@@ -10,13 +10,19 @@ public class RTPCController : MonoBehaviour
 
     void Awake()
     {
-        if (instance != null)
-            Destroy(this.gameObject);
-        instance = this;
-        DontDestroyOnLoad(this);
+        if(instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
+    {
+        UpdatemasterVolume();
+    }
+
+    void LateUpdate()
     {
         UpdatemasterVolume();
     }
