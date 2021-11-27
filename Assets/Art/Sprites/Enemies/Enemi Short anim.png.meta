@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 1a41068c9c6f59141a798dc6a43ec9e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1891780017945334795
+    second: Enemi Short anim_0
+  - first:
+      213: -3932261969718893149
+    second: Enemi Short anim_1
+  - first:
+      213: -6515478415172411280
+    second: Enemi Short anim_2
+  - first:
+      213: 914699533882749611
+    second: Enemi Short anim_3
+  - first:
+      213: -8729115543480931944
+    second: Enemi Short anim_4
+  - first:
+      213: -1199583756263203674
+    second: Enemi Short anim_5
+  - first:
+      213: -3257470673055722741
+    second: Enemi Short anim_6
+  - first:
+      213: -766474363940315874
+    second: Enemi Short anim_7
+  - first:
+      213: 6498692699829882589
+    second: Enemi Short anim_8
+  - first:
+      213: 8021935463949070755
+    second: Enemi Short anim_9
+  - first:
+      213: -3484279419764888103
+    second: Enemi Short anim_10
+  - first:
+      213: -4527494391106036392
+    second: Enemi Short anim_11
+  - first:
+      213: -7218577379599369008
+    second: Enemi Short anim_12
+  - first:
+      213: 3065352587116003410
+    second: Enemi Short anim_13
+  - first:
+      213: -2823105190655657080
+    second: Enemi Short anim_14
+  - first:
+      213: 2572718354089975149
+    second: Enemi Short anim_15
+  - first:
+      213: -1445402847519659319
+    second: Enemi Short anim_16
+  - first:
+      213: 7949812654965952398
+    second: Enemi Short anim_17
+  - first:
+      213: 1389587292868959215
+    second: Enemi Short anim_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemi Short anim_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 2975
+        width: 302
+        height: 427
+      alignment: 9
+      pivot: {x: 0.6010168, y: 0.46144179}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0450da37e3f04a10800000000000000
+      internalID: 1891780017945334795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 2415
+        width: 364
+        height: 418
+      alignment: 9
+      pivot: {x: 0.5468776, y: 0.47006416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5a023929ccd69c0800000000000000
+      internalID: -3932261969718893149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_2
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 2409
+        width: 338
+        height: 436
+      alignment: 9
+      pivot: {x: 0.5875049, y: 0.46347243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0706ce1e6ee5495a0800000000000000
+      internalID: -6515478415172411280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_3
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 2412
+        width: 321
+        height: 471
+      alignment: 9
+      pivot: {x: 0.609858, y: 0.5048305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2fb49316aa1bc00800000000000000
+      internalID: 914699533882749611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_4
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 2410
+        width: 358
+        height: 466
+      alignment: 9
+      pivot: {x: 0.57943845, y: 0.48047084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8996a7b79a3fbd680800000000000000
+      internalID: -8729115543480931944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_5
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 2409
+        width: 405
+        height: 442
+      alignment: 9
+      pivot: {x: 0.5674108, y: 0.43823186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac5a99ede83a5fe0800000000000000
+      internalID: -1199583756263203674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_6
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 2411
+        width: 306
+        height: 425
+      alignment: 9
+      pivot: {x: 0.6412657, y: 0.43308422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03d2428ea32bc2d0800000000000000
+      internalID: -3257470673055722741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_7
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1169
+        width: 274
+        height: 636
+      alignment: 9
+      pivot: {x: 0.2924152, y: 0.39804864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dd4ef70afec55f0800000000000000
+      internalID: -766474363940315874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_8
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 1754
+        width: 329
+        height: 470
+      alignment: 9
+      pivot: {x: 0.64522064, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddec8c5349eff2a50800000000000000
+      internalID: 6498692699829882589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_9
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 1777
+        width: 314
+        height: 424
+      alignment: 9
+      pivot: {x: 0.63404334, y: 0.49731705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1facb6dc3a35f60800000000000000
+      internalID: 8021935463949070755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1170
+        width: 366
+        height: 437
+      alignment: 9
+      pivot: {x: 0.692702, y: 0.476572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dda5b6045a55afc0800000000000000
+      internalID: -3484279419764888103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_11
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1169
+        width: 266
+        height: 434
+      alignment: 9
+      pivot: {x: 0.5598716, y: 0.49475774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d1d87c6db1b21c0800000000000000
+      internalID: -4527494391106036392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_12
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1170
+        width: 321
+        height: 607
+      alignment: 9
+      pivot: {x: 0.58505106, y: 0.35944438}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc3f417e1672db90800000000000000
+      internalID: -7218577379599369008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_13
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 1164
+        width: 467
+        height: 593
+      alignment: 9
+      pivot: {x: 0.71435887, y: 0.3542077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250cf52efe15a8a20800000000000000
+      internalID: 3065352587116003410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_14
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 1164
+        width: 449
+        height: 435
+      alignment: 9
+      pivot: {x: 0.7052173, y: 0.4790794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b786b59c052d8d0800000000000000
+      internalID: -2823105190655657080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_15
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 552
+        width: 442
+        height: 435
+      alignment: 9
+      pivot: {x: 0.6981728, y: 0.46861896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d19a256b124b320800000000000000
+      internalID: 2572718354089975149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_16
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 525
+        width: 446
+        height: 421
+      alignment: 9
+      pivot: {x: 0.5816188, y: 0.5216166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caa04ca4c5e0fbe0800000000000000
+      internalID: -1445402847519659319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_17
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 526
+        width: 437
+        height: 436
+      alignment: 9
+      pivot: {x: 0.47396857, y: 0.5078272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f86226d78635e60800000000000000
+      internalID: 7949812654965952398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemi Short anim_18
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 582
+        width: 456
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5449037, y: 0.4317462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febd9dfc74ec84310800000000000000
+      internalID: 1389587292868959215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 34e31f20eebeb4b4db3f39a8f35fe5b7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: df8015cae20b276438244d088cb4a047, type: 3}
+      name: _Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

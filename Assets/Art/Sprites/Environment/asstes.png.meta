@@ -1,0 +1,604 @@
+fileFormatVersion: 2
+guid: fa902876991d19d44bc295a300289017
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 998176480516855873
+    second: asstes_5
+  - first:
+      213: 4465704551063042307
+    second: asstes_6
+  - first:
+      213: 6751848206164760448
+    second: asstes_8
+  - first:
+      213: 9165289585725377561
+    second: asstes_11
+  - first:
+      213: -8664732399997507186
+    second: asstes_12
+  - first:
+      213: -303065151359004340
+    second: asstes_13
+  - first:
+      213: -5870060760072675983
+    second: asstes_14
+  - first:
+      213: 2182289249412715935
+    second: asstes_15
+  - first:
+      213: -1881423844469212763
+    second: asstes_16
+  - first:
+      213: 1389083757754745038
+    second: asstes_17
+  - first:
+      213: -5684135024200713851
+    second: asstes_18
+  - first:
+      213: -117661099061233587
+    second: asstes_19
+  - first:
+      213: 7444195458387364784
+    second: asstes_20
+  - first:
+      213: -6310946117006277721
+    second: asstes_21
+  - first:
+      213: 6263042462544305619
+    second: asstes_22
+  - first:
+      213: 3285618529254038861
+    second: asstes_23
+  - first:
+      213: 3912027917514960259
+    second: asstes_24
+  - first:
+      213: 7162969912445630755
+    second: asstes_25
+  - first:
+      213: -7388741822879620365
+    second: asstes_26
+  - first:
+      213: -1492211693917884890
+    second: asstes_27
+  - first:
+      213: -161329190624833444
+    second: asstes_28
+  - first:
+      213: 8429337611972543201
+    second: asstes_29
+  - first:
+      213: -1345692006658024846
+    second: asstes_30
+  - first:
+      213: -4666024565586292977
+    second: asstes_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 32
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: asstes_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1812
+        width: 206
+        height: 668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1485b50783c3add00800000000000000
+      internalID: 998176480516855873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1812
+        width: 206
+        height: 668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30935fdf0ae59fd30800000000000000
+      internalID: 4465704551063042307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_8
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1812
+        width: 206
+        height: 668
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0871fc1bb2263bd50800000000000000
+      internalID: 6751848206164760448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_11
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1812
+        width: 206
+        height: 668
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c8fb48156a13f70800000000000000
+      internalID: 9165289585725377561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_12
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1943
+        width: 270
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89a4583acfa0c780800000000000000
+      internalID: -8664732399997507186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_13
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1929
+        width: 290
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41527db9db4bcbf0800000000000000
+      internalID: -303065151359004340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_14
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 2059
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d98e1f6da598ea0800000000000000
+      internalID: -5870060760072675983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_15
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 2059
+        width: 231
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f951664928c094e10800000000000000
+      internalID: 2182289249412715935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_22
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1811
+        width: 216
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd1429cfebcae650800000000000000
+      internalID: 6263042462544305619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_23
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 1811
+        width: 216
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4dd0a7f4acd89d20800000000000000
+      internalID: 3285618529254038861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 994
+        width: 518
+        height: 628
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38de3e60aa05a4630800000000000000
+      internalID: 3912027917514960259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_25
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1013
+        width: 402
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329f1203f2bf76360800000000000000
+      internalID: 7162969912445630755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_26
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 1100
+        width: 251
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f22036957ae57990800000000000000
+      internalID: -7388741822879620365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_27
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 1100
+        width: 251
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e2756de599a4be0800000000000000
+      internalID: -1492211693917884890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_28
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 1100
+        width: 251
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50d7e4b4f7d2cdf0800000000000000
+      internalID: -161329190624833444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 634
+        height: 473
+      alignment: 9
+      pivot: {x: 0.48554444, y: 0.034977727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e28675c5e50bf470800000000000000
+      internalID: 8429337611972543201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_30
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 250
+        width: 779
+        height: 511
+      alignment: 9
+      pivot: {x: 0.48823503, y: 0.05760172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ad01eef34235de0800000000000000
+      internalID: -1345692006658024846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asstes_31
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 269
+        width: 674
+        height: 506
+      alignment: 9
+      pivot: {x: 0.4592068, y: 0.029080357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f8bf61163fe3fb0800000000000000
+      internalID: -4666024565586292977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8fdd78811a003ad4193bfed468c968ed
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: fb95534775f10334c827963761d8bdce, type: 3}
+      name: _Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

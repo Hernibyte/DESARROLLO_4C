@@ -1,0 +1,21 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyStats : MonoBehaviour
+{
+    public float lifeAmount;
+    public float maxLife;
+    public float movementForce;
+    public float distanceTracking;
+    public float distanceToAttack;
+    public float attackDelay;
+    public float attackRadiusArea;
+    public float damage;
+    public float knockbackForce;
+
+    private void Start()
+    {
+        lifeAmount = maxLife;
+    }
+}
