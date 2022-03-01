@@ -56,6 +56,13 @@ public class CheatSystem : MonoBehaviour
                 pj.maxHearts = cheatMaxHP;
                 pj.heartsAmount = cheatMaxHP;
                 break;
+            case "oh crap":
+                pj.maxHearts = 1;
+                pj.heartsAmount = 1;
+                pj.totalDamageMelee = 1;
+                pj.totalDamageRange = 1;
+                pj.totalForceMovement = 160;
+                break;
         }
 
         uiManager.uiPlayer.UpdateStatsAfterCheat();
