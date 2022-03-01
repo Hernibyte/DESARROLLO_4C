@@ -6,6 +6,7 @@ public class GateBehaviour : MonoBehaviour
 {
     [HideInInspector] public Vector2 teleportPosition;
     [HideInInspector] public bool isGateOpen;
+    [SerializeField] private bool keyNeeded = false;
     [SerializeField] LayerMask playerMask;
     Animator gateAnimator;
 
