@@ -5,16 +5,31 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] EnemyStats stats;
-    Rigidbody2D body2D;
     [HideInInspector] public SpriteRenderer enemySprite;
+    
+    #region PRIVATE_FIELDS
+    Rigidbody2D body2D;
+    CapsuleCollider2D colliderGo;
     float auxTimer;
     float auxDistante;
     bool stopMove = false;
+    #endregion
 
     private void Start()
     {
         body2D = GetComponent<Rigidbody2D>();
+        colliderGo = GetComponent<CapsuleCollider2D>();
         enemySprite = GetComponentInChildren<SpriteRenderer>();
+    }
+
+    public void DisableCollision()
+    {
+        colliderGo.isTrigger = true;
+    }
+
+    public void EnableCollision()
+    {
+        colliderGo.isTrigger = false;
     }
 
     public void Move(Vector2 position)

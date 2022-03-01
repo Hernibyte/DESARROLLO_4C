@@ -762,6 +762,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   state: 0
+  porcentageAttackZone: 55
   imDie:
     m_PersistentCalls:
       m_Calls: []

@@ -39,6 +39,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.62222224
         value: {x: 0, y: 3.15, z: 0}
+        inSlope: {x: 0, y: 16.72258, z: 0}
+        outSlope: {x: 0, y: 16.72258, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 1.2444445
+        value: {x: 0, y: 10.13, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -46,7 +55,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.1111112
+        time: 1.7777778
         value: {x: 0, y: -1.39, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -90,7 +99,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.6666667
+        time: 1.2444445
         value: {x: 10, y: 10, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -99,7 +108,16 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 1.1111112
+        time: 1.3333334
+        value: {x: 10, y: 10, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 1.7777778
         value: {x: 9, y: 9, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -123,19 +141,22 @@ AnimationClip:
     - time: 0.62222224
       value: {fileID: 169822645630210129, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 0.7777778
+    - time: 1.2444445
+      value: {fileID: 169822645630210129, guid: 62e241284dea17d4f9abcf23cfec411b,
+        type: 3}
+    - time: 1.4444444
       value: {fileID: -3311555220901124792, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 1.0666667
+    - time: 1.7333333
       value: {fileID: -3479477395404327623, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 1.1111112
+    - time: 1.7777778
       value: {fileID: 7763887787169233745, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 1.2222222
+    - time: 1.8888888
       value: {fileID: 8273466564971783008, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
-    - time: 1.3333334
+    - time: 2.2222223
       value: {fileID: 7763887787169233745, guid: 62e241284dea17d4f9abcf23cfec411b,
         type: 3}
     attribute: m_Sprite
@@ -174,6 +195,7 @@ AnimationClip:
     - {fileID: -1193597803089831913, guid: 62e241284dea17d4f9abcf23cfec411b, type: 3}
     - {fileID: 8343660376048651627, guid: 62e241284dea17d4f9abcf23cfec411b, type: 3}
     - {fileID: 169822645630210129, guid: 62e241284dea17d4f9abcf23cfec411b, type: 3}
+    - {fileID: 169822645630210129, guid: 62e241284dea17d4f9abcf23cfec411b, type: 3}
     - {fileID: -3311555220901124792, guid: 62e241284dea17d4f9abcf23cfec411b, type: 3}
     - {fileID: -3479477395404327623, guid: 62e241284dea17d4f9abcf23cfec411b, type: 3}
     - {fileID: 7763887787169233745, guid: 62e241284dea17d4f9abcf23cfec411b, type: 3}
@@ -184,7 +206,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.3555557
+    m_StopTime: 2.2444446
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -231,7 +253,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.6666667
+        time: 1.2444445
         value: 10
         inSlope: 0
         outSlope: 0
@@ -240,7 +262,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1111112
+        time: 1.3333334
+        value: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.7777778
         value: 9
         inSlope: 0
         outSlope: 0
@@ -286,7 +317,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.6666667
+        time: 1.2444445
         value: 10
         inSlope: 0
         outSlope: 0
@@ -295,7 +326,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1111112
+        time: 1.3333334
+        value: 10
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.7777778
         value: 9
         inSlope: 0
         outSlope: 0
@@ -341,7 +381,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.6666667
+        time: 1.2444445
         value: 1
         inSlope: 0
         outSlope: 0
@@ -350,7 +390,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1111112
+        time: 1.3333334
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.7777778
         value: 1
         inSlope: 0
         outSlope: 0
@@ -396,7 +445,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1111112
+        time: 1.2444445
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.7777778
         value: 0
         inSlope: 0
         outSlope: 0
@@ -435,6 +493,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.62222224
         value: 3.15
+        inSlope: 16.72258
+        outSlope: 16.72258
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.2444445
+        value: 10.13
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -442,7 +509,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1111112
+        time: 1.7777778
         value: -1.39
         inSlope: 0
         outSlope: 0
@@ -488,7 +555,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 1.1111112
+        time: 1.2444445
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.7777778
         value: 0
         inSlope: 0
         outSlope: 0
@@ -506,4 +582,39 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 1.2222222
+    functionName: StopTrackPlayer
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.2444445
+    functionName: MakeSoundAttack_2
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.4444444
+    functionName: TriggerEffectorZone
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.7333333
+    functionName: ZoneAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.8888888
+    functionName: StartChaseAgain
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

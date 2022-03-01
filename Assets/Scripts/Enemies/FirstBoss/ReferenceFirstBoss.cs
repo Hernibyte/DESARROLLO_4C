@@ -63,8 +63,15 @@ public class ReferenceFirstBoss : MonoBehaviour
         CameraShake.Instance.ExecuteShake(1f, 1f);
     }
 
+    public void StopTrackPlayer()
+    {
+        enemy.StopTrackPlayerOnAir();
+    }
+
     public void ZoneAttack()
     {
-        //Hay que hacerlo
+        BoostRadiusZone();
+        CameraShake.Instance.ExecuteShake(.2f, .4f);
+        enemy.enemyAttack.MeleeAttack(playerLayer);
     }
 }

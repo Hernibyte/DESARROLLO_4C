@@ -3,21 +3,30 @@ using UnityEngine.Events;
 
 public class FirstBossBehaviour : MonoBehaviour
 {
+    #region EXPOSED_FIELDS
     [SerializeField] EnemyStats stats;
     [SerializeField] EnemyMovement enemyMovement;
     public EnemyAttack enemyAttack;
     [SerializeField] LayerMask playerMask;
     [SerializeField] MyUtilities.EnemyState state;
+    [SerializeField,Range(0, 100)] private float porcentageAttackZone = 0;
     [HideInInspector] public UnityEvent imDie;
-    bool ifSetPositionPivot;
-    //float auxTimer;
+    #endregion
 
-    Animator animBoss;
+    #region PRIVATE_FIELDS
+    bool ifSetPositionPivot;
+    private Animator animBoss;
+    private float randomChange = 0;
+    private float initialSpeed = 0;
+    private bool trackingPlayerOnAir = false;
+    #endregion
 
     void Start()
     {
         animBoss = gameObject.GetComponentInChildren<Animator>();
         enemyMovement.enemySprite.enabled = false;
+
+        initialSpeed = stats.movementForce;
     }
 
     void Update()
@@ -70,9 +79,27 @@ public class FirstBossBehaviour : MonoBehaviour
     {
         if(!ifSetPositionPivot)
         {
+            randomChange = Random.Range(0, 100);
+
+            if (randomChange < porcentageAttackZone)
+            {
+                animBoss.SetTrigger("AttackZone");
+                trackingPlayerOnAir = true;
+            }
+            else
+            {
+                animBoss.SetTrigger("Attack");
+            }
+
             enemyAttack.SetPivotPosition(enemyAttack.playerTransform.position);
             ifSetPositionPivot = true;
-            animBoss.SetTrigger("Attack");
+        }
+
+        if (randomChange < porcentageAttackZone && trackingPlayerOnAir)
+        {
+            stats.movementForce = initialSpeed * 2;
+            enemyMovement.Move(enemyAttack.playerTransform.position);
+            enemyMovement.DisableCollision();
         }
         //auxTimer += Time.deltaTime;
         //if(auxTimer >= stats.attackDelay)
@@ -83,11 +110,19 @@ public class FirstBossBehaviour : MonoBehaviour
         //}
     }
 
+    public void StopTrackPlayerOnAir()
+    {
+        trackingPlayerOnAir = false;
+    }
+
     public void SetChaseState()
     {
         Debug.Log("Cambio state chase boss");
         state = MyUtilities.EnemyState.Chasing;
-        animBoss.ResetTrigger("Attack");
+        stats.movementForce = initialSpeed;
+        enemyMovement.EnableCollision();
+        /*animBoss.ResetTrigger("Attack");
+        animBoss.ResetTrigger("AttackZone");*/
         //auxTimer = 0f;
     }
 }
