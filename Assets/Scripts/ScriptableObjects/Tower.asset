@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Tower
-    lifeChange: 100
-    defenseChange: 25
+    heartsChange: 3
     damageChange: 0
+    defenseChange: 25
     moveSpeedChange: -200

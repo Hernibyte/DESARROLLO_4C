@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class StatsManager : MonoBehaviour
 {
@@ -9,16 +7,16 @@ public class StatsManager : MonoBehaviour
 
     [Header("MIN STATS")]
     [Space(15)]
+    [SerializeField] int minMaxHearts;
+    [SerializeField] int minDamage;
     [SerializeField] float minSpeedPlayer;
-    [SerializeField] float minMaxHP;
     [SerializeField] float minDefense;
-    [SerializeField] float minDamage;
     [Header("MAX STATS")]
     [Space(15)]
+    [SerializeField] int capMaxHearts;
+    [SerializeField] int capDamage;
     [SerializeField] float capSpeedPlayer;
-    [SerializeField] float capMaxHP;
     [SerializeField] float capDefense;
-    [SerializeField] float capDamage;
 
     [HideInInspector] public PlayerStats playerStats;
     GameManager gameManager;
@@ -45,17 +43,17 @@ public class StatsManager : MonoBehaviour
 
     public void ModifyStats()
     {
-        float extraCardsHP = 0;
+        int extraCardsHP = 0;
         float extraCardsDEF = 0;
-        float extraCardsDMG = 0;
+        int extraCardsDMG = 0;
         float extraCardsVEL = 0;
 
-        foreach(int id in inventory.idsOfCardsInEquipment)
+        foreach (int id in inventory.idsOfCardsInEquipment)
         {
-            if(id != -1)
+            if (id != -1)
             {
                 //HEALTH POINTS CHGANGE
-                extraCardsHP += listOfCards.cardList[id].data.lifeChange;
+                extraCardsHP += listOfCards.cardList[id].data.heartsChange;
 
                 //DEFENSE CHGANGE
                 extraCardsDEF += listOfCards.cardList[id].data.defenseChange;
@@ -69,14 +67,29 @@ public class StatsManager : MonoBehaviour
             // Modifica todos los valores necesarios del playerstats en relacion a las ids de las cartas
         }
 
-        SetValueStat(ref playerStats.totalMaxHP, (playerStats.maxHp + extraCardsHP), minMaxHP, capMaxHP);
-        SetValueStat(ref playerStats.totalDefense, (playerStats.defense + extraCardsDEF), minDefense, capDefense);
-        SetValueStat(ref playerStats.totalDamageMelee, (playerStats.damageMeleeAttack + extraCardsDMG), minDamage, capDamage);
-        SetValueStat(ref playerStats.totalDamageRange, (playerStats.damageRangeAttack + extraCardsDMG), minDamage, capDamage);
-        SetValueStat(ref playerStats.totalForceMovement, (playerStats.forceMovement + extraCardsVEL), minSpeedPlayer, capSpeedPlayer);
+        SetValueStat(ref playerStats.maxHearts, playerStats.initialMaxHearts + extraCardsHP, minMaxHearts, capMaxHearts);
+        SetValueStat(ref playerStats.totalDefense, extraCardsDEF, minDefense, capDefense);
+        SetValueStat(ref playerStats.totalDamageMelee, playerStats.damageMeleeAttack + extraCardsDMG, minDamage, capDamage);
+        SetValueStat(ref playerStats.totalDamageRange, playerStats.damageRangeAttack + extraCardsDMG, minDamage, capDamage);
+        SetValueStat(ref playerStats.totalForceMovement, extraCardsVEL, minSpeedPlayer, capSpeedPlayer);
     }
 
     void SetValueStat(ref float stat, float value, float minimumCondition, float maximumCondition)
+    {
+        if (value > minimumCondition)
+        {
+            if (value < maximumCondition)
+                stat = value;
+            else
+                stat = maximumCondition;
+        }
+        else
+        {
+            stat = minimumCondition;
+        }
+    }
+
+    void SetValueStat(ref int stat, int value, int minimumCondition, int maximumCondition)
     {
         if (value > minimumCondition)
         {

@@ -15,13 +15,14 @@ public class PlayerStats : MonoBehaviour
 
     [Header("BASIC STATS")]
     [Space(15)]
-    public float maxHp;
-    public float lifeAmount;
+    public int maxHearts;
+    public int initialMaxHearts;
+    public int heartsAmount;
     public float defense;
     public float damageReducedByDef;
     [Header("(BASIC + EXTRA CARDS) STATS")]
     [Space(15)]
-    public float totalMaxHP;
+    public int maxHeartsTotal;
     public float totalDefense;
 
     [Header("BASIC ATTACK STATS")]
@@ -32,13 +33,14 @@ public class PlayerStats : MonoBehaviour
     public float knockbackMelee;
     [Header("(BASIC + EXTRA CARDS) ATTACK STATS")]
     [Space(15)]
-    public float totalDamageMelee;
-    public float totalDamageRange;
+    public int totalDamageMelee;
+    public int totalDamageRange;
 
     private void Start()
     {
-        lifeAmount = maxHp; //Inicialmente asi, desp cuando se consigan cartas si se cura lo haria con el TotalMaxHP
-        totalMaxHP = maxHp;
+        heartsAmount = maxHearts; //Inicialmente asi, desp cuando se consigan cartas si se cura lo haria con el TotalMaxHP
+        initialMaxHearts = maxHearts;
+
         totalDefense = defense;
         totalForceMovement = forceMovement;
         totalDamageMelee = damageMeleeAttack;

@@ -79,6 +79,12 @@ public class EnemyManager : MonoBehaviour
     public void IfEnemyDie()
     {
         enemiesAmount--;
+
+        if(gameManager != null)
+        {
+            gameManager.HealPlayer(1);
+        }
+
         if(enemiesAmount <= 0)
         {
             if(generateBoss)

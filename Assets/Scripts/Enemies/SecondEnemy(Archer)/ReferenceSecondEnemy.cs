@@ -13,6 +13,6 @@ public class ReferenceSecondEnemy : MonoBehaviour
     public void RangeAttack()
     {
         Vector2 posTarget = enemyRef.enemyAttack.playerTransform.position;
-        enemyRef.enemyAttack.RangeAttack((int)enemyRef.stats.damage, enemyRef.stats.knockbackForce, enemyRef.firePointRb.transform,posTarget);
+        enemyRef.enemyAttack.RangeAttack((int)enemyRef.stats.damageHits, enemyRef.stats.knockbackForce, enemyRef.firePointRb.transform,posTarget);
     }
 }

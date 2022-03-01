@@ -41,7 +41,7 @@ public class ProjectileBehaviour : MonoBehaviour
             IHitabble impactDone = collision.GetComponent<IHitabble>();
             if (impactDone != null)
             {
-                impactDone.ReciveDamage(damageProjectile, knockBack, transform.position);
+                impactDone.ReciveHit(damageProjectile, knockBack, transform.position);
                 Destroy(gameObject);
             }
         }

@@ -58,11 +58,23 @@ public class GameManager : MonoBehaviour
         PlayerInteractions playerInteractions = movement.GetComponent<PlayerInteractions>();
         if (playerInteractions != null)
             playerInteractions.hasRecivedDamage.AddListener(uiManager.uiPlayer.UpdateUIPlayer);
+
         Player player = movement.GetComponent<Player>();
         player.die.AddListener(PlayerIsDead);
         //
         statsManager.GetPlayerStatsReference();
         uiManager.uiPlayer.StartStatsPanel();
+        uiManager.uiPlayer.UpdateUIPlayer(statsManager.playerStats.heartsAmount, statsManager.playerStats.maxHearts);
+    }
+
+    public void HealPlayer(int amountHearts)
+    {
+        if (statsManager.playerStats.heartsAmount < statsManager.playerStats.maxHearts)
+            statsManager.playerStats.heartsAmount += amountHearts;
+        else
+            statsManager.playerStats.heartsAmount = statsManager.playerStats.maxHearts;
+
+        uiManager.uiPlayer.UpdateUIPlayer(statsManager.playerStats.heartsAmount, statsManager.playerStats.maxHearts);
     }
 
     void PlayerIsDead()

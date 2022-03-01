@@ -17,7 +17,7 @@ public class StatsOnPanel : MonoBehaviour
 
     public void StartDefaulPanelStats(float basicHP, float basicDEF, float basicDMG, float basicVEL)
     {
-        this.basicHP.text = "HP:" + basicHP;
+        this.basicHP.text = "HEARTS:" + basicHP;
         cardsExtraHP.text = "";
 
         this.basicDEF.text = "DEF:" + basicDEF;
@@ -29,10 +29,10 @@ public class StatsOnPanel : MonoBehaviour
         this.basicVEL.text = "VEL:" + basicVEL;
         cardsExtraVEL.text = "";
     }
-    public void UpdateStat(float basicHP, float extraHP, float basicDEF, float extraDEF,
+    public void UpdateStat(int basicHP, int extraHP, float basicDEF, float extraDEF,
         float basicDMG, float extraDMG, float basicVEL, float extraVEL)
     {
-        this.basicHP.text = "HP:" + basicHP;
+        this.basicHP.text = "HEARTS:" + basicHP;
         if(!CheckIfSpecIsNegative(extraHP , cardsExtraHP))
             cardsExtraHP.text = " +" + extraHP;
         else

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Master
-    lifeChange: 1000
-    defenseChange: 500
+    heartsChange: 5
     damageChange: 200
+    defenseChange: 500
     moveSpeedChange: 300

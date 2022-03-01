@@ -21,7 +21,7 @@ public class EnemyAttack : MonoBehaviour
             IHitabble hittable;
             if(collider.TryGetComponent<IHitabble>(out hittable))
             {
-                hittable.ReciveDamage(stats.damage, stats.knockbackForce, transform.position);
+                hittable.ReciveHit(stats.damageHits, stats.knockbackForce, transform.position);
             }
         }
         return true;

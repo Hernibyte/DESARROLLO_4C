@@ -404,14 +404,14 @@ MonoBehaviour:
   dodgeForce: 500
   dodgeDistance: 3
   totalForceMovement: 0
-  maxHp: 450
-  lifeAmount: 0
+  maxHearts: 5
+  heartsAmount: 5
   defense: 20
   damageReducedByDef: 0
-  totalMaxHP: 0
+  maxHeartsTotal: 0
   totalDefense: 0
-  damageRangeAttack: 5
-  damageMeleeAttack: 10
+  damageRangeAttack: 2
+  damageMeleeAttack: 2
   knockbackRange: 1
   knockbackMelee: 30
   totalDamageMelee: 0

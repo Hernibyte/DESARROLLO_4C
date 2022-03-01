@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414735, b: 0.1210785, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2027,6 +2027,36 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6963154697267120432, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963154697267120432, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963154697267120432, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6963154697267120432, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616932644418584339, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: cheatMaxHP
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616932644418584339, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: godModeMaxHp
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfa9df6785fb15645a0a37bc711483ec, type: 3}
 --- !u!114 &773559560 stripped
@@ -2132,14 +2162,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 1840690541}
   listOfCards: {fileID: 1323897285}
+  minMaxHearts: 1
+  minDamage: 1
   minSpeedPlayer: 70
-  minMaxHP: 100
   minDefense: 20
-  minDamage: 10
+  capMaxHearts: 30
+  capDamage: 5
   capSpeedPlayer: 350
-  capMaxHP: 50000
   capDefense: 1000
-  capDamage: 200
   playerStats: {fileID: 0}
 --- !u!1 &808913526
 GameObject:

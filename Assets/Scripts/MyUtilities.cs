@@ -7,6 +7,11 @@ public struct MyUtilities
 {
     public class MyUnityEvent2F : UnityEvent<float, float>
     {
+
+    }
+
+    public class MyUnityEvent2I : UnityEvent<int, int>
+    {
     }
 
     public class MyUnityEventNoParam : UnityEvent

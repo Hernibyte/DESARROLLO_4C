@@ -30,7 +30,7 @@ public class MeleeAttack : MonoBehaviour
             IHitabble hit = coll.GetComponent<IHitabble>();
             if(hit != null)
             {
-                hit.ReciveDamage(playerData.totalDamageMelee, playerData.knockbackMelee, attackPoint.position);
+                hit.ReciveHit(playerData.totalDamageMelee, playerData.knockbackMelee, attackPoint.position);
             }
         }
     }

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class CheatSystem : MonoBehaviour
 {
     [SerializeField] GameObject inputField;
+    [SerializeField] private int godModeMaxHp = 0;
+    [SerializeField] private int cheatMaxHP = 0;
     UI_Manager uiManager;
     bool inputState;
 
@@ -40,8 +42,8 @@ public class CheatSystem : MonoBehaviour
         switch (command)
         {
             case "god":
-                pj.totalMaxHP = 100000f;
-                pj.lifeAmount = 100000f;
+                pj.maxHearts = godModeMaxHp;
+                pj.heartsAmount = godModeMaxHp;
                 pj.totalDamageMelee = 100000;
                 pj.totalDamageRange = 100000;
                 pj.totalForceMovement = 300;//Es dios dejalo romper el cap pa
@@ -51,11 +53,12 @@ public class CheatSystem : MonoBehaviour
                 pj.totalDamageRange = 100000;
                 break;
             case "max hp":
-                pj.totalMaxHP = 1000000f;
-                pj.lifeAmount = 1000000f;
+                pj.maxHearts = cheatMaxHP;
+                pj.heartsAmount = cheatMaxHP;
                 break;
         }
 
         uiManager.uiPlayer.UpdateStatsAfterCheat();
+        
     }
 }

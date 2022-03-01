@@ -357,14 +357,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af0ce90de37ab6449d9e748669aa171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeAmount: 0
-  maxLife: 100
+  heartsAmount: 15
+  maxHearts: 15
   movementForce: 4
   distanceTracking: 16
   distanceToAttack: 1.5
   attackDelay: 1
   attackRadiusArea: 2
-  damage: 15
+  damageHits: 2
   knockbackForce: 20
 --- !u!114 &2276568717983404203
 MonoBehaviour:
@@ -379,6 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 2276568717983404202}
+  enemySprite: {fileID: 0}
 --- !u!114 &2276568717983404196
 MonoBehaviour:
   m_ObjectHideFlags: 0

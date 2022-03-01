@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Healthy
-    lifeChange: 300
-    defenseChange: 0
+    heartsChange: 5
     damageChange: 0
+    defenseChange: 0
     moveSpeedChange: 150

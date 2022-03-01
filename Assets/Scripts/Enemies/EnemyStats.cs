@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    public float lifeAmount;
-    public float maxLife;
+    public int heartsAmount;
+    public int maxHearts;
     public float movementForce;
     public float distanceTracking;
     public float distanceToAttack;
     public float attackDelay;
     public float attackRadiusArea;
-    public float damage;
+    public int damageHits;
     public float knockbackForce;
 
     private void Start()
     {
-        lifeAmount = maxLife;
+        heartsAmount = maxHearts;
     }
 }

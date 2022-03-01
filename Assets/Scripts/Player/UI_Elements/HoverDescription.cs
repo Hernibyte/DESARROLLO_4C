@@ -49,7 +49,7 @@ public class HoverDescription : MonoBehaviour
 
         nameCard.text = cardData.data.name;
 
-        CheckAndShowSpec(cardData.data.lifeChange, lifeSpec, "HP +", "HP ");
+        CheckAndShowSpec(cardData.data.heartsChange, lifeSpec, "HP +", "HP ");
         CheckAndShowSpec(cardData.data.defenseChange, defenseSpec, "DEF +", "DEF ");
         CheckAndShowSpec(cardData.data.damageChange, damageSpec, "DMG +", "DMG ");
         CheckAndShowSpec(cardData.data.moveSpeedChange, moveSpeedSpec, "VEL +", "VEL ");

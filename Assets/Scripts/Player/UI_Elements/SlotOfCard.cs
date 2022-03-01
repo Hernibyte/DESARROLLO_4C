@@ -41,8 +41,9 @@ public class SlotOfCard : MonoBehaviour, IPointerClickHandler,IPointerEnterHandl
 
             stats.ModifyStats();
             loot.DiscardIndexCardTaked();
+
             uiPlayer.UpdateStatsPanel(inventoryPlayer, stats.GetListOfCards() );
-            uiPlayer.UpdateUIPlayer(stats.playerStats.lifeAmount, stats.playerStats.totalMaxHP);
+            uiPlayer.UpdateUIPlayer(stats.playerStats.heartsAmount, stats.playerStats.maxHearts);
 
             hoverDescription.UpdateDataCardDescription( stats.GetCardByID(idCardTaked) );
             textSlot.text = stats.GetCardByID(idCardTaked).data.name;

@@ -21,7 +21,7 @@ public class SecondEnemyBehaviour : MonoBehaviour
     }
     void Update()
     {
-        if (stats.lifeAmount <= 0)
+        if (stats.heartsAmount <= 0)
             return;
 
         switch (state)
