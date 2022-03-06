@@ -15,6 +15,6 @@ MonoBehaviour:
   data:
     name: Tower
     heartsChange: 3
-    damageChange: 0
+    damageChange: -25
     defenseChange: 25
-    moveSpeedChange: -200
+    moveSpeedChange: -75

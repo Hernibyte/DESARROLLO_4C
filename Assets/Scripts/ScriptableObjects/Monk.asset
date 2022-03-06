@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c96ba15897f5ba74881480d327bf1443, type: 3}
-  m_Name: MasterChief
+  m_Name: Monk
   m_EditorClassIdentifier: 
   data:
-    name: Master
-    heartsChange: -10
-    damageChange: 90
-    defenseChange: 500
-    moveSpeedChange: 80
+    name: Monk
+    heartsChange: 5
+    damageChange: 10
+    defenseChange: -15
+    moveSpeedChange: 25

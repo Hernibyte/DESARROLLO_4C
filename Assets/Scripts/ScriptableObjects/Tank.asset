@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Tank
-    heartsChange: 4
-    damageChange: 0
+    heartsChange: 5
+    damageChange: -65
     defenseChange: 50
-    moveSpeedChange: -500
+    moveSpeedChange: -90

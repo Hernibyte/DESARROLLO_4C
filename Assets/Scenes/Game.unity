@@ -610,11 +610,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1170090998}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 731, y: -421}
+  m_AnchoredPosition: {x: 731, y: -463}
   m_SizeDelta: {x: 694, y: 144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505080303
@@ -925,6 +925,93 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &609604432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 609604433}
+  - component: {fileID: 609604435}
+  - component: {fileID: 609604434}
+  - component: {fileID: 609604436}
+  m_Layer: 5
+  m_Name: Comic_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &609604433
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609604432}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1170090998}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 2.0000052, y: 1.9999924}
+  m_SizeDelta: {x: 1837.469, y: 984.47705}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &609604434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609604432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5350fa05e4df0ed45811f67a5e1d1a17, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &609604435
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609604432}
+  m_CullTransparentMesh: 0
+--- !u!225 &609604436
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609604432}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &661543593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1856,6 +1943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI_Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482288119051273516, guid: bfa9df6785fb15645a0a37bc711483ec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3482288119074633443, guid: bfa9df6785fb15645a0a37bc711483ec,
         type: 3}
@@ -3603,12 +3695,12 @@ MonoBehaviour:
   inventory: {fileID: 1840690541}
   listOfCards: {fileID: 1323897285}
   minMaxHearts: 1
-  minDamage: 1
+  minDamage: 15
   minSpeedPlayer: 70
   minDefense: 20
   capMaxHearts: 32
-  capDamage: 5
-  capSpeedPlayer: 350
+  capDamage: 150
+  capSpeedPlayer: 380
   capDefense: 1000
   playerStats: {fileID: 0}
 --- !u!1 &808913526
@@ -3686,11 +3778,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1170090998}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 577, y: -421}
+  m_AnchoredPosition: {x: 577, y: -463}
   m_SizeDelta: {x: 694, y: 144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842327280
@@ -4400,6 +4492,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1881681836}
+  - {fileID: 609604433}
+  - {fileID: 1491543618}
   - {fileID: 842327279}
   - {fileID: 505080302}
   m_Father: {fileID: 1231198224}
@@ -4424,6 +4518,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TextContinue: {fileID: 842327278}
   m_TextLoading: {fileID: 505080301}
+  comicImages:
+  - {fileID: 609604436}
+  - {fileID: 1491543621}
   close:
     m_PersistentCalls:
       m_Calls:
@@ -4799,6 +4896,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e789c3973d964814ab022120091d4671, type: 2}
   - {fileID: 11400000, guid: 9b75ca1033db11840933e739b2baf952, type: 2}
   - {fileID: 11400000, guid: cd0864746a934d948bd982eaa2444b51, type: 2}
+  - {fileID: 11400000, guid: c2e2813594b9e5f428871f47a5cb674f, type: 2}
+  - {fileID: 11400000, guid: e32a8accfc2f52449a3277eab7c313b4, type: 2}
 --- !u!1 &1396742326
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,6 +5448,93 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &1491543617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1491543618}
+  - component: {fileID: 1491543620}
+  - component: {fileID: 1491543619}
+  - component: {fileID: 1491543621}
+  m_Layer: 5
+  m_Name: Comic_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1491543618
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491543617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1170090998}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2, y: 2}
+  m_SizeDelta: {x: 1937.469, y: 1084.4767}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1491543619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491543617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 95f218b3f7de803499d3c7c19156289c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1491543620
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491543617}
+  m_CullTransparentMesh: 0
+--- !u!225 &1491543621
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491543617}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1624649103
 GameObject:
   m_ObjectHideFlags: 0
@@ -5418,7 +5604,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUE
+  m_Text: RESTART
 --- !u!222 &1624649106
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6502,7 +6688,7 @@ MonoBehaviour:
     type: 3}
   nodeXDistance: 50
   nodeYDistance: 30
-  nodeAmount: 15
+  nodeAmount: 35
   finishGeneration:
     m_PersistentCalls:
       m_Calls:

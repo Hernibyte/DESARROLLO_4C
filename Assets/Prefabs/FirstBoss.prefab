@@ -671,8 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af0ce90de37ab6449d9e748669aa171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartsAmount: 50
-  maxHearts: 50
+  heartsAmount: 500
+  maxHearts: 500
   movementForce: 4
   distanceTracking: 16
   distanceToAttack: 2
