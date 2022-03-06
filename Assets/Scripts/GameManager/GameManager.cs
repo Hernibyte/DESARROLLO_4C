@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     void ChangeStateMovementPlayer()
     {
         playerTransform.GetComponent<PlayerMovement>().canIMove = !playerTransform.GetComponent<PlayerMovement>().canIMove;
+        ComboSystem.Instance.canAttack = !ComboSystem.Instance.canAttack;
     }
 
     public void IfLevelGenerationEnds()

@@ -27,7 +27,12 @@ public class ComboSystem : MonoBehaviour
 
     public bool canReciveInput;
     public bool inputRecived;
+    public bool canAttack = false;
 
+    private void Start()
+    {
+        canAttack = true;
+    }
     private void Update()
     {
         IntedAttack();
@@ -35,6 +40,9 @@ public class ComboSystem : MonoBehaviour
 
     public void IntedAttack()
     {
+        if (!canAttack)
+            return;
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (canReciveInput)
