@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -7,6 +8,7 @@ public class UILoadingScreenBehaviour : MonoBehaviour
 {
     #region EXPOSED_FIELDS
     [SerializeField] GameObject m_TextContinue;
+    [SerializeField] GameObject m_TextNext;
     [SerializeField] GameObject m_TextLoading;
     [SerializeField] CanvasGroup[] comicImages;
     [SerializeField] UnityEvent close;
@@ -25,9 +27,10 @@ public class UILoadingScreenBehaviour : MonoBehaviour
         firstTime = PlayerPrefs.GetInt("firstTime", 0);
 
         m_TextContinue.SetActive(false);
+        m_TextNext.SetActive(false);
         m_TextLoading.SetActive(true);
 
-        if(firstTime >= 1)
+        if (firstTime >= 1)
         {
             comicsDisplayed = comicImages.Length;
             allDoneToStart = true;
@@ -55,6 +58,7 @@ public class UILoadingScreenBehaviour : MonoBehaviour
         PlayerPrefs.SetInt("firstTime", firstTime);
         PlayerPrefs.Save();
 
+        m_TextNext.SetActive(false);
         m_TextContinue.SetActive(true);
         allDoneToStart = true;
     }
@@ -86,6 +90,7 @@ public class UILoadingScreenBehaviour : MonoBehaviour
     #region CORUTINES
     private IEnumerator ShowComic()
     {
+        m_TextNext.SetActive(false);
         float increaseVal = 0.25f;
 
         while (comicImages[comicsDisplayed].alpha < 1)
@@ -103,6 +108,7 @@ public class UILoadingScreenBehaviour : MonoBehaviour
         if(comicsDisplayed < comicImages.Length)
         {
             comicsDisplayed++;
+            m_TextNext.SetActive(true);
         }
 
         yield break;
