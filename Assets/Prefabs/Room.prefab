@@ -333,6 +333,8 @@ MonoBehaviour:
   enemiesPrefab:
   - {fileID: 2276568717983404206, guid: c20fd72caf311e44daccc455455af611, type: 3}
   - {fileID: 6397217175561193418, guid: 40778fec3adad40479b25863a66a12c7, type: 3}
+  - {fileID: 5264881131716090809, guid: bb22234aad9a7b14b877810c2622a3db, type: 3}
+  - {fileID: 782758760015966278, guid: 8309d2a513a43de43a71b9f4bcaba67c, type: 3}
   - {fileID: 8011611470067475094, guid: 72ee82428171d60449059f5212751edb, type: 3}
   switchGatesOpen:
     m_PersistentCalls:
@@ -351,7 +353,7 @@ MonoBehaviour:
   enemyGenerator: {fileID: 4056008632670356702}
   enemiesSpawnOffSet: 0
   minEnemiesPerRoom: 1
-  maxEnemiesPerRoom: 2
+  maxEnemiesPerRoom: 4
   bossDie:
     m_PersistentCalls:
       m_Calls: []
@@ -598,7 +600,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -981665299
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 0863ef6c1790f5d49a94b5c2a0feff09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

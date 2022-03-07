@@ -3696,11 +3696,11 @@ MonoBehaviour:
   listOfCards: {fileID: 1323897285}
   minMaxHearts: 1
   minDamage: 15
-  minSpeedPlayer: 70
+  minSpeedPlayer: 100
   minDefense: 20
   capMaxHearts: 32
   capDamage: 150
-  capSpeedPlayer: 380
+  capSpeedPlayer: 400
   capDefense: 1000
   playerStats: {fileID: 0}
 --- !u!1 &808913526
@@ -6768,7 +6768,7 @@ MonoBehaviour:
     type: 3}
   nodeXDistance: 50
   nodeYDistance: 30
-  nodeAmount: 35
+  nodeAmount: 10
   finishGeneration:
     m_PersistentCalls:
       m_Calls:

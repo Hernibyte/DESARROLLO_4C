@@ -445,7 +445,7 @@ MonoBehaviour:
   distanceToAttack: 70
   attackDelay: 1
   attackRadiusArea: 0
-  damageHits: 1
+  damageHits: 2
   knockbackForce: 20
 --- !u!114 &6397217175561193430
 MonoBehaviour:

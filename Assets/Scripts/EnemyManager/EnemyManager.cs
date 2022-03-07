@@ -45,7 +45,7 @@ public class EnemyManager : MonoBehaviour
         //
         if(generateBoss)
         {
-            GenerateEnemy(enemiesPrefab[2], transform.position);
+            GenerateEnemy(enemiesPrefab[enemiesPrefab.Count-1], transform.position);
             enemiesAmount++;
         }
         else 
@@ -62,7 +62,7 @@ public class EnemyManager : MonoBehaviour
                 spawnPosition.y = Random.Range(enemyGenerator.transform.position.y - enemyGeneratorCollider.size.y / 2, 
                                             enemyGenerator.transform.position.y + enemyGeneratorCollider.size.y / 2);
                 //
-                switch(Random.Range(0, 2))
+                switch(Random.Range(0, enemiesPrefab.Count-1))
                 {
                     case 0:
                         GenerateEnemy(enemiesPrefab[0], spawnPosition);
@@ -70,6 +70,12 @@ public class EnemyManager : MonoBehaviour
                     case 1:
                         GenerateEnemy(enemiesPrefab[1], spawnPosition);
                     break;
+                    case 2:
+                        GenerateEnemy(enemiesPrefab[2], spawnPosition);
+                        break;
+                    case 3:
+                        GenerateEnemy(enemiesPrefab[3], spawnPosition);
+                        break;
                 }
                 enemiesAmount++;
             }

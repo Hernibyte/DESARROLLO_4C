@@ -1,0 +1,35 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2788974843	Boss_vida			\Default Work Unit\Boss_vida	
+
+Switch	ID	Name	Switch Group			Notes
+	1677318729	Baja	Boss_vida			
+	3142410971	Media	Boss_vida			
+	3201957283	Alta	Boss_vida			
+	3786252812	Cero	Boss_vida			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	873867260	Musica_Juego			\Default Work Unit\Musica_Juego	
+	3092587489	pausa			\Default Work Unit\pausa	
+
+State	ID	Name	State Group			Notes
+	675784008	Batalla	Musica_Juego			
+	748895195	None	Musica_Juego			
+	2607556080	Menu	Musica_Juego			
+	3524513810	Pantalla_Inicio	Musica_Juego			
+	582728953	pausa_in	pausa			
+	748895195	None	pausa			
+	2340700472	pausa_out	pausa			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	475992437	pausa_in	pausa	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2582501215	rtpc_mastervolume			\Default Work Unit\rtpc_mastervolume	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

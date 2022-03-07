@@ -1,0 +1,160 @@
+Event	ID	Name			Wwise Object Path	Notes
+	194776941	inicio_start			\Default Work Unit\Generales\inicio_start	
+	348796695	ogre_attack			\Default Work Unit\Enemigos\ogre_attack	
+	399764490	open_loot			\Default Work Unit\Generales\open_loot	
+	405030957	ogre_step			\Default Work Unit\Enemigos\ogre_step	
+	455792825	ogre_idle			\Default Work Unit\Enemigos\ogre_idle	
+	581405597	ogre_receivedamage			\Default Work Unit\Enemigos\ogre_receivedamage	
+	582728953	pausa_in			\Default Work Unit\Generales\pausa_in	
+	628083195	monk_strikeuno			\Default Work Unit\Monje\monk_strikeuno	
+	647670877	monk_strikedos			\Default Work Unit\Monje\monk_strikedos	
+	652749204	menu_ingame			\Default Work Unit\Generales\menu_ingame	
+	869697009	ui_onenter			\Default Work Unit\Interfaz\ui_onenter	
+	874211877	rtpc_life			\Default Work Unit\RTPCs\rtpc_life	
+	880580374	inicio_menu			\Default Work Unit\Generales\inicio_menu	
+	950189142	clear_room			\Default Work Unit\Generales\clear_room	
+	1236462751	ranger_receivedamage			\Default Work Unit\Enemigos\ranger_receivedamage	
+	1373024549	inicio_game			\Default Work Unit\Generales\inicio_game	
+	1374521763	boss_step			\Default Work Unit\Boss\boss_step	
+	1547966948	Set_Switch_Inicio			\Default Work Unit\Set_Switch_Inicio	
+	1662268395	monk_dash			\Default Work Unit\Monje\monk_dash	
+	1766466901	inicio_battle			\Default Work Unit\Generales\inicio_battle	
+	2047528901	ranger_die			\Default Work Unit\Enemigos\ranger_die	
+	2141748771	ogre_die			\Default Work Unit\Enemigos\ogre_die	
+	2278053539	ui_onclick			\Default Work Unit\Interfaz\ui_onclick	
+	2319098654	Set_Switch_Boss			\Default Work Unit\Set_Switch_Boss	
+	2340700472	pausa_out			\Default Work Unit\Generales\pausa_out	
+	2409810141	enter_room			\Default Work Unit\Generales\enter_room	
+	2582501215	rtpc_mastervolume			\Default Work Unit\RTPCs\rtpc_mastervolume	
+	2711906925	Set_Switch_Exploracion			\Default Work Unit\Set_Switch_Exploracion	
+	2807435833	aparece_loot			\Default Work Unit\Generales\aparece_loot	
+	3022924773	ranger_attack			\Default Work Unit\Enemigos\ranger_attack	
+	3123195961	monk_receivedamage			\Default Work Unit\Monje\monk_receivedamage	
+	3151110311	ranger_idle			\Default Work Unit\Enemigos\ranger_idle	
+	3359398450	monk_range			\Default Work Unit\Monje\monk_range	
+	3387779820	Set_Switch_Batalla			\Default Work Unit\Set_Switch_Batalla	
+	3533197240	ui_onclick_card			\Default Work Unit\Interfaz\ui_onclick_card	
+	3556884147	boss_life			\Default Work Unit\RTPCs\boss_life	
+	3854436575	monk_die			\Default Work Unit\Monje\monk_die	
+	3940739283	ui_onenter_ingame			\Default Work Unit\Interfaz\ui_onenter_ingame	
+	3998673717	ui_onclick_ingame			\Default Work Unit\Interfaz\ui_onclick_ingame	
+	4004373545	boss_strikeuno			\Default Work Unit\Boss\boss_strikeuno	
+	4023858067	boss_strikedos			\Default Work Unit\Boss\boss_strikedos	
+	4041908129	monk_step			\Default Work Unit\Monje\monk_step	
+	4048155386	ranger_move			\Default Work Unit\Enemigos\ranger_move	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1093653570	switch_musica			\Default Work Unit\switch_musica	
+
+Switch	ID	Name	Switch Group			Notes
+	675784008	Batalla	switch_musica			
+	1560169506	Boss	switch_musica			
+	2658298240	Inicio	switch_musica			
+	2902310089	Exploracion	switch_musica			
+
+Effect plug-ins	ID	Name	Type				Notes
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	23784958	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Breathe\Silence\Wwise Silence	
+	497328370	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Dx\Idle\Silence\Wwise Silence	
+	550767385	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Silence\Wwise Silence	
+	663161610	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Idle\Silence\Wwise Silence	
+	692313562	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Foley\Pasos_completos\ropacont\Silence\Wwise Silence	
+	847826133	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Idle\Silence_01\Wwise Silence	
+	859456066	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Foley\Pasos_completos\Pasos\Silence\Wwise Silence	
+	956557172	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Foley\Pasos\Silence\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	7638481	Demon_Dx_dead3	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Dx_dead3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Dx\Dead\Demon_Dx_dead3		340512
+	9471008	Foley_ropa_final-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Foley_ropa_final-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Foley\Pasos_completos\ropacont\Ropa\Foley_ropa_final-001		220764
+	13440766	door_Fx_open	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\door_Fx_open_84EA93AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Puerta\door_open\door_Fx_open		289144
+	15648755	monk_stepleft_end3	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepleft_end3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_izquierda\Punta\monk_stepleft_end3		43368
+	24665574	Orco_Dx_attack-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_attack-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Fx\Hit\Hit_voice\Orco_Dx_attack-003		147920
+	62939478	monk_dash2	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_dash2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Dash\monk_dash2		294120
+	68538077	monk_stepright_end2	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepright_end2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_derecha\Punta\monk_stepright_end2		2904
+	82951474	Monje_damage-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Monje_damage-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Receive_damage\Monje_damage-001		270536
+	85627219	Fantasy_Game_Organic_Magic_Accept_Quest_Drum_Impact_01	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Fantasy_Game_Organic_Magic_Accept_Quest_Drum_Impact_1_B4490EAD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interfaz\Menu\on_click\Fantasy_Game_Organic_Magic_Accept_Quest_Drum_Impact_01		78360
+	167962525	Orco_Dx_breathe_out-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_breathe_out-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Breathe\Breathe_out\Orco_Dx_breathe_out-003		101260
+	177055058	door_Fx_close	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\door_Fx_close_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Puerta\door_close\door_Fx_close		336208
+	196463260	monk_stepright-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepright-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_derecha\Tacon\monk_stepright-002		3544
+	210679115	open_loot_card-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\open_loot_card-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interfaz\Ingame\ingame_card\open_loot_card-002		302236
+	218080424	Transition - Redemption-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Transition - Redemption-001_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Transition - Redemption\Transition - Redemption-001		617464
+	222668660	Fantasy_Game_Distant_Soft_Rumble_2	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Fantasy_Game_Distant_Soft_Rumble_2_757475C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interfaz\Menu\on_enter\Fantasy_Game_Distant_Soft_Rumble_2		371980
+	236766836	monk_distance-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_distance-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Range\monk_distance-003		347292
+	241286790	aparece loot_music_03	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\aparece loot_music_E939BFE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\aparece_loot\musica\aparece loot_music_03		243732
+	241520495	Orco_Fx_Pasoderecha-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Fx_Pasoderecha-002_5881689F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Foley\Pasos\Pasos_der\Orco_Fx_Pasoderecha-002		154476
+	274648691	monk_stepright-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepright-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_derecha\Tacon\monk_stepright-003		8456
+	278355826	monk_stepleft-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepleft-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_izquierda\Tacon\monk_stepleft-001		13100
+	295466494	Demon_Dx_iddle2	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Dx_iddle2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Dx\Idle\Demon_Dx_iddle2		870064
+	301788336	Orco_Dx_breathe-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_breathe-001_86650C2D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Breathe\Breathe_in\Orco_Dx_breathe-001		85812
+	302502130	monk_hit_fx3	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hit_fx3_FFC1ECBB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_uno\Fx\monk_hit_fx3		315596
+	306534468	Orco_Fx_Pasoizquierda-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Fx_Pasoizquierda-001_09FD2DE6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Foley\Pasos\Pasos_izq\Orco_Fx_Pasoizquierda-001		148452
+	306806010	monk_stepleft_end1	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepleft_end1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_izquierda\Punta\monk_stepleft_end1		40380
+	308800202	Orco_Fx_golpe-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Fx_golpe-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Fx\Hit\Hit_arma\Orco_Fx_golpe-002		269044
+	313702848	Demon_Dx_dead2	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Dx_dead2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Dx\Dead\Demon_Dx_dead2		278864
+	315565834	monk_hit_dx-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hit_dx-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_uno\Dx\monk_hit_dx-002		330824
+	341149171	Orco_Fx_Pasoizquierda-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Fx_Pasoizquierda-002_8DE64D6A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Foley\Pasos\Pasos_izq\Orco_Fx_Pasoizquierda-002		148216
+	359562049	monk_hitcomb_fx-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hitcomb_fx-002_8A984C7A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_dos\Fx\monk_hitcomb_fx-002		293936
+	364815523	aparece loot_music	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\aparece loot_music_717881C0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\aparece_loot\musica\aparece loot_music		243732
+	385097772	open_loot-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\open_loot-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\open_loot\open_loot-001		1126024
+	395153170	golpe_simple2	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\golpe_simple2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Golpe\golpe_simple2		403548
+	413174192	Orco_Dx_Recibe_golpe-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_Recibe_golpe-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Damage\Orco_Dx_Recibe_golpe-002		162488
+	417203932	monk_hitcomb_dx-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hitcomb_dx-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_dos\Dx\monk_hitcomb_dx-003		214516
+	422172478	Demon_Fx_movement_03	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Fx_movement_9E851DDF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Fx\Movement\Demon_Fx_movement_03		748756
+	423832390	monk_dash	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Dash\monk_dash		317012
+	435700791	monk_distance-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_distance-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Range\monk_distance-001		348560
+	436213662	monk_hitcomb_dx-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hitcomb_dx-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_dos\Dx\monk_hitcomb_dx-001		210252
+	444980386	monk_hit_fx2	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hit_fx2_37F7B6C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_uno\Fx\monk_hit_fx2		314200
+	464573880	open_loot-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\open_loot-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\open_loot\open_loot-003		1129908
+	468469706	Orco_Fx_golpe-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Fx_golpe-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Fx\Hit\Hit_arma\Orco_Fx_golpe-001		268916
+	469552280	Orco_Dx_idle(con_efecto)_01	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_idle(con_efecto)_93198855.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Idle\Orco_Dx_idle(con_efecto)_01		714648
+	516182575	Orco_Dx_idle(con_efecto)_03	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_idle(con_efecto)_D48924DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Idle\Orco_Dx_idle(con_efecto)_03		546764
+	516920478	monk_stepright_end3	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepright_end3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_derecha\Punta\monk_stepright_end3		9880
+	548884856	monk_hitcomb_fx-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hitcomb_fx-001_0BB3332C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_dos\Fx\monk_hitcomb_fx-001		292388
+	551509563	Orco_Dx_idle(con_efecto)	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_idle(con_efecto)_3FF6248B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Idle\Orco_Dx_idle(con_efecto)		766304
+	562460157	aparece loot-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\aparece loot-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\aparece_loot\cofre\aparece loot-001		230388
+	581925326	Orco_Dx_breathe_out-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_breathe_out-001_218A0318.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Breathe\Breathe_out\Orco_Dx_breathe_out-001		65376
+	596316658	Orco_Dx_attack-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_attack-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Fx\Hit\Hit_voice\Orco_Dx_attack-002		158000
+	597880745	monk_hit_fx	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hit_fx_D68D9030.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_uno\Fx\monk_hit_fx		314664
+	618328925	Demon_Fx_movement_02	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Fx_movement_A9BA8499.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Fx\Movement\Demon_Fx_movement_02		670264
+	629121119	Demon_Fx_movement	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Fx_movement_B67F7D87.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Fx\Movement\Demon_Fx_movement		760832
+	631957275	UI_SoundPack11_Error_v3	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\UI_SoundPack11_Error_v3_E08D20B3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interfaz\Ingame\ingame_error\UI_SoundPack11_Error_v3		29528
+	635388004	Demon_Dx_dead1	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Dx_dead1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Dx\Dead\Demon_Dx_dead1		363536
+	636030852	open_loot_card-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\open_loot_card-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interfaz\Ingame\ingame_card\open_loot_card-001		321292
+	638695364	monk_stepleft-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepleft-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_izquierda\Tacon\monk_stepleft-003		18008
+	647895068	Orco_Dx_attack-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_attack-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Fx\Hit\Hit_voice\Orco_Dx_attack-001		164056
+	652156168	aparece loot-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\aparece loot-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\aparece_loot\cofre\aparece loot-002		181900
+	654081637	Demon_Fx_movement_01	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Fx_movement_A30516B3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Fx\Movement\Demon_Fx_movement_01		682340
+	664099092	Orco_Fx_Pasoderecha-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Fx_Pasoderecha-003_36EFCB91.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Foley\Pasos\Pasos_der\Orco_Fx_Pasoderecha-003		168568
+	670274005	open_loot-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\open_loot-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\open_loot\open_loot-002		1129508
+	693104905	Orco_Dx_breathe-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_breathe-003_96444D29.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Breathe\Breathe_in\Orco_Dx_breathe-003		100868
+	698268410	monk_hit_dx-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hit_dx-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_uno\Dx\monk_hit_dx-003		357216
+	706253243	Demon_Fx_movement_04	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Fx_movement_81B2B9B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Fx\Movement\Demon_Fx_movement_04		694416
+	715023574	Orco_Dx_idle(con_efecto)_02	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_idle(con_efecto)_54CB8DC3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Idle\Orco_Dx_idle(con_efecto)_02		710344
+	718042823	monk_hit_dx-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hit_dx-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_uno\Dx\monk_hit_dx-001		269672
+	729802019	monk_dash3	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_dash3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Dash\monk_dash3		294120
+	740443677	monk_hitcomb_dx-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_hitcomb_dx-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Strike_dos\Dx\monk_hitcomb_dx-002		193400
+	805644031	monk_stepleft_end2	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepleft_end2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_izquierda\Punta\monk_stepleft_end2		36360
+	837298047	aparece loot_music_01	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\aparece loot_music_6E3A3EF8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\aparece_loot\musica\aparece loot_music_01		291568
+	846189855	monk_stepleft-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepleft-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_izquierda\Tacon\monk_stepleft-002		21272
+	859675253	Monje_damage-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Monje_damage-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Receive_damage\Monje_damage-002		269448
+	880811429	Foley_ropa_final-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Foley_ropa_final-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Foley\Pasos_completos\ropacont\Ropa\Foley_ropa_final-003		221452
+	905137215	Monje_damage-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Monje_damage-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Receive_damage\Monje_damage-003		219340
+	911376123	monk_stepright-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepright-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_derecha\Tacon\monk_stepright-001		2968
+	920448570	Demon_Dx_iddle3	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Dx_iddle3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Dx\Idle\Demon_Dx_iddle3		1256172
+	928770830	vintage_radio_button_006	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\vintage_radio_button_006_A03D8689.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interfaz\Ingame\ingame_onenter\vintage_radio_button_006		31020
+	953620692	monk_distance-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_distance-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Dx\Range\monk_distance-002		320632
+	970412414	monk_stepright_end1	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\monk_stepright_end1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Monje\Foley\paso_completo\Pasos_derecha\Punta\monk_stepright_end1		1684
+	972092062	aparece loot_music_02	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\aparece loot_music_1D0A40A4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generales\Loot\aparece_loot\musica\aparece loot_music_02		276620
+	973310588	Orco_Dx_Recibe_golpe-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Dx_Recibe_golpe-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Dx\Damage\Orco_Dx_Recibe_golpe-001		140200
+	999109316	Orco_Fx_Pasoizquierda-003	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Fx_Pasoizquierda-003_25EC416D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Foley\Pasos\Pasos_izq\Orco_Fx_Pasoizquierda-003		150028
+	1004681454	Main Theme	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Main Theme Completo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music Switch\Main\Main Theme\Main Theme		8045432
+	1019961496	Demon_Dx_attackcombo	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Dx_attackcombo_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Fx\Attack\Demon_Dx_attackcombo		400328
+	1028601640	Demon_Dx_iddle1	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Demon_Dx_iddle1_BC723C37.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Demonio\Dx\Idle\Demon_Dx_iddle1		1375364
+	1044057678	Orco_Fx_Pasoderecha-001	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Orco_Fx_Pasoderecha-001_E45FCE47.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemigos\Ogro\Foley\Pasos\Pasos_der\Orco_Fx_Pasoderecha-001		135436
+	1054583540	golpe_comb	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\golpe_comb_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Golpe\golpe_comb		509116
+	1056715555	Foley_ropa_final-002	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\Foley_ropa_final-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Boss\Foley\Pasos_completos\ropacont\Ropa\Foley_ropa_final-002		222448
+	1066794211	switch_on_042	Y:\Documents\GitHub\Test-of-Faith-wwise-repo\.cache\Mac\SFX\switch_on_042_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interfaz\Ingame\ingame_error\switch_on_042		130344
+
