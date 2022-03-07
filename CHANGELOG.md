@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9] - 2021-3-6
+### Added
+- History comic
+- Two enemies variants
+- New boss attack
+
+### Improved
+- Card statistics
+- Enemies statistics
+- Player statistics
+
+### Fixed
+- Statistics
+- Boss animation
+- Attack in inventory
+
 ## [0.8] - 2021-11-26
 ### Added
 - Sound volume controller
