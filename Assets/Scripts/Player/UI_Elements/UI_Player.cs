@@ -12,8 +12,6 @@ public class UI_Player : MonoBehaviour
     [SerializeField] private Transform holderLosedHearts = null;
 
     [SerializeField] TextMeshProUGUI porcentHP;
-    //[SerializeField] Image fillHP; 
-    //[SerializeField] Image fillDamageEntry;
     [SerializeField] StatsOnPanel allStats;
 
     [HideInInspector] public StatsManager statsMng;
@@ -34,13 +32,6 @@ public class UI_Player : MonoBehaviour
 
         hearts = new List<Animator>();
         losedHearts = new List<Animator>();
-    }
-    private void Update()
-    {
-        /*if(needUpdateHelathBar)
-        {
-            UpdateFillDamageEntry();
-        }*/
     }
 
     public void StartStatsPanel()
@@ -196,42 +187,8 @@ public class UI_Player : MonoBehaviour
                     hearts.RemoveAt(j);
                 }
             }
-            /*for (int i = 1; i <= Mathf.Abs(diffValue); i++)
-            {
-                hearts[hearts.Count - i].SetTrigger("Hit");
-                hearts.RemoveAt(hearts.Count - i);
-            }*/
         }
     }
-
-    /*void UpdateFillHP(float updateHealthPoints, float maxHelathPointsPlayer)
-    {
-        float damageToHP = updateHealthPoints / maxHelathPointsPlayer;
-        fillHP.fillAmount = damageToHP;
-
-        targetFillAmount = damageToHP;
-        StartCoroutine(WaitToApplyDamage());
-    }*/
-
-    /*IEnumerator WaitToApplyDamage()
-    {
-        yield return new WaitForSeconds(0.15f);
-
-        needUpdateHelathBar = true;
-    }*/
-
-    /*void UpdateFillDamageEntry()
-    {
-        if(fillDamageEntry.fillAmount > targetFillAmount)
-        {
-            fillDamageEntry.fillAmount -= Time.deltaTime / targetFillAmount;
-        }
-        else
-        {
-            fillDamageEntry.fillAmount = targetFillAmount;
-            needUpdateHelathBar = false;
-        }
-    }*/
 
     public void OpenAndClosePanelPlayer()
     {

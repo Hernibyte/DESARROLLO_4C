@@ -12,6 +12,7 @@ public class PlayerStats : MonoBehaviour
     [Header("(BASIC + EXTRA CARDS) MOVEMENT STATS")]
     [Space(15)]
     public float totalForceMovement;
+    public float initialForceMovement;
 
     [Header("BASIC STATS")]
     [Space(15)]
@@ -34,7 +35,9 @@ public class PlayerStats : MonoBehaviour
     [Header("(BASIC + EXTRA CARDS) ATTACK STATS")]
     [Space(15)]
     public int totalDamageMelee;
+    public int initialDmgMelee;
     public int totalDamageRange;
+    public int initialDmgRange;
 
     private void Start()
     {
@@ -43,6 +46,10 @@ public class PlayerStats : MonoBehaviour
 
         totalDefense = defense;
         totalForceMovement = forceMovement;
+        initialForceMovement = forceMovement;
+
+        initialDmgMelee = damageMeleeAttack;
+        initialDmgRange = damageRangeAttack;
         totalDamageMelee = damageMeleeAttack;
         totalDamageRange = damageRangeAttack;
     }

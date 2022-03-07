@@ -3695,13 +3695,13 @@ MonoBehaviour:
   inventory: {fileID: 1840690541}
   listOfCards: {fileID: 1323897285}
   minMaxHearts: 1
-  minDamage: 15
-  minSpeedPlayer: 100
-  minDefense: 20
+  minDamage: 9
+  minSpeedPlayer: 70
+  minDefense: 0
   capMaxHearts: 32
-  capDamage: 150
-  capSpeedPlayer: 400
-  capDefense: 1000
+  capDamage: 20
+  capSpeedPlayer: 210
+  capDefense: 0
   playerStats: {fileID: 0}
 --- !u!1 &808913526
 GameObject:

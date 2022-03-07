@@ -15,6 +15,6 @@ MonoBehaviour:
   data:
     name: Tank
     heartsChange: 5
-    damageChange: -65
-    defenseChange: 50
-    moveSpeedChange: -90
+    damageChange: -3
+    defenseChange: 0
+    moveSpeedChange: -10

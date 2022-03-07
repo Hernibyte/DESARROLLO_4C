@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Monk
-    heartsChange: 5
-    damageChange: 10
-    defenseChange: -15
-    moveSpeedChange: 25
+    heartsChange: 2
+    damageChange: 1
+    defenseChange: 0
+    moveSpeedChange: 0

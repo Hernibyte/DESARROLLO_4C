@@ -75,6 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canReciveInput: 1
   inputRecived: 0
+  canAttack: 0
 --- !u!1 &3627288357335876433
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +413,7 @@ MonoBehaviour:
   maxHeartsTotal: 0
   totalDefense: 0
   damageRangeAttack: 5
-  damageMeleeAttack: 15
+  damageMeleeAttack: 9
   knockbackRange: 1
   knockbackMelee: 30
   totalDamageMelee: 0

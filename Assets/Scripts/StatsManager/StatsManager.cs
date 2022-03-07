@@ -69,9 +69,9 @@ public class StatsManager : MonoBehaviour
 
         SetValueStat(ref playerStats.maxHearts, playerStats.initialMaxHearts + extraCardsHP, minMaxHearts, capMaxHearts);
         SetValueStat(ref playerStats.totalDefense, extraCardsDEF, minDefense, capDefense);
-        SetValueStat(ref playerStats.totalDamageMelee, playerStats.damageMeleeAttack + extraCardsDMG, minDamage, capDamage);
-        SetValueStat(ref playerStats.totalDamageRange, playerStats.damageRangeAttack + extraCardsDMG, minDamage, capDamage);
-        SetValueStat(ref playerStats.totalForceMovement, extraCardsVEL, minSpeedPlayer, capSpeedPlayer);
+        SetValueStat(ref playerStats.totalDamageMelee, playerStats.initialDmgMelee + extraCardsDMG, minDamage, capDamage);
+        SetValueStat(ref playerStats.totalDamageRange, playerStats.initialDmgRange + extraCardsDMG, minDamage, capDamage);
+        SetValueStat(ref playerStats.totalForceMovement, playerStats.initialForceMovement + extraCardsVEL, minSpeedPlayer, capSpeedPlayer);
     }
 
     void SetValueStat(ref float stat, float value, float minimumCondition, float maximumCondition)

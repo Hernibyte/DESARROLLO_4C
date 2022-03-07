@@ -366,9 +366,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af0ce90de37ab6449d9e748669aa171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartsAmount: 200
-  maxHearts: 200
-  movementForce: 4
+  heartsAmount: 85
+  maxHearts: 85
+  movementForce: 2.8
   distanceTracking: 16
   distanceToAttack: 1.5
   attackDelay: 2
@@ -545,8 +545,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5264881132810250749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.274, z: 0}
-  m_LocalScale: {x: 13, y: 13, z: 1}
+  m_LocalPosition: {x: 0.085, y: 0.391, z: 0}
+  m_LocalScale: {x: 14, y: 14, z: 1}
   m_Children: []
   m_Father: {fileID: 5264881131716090808}
   m_RootOrder: 0

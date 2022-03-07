@@ -15,6 +15,6 @@ MonoBehaviour:
   data:
     name: Assasin
     heartsChange: -2
-    damageChange: 75
+    damageChange: 2
     defenseChange: 0
-    moveSpeedChange: 75
+    moveSpeedChange: 10

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     name: Lucky
-    heartsChange: -15
-    damageChange: -15
-    defenseChange: -15
-    moveSpeedChange: -15
+    heartsChange: -2
+    damageChange: 1
+    defenseChange: 0
+    moveSpeedChange: -8
